@@ -22,3 +22,11 @@ The purpose of the design system is to create a set of components, blocks and pa
 ## Documentation
 
 For full documentation, visit [UAE Design Language System](https://dls.government.ae).
+
+## Getting started
+
+The Design Language System is built with standards and components that will help you build websites faster and with a consistent UI adhering to accessibility principles. 
+
+The Design Language System (DLS) is built with [TailwindCSS](https://tailwindcss.com) and to get started, you simply need to add the the DLS plugin to your existing or new TailwindCSS Project.
+
+For installation instructions, go to [dls.government.ae/docs/installation](https://dls.government.ae/docs/installation)
