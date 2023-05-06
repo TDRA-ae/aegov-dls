@@ -4,8 +4,9 @@
 	</a>
 	<br>
 	<a href="https://tdra.gov.ae/">
-		<img src="https://tdra.gov.ae/Assets/images/TDRA-final-logo.svg" alt="The Telecommunication and Digital Government Regulatory Authority of the United Arab Emirates" height="80">
+		<img src="https://tdra.gov.ae/Assets/images/TDRA-final-logo.svg" alt="The Telecommunication and Digital Government Regulatory Authority of the United Arab Emirates" height="40">
 	</a>
 </div>
+
 #The United Arab Emirates Design System
 ---
