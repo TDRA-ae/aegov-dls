@@ -13,6 +13,10 @@
 
 # The United Arab Emirates Design System
 
+The design system has been created based on research and information collected from in-depth studies conducted on user behaviour and benchmarking best practices. 
+
+The purpose of the design system is to create a set of components, blocks and patterns with detailed guidelines on how to create web UI for Federal Ministries and Authorities of the United Arab Emirates.
+
 ------
 
 ## Documentation
