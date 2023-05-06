@@ -11,5 +11,10 @@
 </div>
 <p>&nbsp;</p>
 
-#The United Arab Emirates Design System
----
+# The United Arab Emirates Design System
+
+------
+
+## Documentation
+
+For full documentation, visit [UAE Design Language System](https://dls.government.ae).
