@@ -1,5 +1,5 @@
 {
-  "name": "aegov-dls",
+  "name": "@aegov/design-system",
   "version": "0.0.5",
   "description": "A design system for the Government of the United Arab Emirates. The design system has been created based on research and information collected from in-depth studies conducted on user behaviour and benchmarking best practices. The primary use of this design system is to allow ministries of the United Arab Emirates to create consistent websites with components that are common and acceissible.",
   "keywords": [
@@ -24,22 +24,18 @@
   ],
   "license": "MIT",
   "contributors": [
-    {
-      "name": "Conceptualize",
-      "url": "https://www.conceptualize.ae"
-    }
+    "Conceptualize (https://www.conceptualize.ae)"
   ],
   "author": "Telecommunication and Digital Government Regulatory Authority",
   "homepage": "https://www.tdra.ae/",
-  "bugs": "",
+  "bugs": {
+    "url": "https://github.com/TDRA-ae/aegov-dls/issues"
+  },
   "prettier": "./src/prettier.config.js",
   "main": "src/index.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/TDRA-ae/aegov-dls.git"
-  },
-  "bugs": {
-    "url": "https://github.com/TDRA-ae/aegov-dls/issues"
   },
   "files": [
     "dist/*.js",
