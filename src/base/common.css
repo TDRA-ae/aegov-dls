@@ -34,6 +34,22 @@ button {
   @apply cursor-pointer font-roboto no-underline inline-flex flex-shrink-0 select-none flex-wrap items-center justify-center text-center transition duration-200 ease-in-out;
 }
 
+/* typography */
+p {
+  @apply text-base mb-8;
+  &.text-sm {
+    @apply mb-7
+  }
+  &.text-xs {
+    @apply mb-6
+  }
+}
+
+a {
+  @apply text-primary-600 hover:text-primary-500 relative inline-block underline underline-offset-1 transition-all duration-200 ease-in-out hover:underline-offset-2;
+}
+
+
 [type='text'],
 [type='email'],
 [type='url'],
@@ -49,19 +65,4 @@ button {
 [multiple],
 textarea,select {
   @apply appearance-none bg-whitely-50;
-}
-
-/* typography */
-p {
-  @apply text-base mb-8;
-  &.text-sm {
-    @apply mb-7
-  }
-  &.text-xs {
-    @apply mb-6
-  }
-}
-
-a {
-  @apply text-primary-600 hover:text-primary-500 relative inline-block underline underline-offset-1 transition-all duration-200 ease-in-out hover:underline-offset-2;
 }
