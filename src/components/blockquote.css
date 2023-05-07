@@ -1,0 +1,21 @@
+.aegov-quote{
+	@apply relative ps-10 py-4 pr-4 text-base text-aeblack-800 font-medium;
+	& .quote-icon{
+        @apply absolute top-0 start-0  h-12 w-12;
+    }
+    & .quote-author{
+        @apply text-sm font-medium text-primary-700 mb-1; 
+    }
+    & .quote-cite{
+        @apply text-sm text-primary-600 font-normal; 
+    }
+    & .quote-footer{
+        @apply mt-10; 
+    }
+    &:not(.quote-colored){
+        @apply ps-14 py-6;
+    } 
+}
+.aegov-quote.quote-colored{
+    @apply bg-primary-50 border-s-[10px] border-primary-500;
+}

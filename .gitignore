@@ -1,0 +1,8 @@
+node_modules
+yarn.lock
+/package-lock.json
+.next
+/dist
+.idea
+.DS_Store
+*.tgz

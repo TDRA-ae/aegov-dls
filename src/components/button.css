@@ -1,0 +1,115 @@
+.aegov-btn {
+    /* Basic style properties of a button */
+    @apply h-12 px-6 text-base font-medium rounded border-2 border-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 gap-2;
+    /* all aspects of colour */
+    @apply bg-primary-600 text-whitely-50 hover:bg-primary-500 hover:text-primary-50 hover:shadow-button hover:shadow-primary-100 focus-visible:ring-primary-200;
+    @apply disabled:!shadow-none disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-30;
+}
+.aegov-btn.btn-soft {
+    @apply bg-primary-50 hover:bg-primary-100 text-primary-700 hover:text-primary-600 focus-visible:ring-primary-800 focus-visible:ring-offset-0 hover:shadow-none;
+    @apply disabled:opacity-50;
+}
+.aegov-btn.btn-link {
+    @apply bg-transparent text-primary-600 hover:bg-primary-50 focus-visible:ring-primary-500 focus-visible:ring-offset-0 focus-visible:ring-1 focus-visible:border-primary-500 hover:shadow-none;
+}
+.aegov-btn.btn-outline {
+    @apply bg-transparent text-primary-600 hover:bg-primary-100 border-primary-600 focus-visible:ring-primary-500 focus-visible:ring-offset-0 focus-visible:ring-1 focus-visible:border-primary-500 hover:shadow-none;
+}
+
+/* size */
+.aegov-btn.btn-xl {
+    @apply h-13 text-lg px-7 rounded-md gap-3;
+}
+.aegov-btn.btn-sm {
+    @apply h-10 text-base px-5;
+}
+.aegov-btn.btn-xs {
+    @apply h-8 text-sm px-4;
+}
+.aegov-btn.btn-block {
+    @apply w-full;
+}
+/* icons */
+.aegov-btn > svg,
+.aegov-btn > img {
+    @apply w-6 h-6 fill-current;
+}
+.aegov-btn:has(> svg),
+.aegov-btn:has(> img) {
+    @apply px-5
+}
+.aegov-btn:has(> svg + svg),
+.aegov-btn:has(> img + img) {
+    @apply px-4
+}
+.aegov-btn.btn-xl > svg,
+.aegov-btn.btn-xl > img {
+    @apply w-7 h-7;
+}
+.aegov-btn.btn-xl:has(> svg),
+.aegov-btn.btn-xl:has(> img) {
+    @apply px-6
+}
+.aegov-btn.btn-xl:has(> svg + svg),
+.aegov-btn.btn-xl:has(> img + img) {
+    @apply px-5
+}
+.aegov-btn.btn-sm > svg,
+.aegov-btn.btn-sm > img {
+    @apply w-5 h-5;
+}
+.aegov-btn.btn-sm:has(> svg),
+.aegov-btn.btn-sm:has(> img) {
+    @apply px-4
+}
+.aegov-btn.btn-sm:has(> svg + svg),
+.aegov-btn.btn-sm:has(> img + img) {
+    @apply px-3
+}
+.aegov-btn.btn-xs > svg,
+.aegov-btn.btn-xs > img {
+    @apply w-4.5 h-4.5;
+}
+.aegov-btn.btn-xs:has(> svg),
+.aegov-btn.btn-xs:has(> img) {
+    @apply px-3;
+}
+.aegov-btn.btn-xs:has(> svg + svg),
+.aegov-btn.btn-xs:has(> img + img) {
+    @apply px-2;
+}
+.aegov-btn.btn-icon {
+    @apply px-0 w-12 gap-0;
+}
+.aegov-btn.btn-xl.btn-icon {
+    @apply w-13 px-0 gap-0;
+}
+.aegov-btn.btn-sm.btn-icon {
+    @apply w-10 px-0 gap-0;
+}
+.aegov-btn.btn-xs.btn-icon {
+    @apply w-8 px-0 gap-0;
+}
+
+/* color */
+.aegov-btn.btn-secondary {
+    @apply bg-aeblack-900 text-whitely-50 hover:bg-aeblack-700 hover:text-aeblack-100 hover:shadow-aeblack-100 focus-visible:ring-aeblack-200;
+}
+.aegov-btn.btn-secondary.btn-soft {
+    @apply bg-aeblack-50 hover:bg-aeblack-100 text-aeblack-800 hover:text-aeblack-700 focus-visible:ring-aeblack-200 focus-visible:ring-offset-0 hover:shadow-none;
+    @apply disabled:opacity-50;
+}
+.aegov-btn.btn-secondary.btn-link {
+    @apply bg-transparent text-aeblack-800 hover:bg-aeblack-50 focus-visible:ring-aeblack-200 focus-visible:ring-offset-0 focus-visible:ring-1 focus-visible:border-aeblack-200 hover:shadow-none;
+}
+.aegov-btn.btn-secondary.btn-outline {
+    @apply bg-transparent text-aeblack-800 hover:bg-aeblack-100 border-aeblack-800 focus-visible:ring-aeblack-200 focus-visible:ring-offset-0 focus-visible:ring-1 focus-visible:border-aeblack-200 hover:shadow-none;
+}
+
+/* auto respond button size */
+[data-responsive='auto'] .aegov-btn {
+    @apply h-8 text-sm px-4;
+    @apply sm:h-10 sm:text-base sm:px-5;
+    @apply lg:h-12 lg:px-6 lg:text-base;
+    @apply 2xl:h-13 2xl:text-lg 2xl:px-7 2xl:rounded-md 2xl:gap-3;
+}
