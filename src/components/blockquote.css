@@ -1,7 +1,7 @@
 .aegov-quote{
 	@apply relative ps-10 py-4 pr-4 text-base text-aeblack-800 font-medium;
 	& .quote-icon{
-        @apply absolute top-0 start-0  h-12 w-12;
+        @apply absolute top-0 start-0  h-12 w-12 rtl:-scale-x-100;
     }
     & .quote-author{
         @apply text-sm font-medium text-primary-700 mb-1; 
