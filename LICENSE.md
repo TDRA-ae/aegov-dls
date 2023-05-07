@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2023 Telecommunication and Digital Government Regulatory Authority of the United Arab Emirates
+Copyright (c) Telecommunication and Digital Government Regulatory Authority <info@tdra.gov.ae>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
