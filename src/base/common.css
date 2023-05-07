@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;600;700;800&family=Roboto:wght@300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@200;600;700;800&family=Inter:wght@200;600;700;800&family=Noto+Kufi+Arabic:wght@300;400;500;600;700;900&family=Roboto:wght@300;400;500;600;700;900&display=swap');
 
 html {
   -webkit-tap-highlight-color: transparent;
@@ -6,37 +6,55 @@ html {
 }
 
 body {
-  @apply m-0 p-0 font-roboto text-base antialiased text-aeblack-800;
+  @apply m-0 p-0 text-base antialiased text-aeblack-800;
   -webkit-print-color-adjust:exact !important;
   print-color-adjust:exact !important;
 }
+body {
+  @apply font-roboto;
+}
+body[dir="rtl"] {
+  @apply font-notokufi;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  @apply font-inter;
+}
+[dir="rtl"] h1,
+[dir="rtl"] h2,
+[dir="rtl"] h3,
+[dir="rtl"] h4,
+[dir="rtl"] h5,
+[dir="rtl"] h6 {
+  @apply font-alexandria;
+}
 
 h1 {
-  @apply text-h1 font-inter font-extrabold;
+  @apply text-h1 font-extrabold;
 }
 h2 {
-  @apply text-h2 font-inter font-extrabold;
+  @apply text-h2 font-extrabold;
 }
 h3 {
-  @apply text-h3 font-inter font-extrabold;
+  @apply text-h3 font-extrabold;
 }
 h4 {
-  @apply text-h4 font-inter font-bold;
+  @apply text-h4 font-bold;
 }
 h5 {
-  @apply text-h5 font-inter font-bold;
+  @apply text-h5 font-bold;
 }
 h6 {
-  @apply text-base font-inter font-semibold;
+  @apply text-base font-semibold;
 }
 
 button {
-  @apply cursor-pointer font-roboto no-underline inline-flex flex-shrink-0 select-none flex-wrap items-center justify-center text-center transition duration-200 ease-in-out;
+  @apply cursor-pointer no-underline inline-flex flex-shrink-0 select-none flex-wrap items-center justify-center text-center transition duration-200 ease-in-out;
 }
 
 /* typography */
 p {
-  @apply text-base mb-8;
+  @apply text-base mb-8 rtl:text-lg;
   &.text-sm {
     @apply mb-7
   }
