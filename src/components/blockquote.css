@@ -1,5 +1,5 @@
 .aegov-quote{
-	@apply relative ps-10 py-4 pr-4 text-base text-aeblack-800 font-medium;
+	@apply relative px-10 py-6 text-base text-aeblack-800 font-medium;
 	& .quote-icon{
         @apply absolute top-0 start-0  h-12 w-12 rtl:-scale-x-100;
     }
@@ -13,7 +13,7 @@
         @apply mt-10; 
     }
     &:not(.quote-colored){
-        @apply ps-14 py-6;
+        @apply pl-14 pr-10 rtl:pr-14 rtl:pl-10 py-6;
     } 
 }
 .aegov-quote.quote-colored{
