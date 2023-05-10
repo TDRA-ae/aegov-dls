@@ -1,0 +1,17 @@
+a.aegov-link {
+	@apply inline-flex gap-2 bg-transparent py-2 px-2 -ml-2 rtl:ml-0 rtl:-mr-2 font-semibold align-middle items-center no-underline hover:underline;
+	@apply focus-visible:ring-offset-4 focus-visible:ring-primary-300;
+
+	& > svg.link-icon {
+		@apply w-5 h-5;
+	}
+	&.link-soft {
+		@apply hover:no-underline hover:bg-primary-50;
+	}
+	&.link-secondary {
+		@apply text-aeblack-800 hover:text-aeblack-700 focus-visible:ring-aeblack-300;
+		&.link-soft {
+			@apply hover:bg-aeblack-50;
+		}
+	}
+}

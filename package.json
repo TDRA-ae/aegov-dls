@@ -1,6 +1,6 @@
 {
   "name": "@aegov/design-system",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A design system for the Government of the United Arab Emirates. The design system has been created based on research and information collected from in-depth studies conducted on user behaviour and benchmarking best practices. The primary use of this design system is to allow ministries of the United Arab Emirates to create consistent websites with components that are common and acceissible.",
   "keywords": [
     "design-system",
@@ -54,33 +54,30 @@
   "scripts": {
     "prettier": "prettier --write . --ignore-path ./src/.prettierignore",
     "base": "cat src/base/*.css > dist/base.css",
-    "postbase": "prejss-cli dist/base.css --format commonjs",
     "components": "cat src/components/*.css > dist/components.css",
-    "postcomponents": "prejss-cli dist/components.css --format commonjs",
     "utilities": "cat src/utilities/*.css > dist/utilities.css",
-    "postutilities": "prejss-cli dist/utilities.css --format commonjs",
     "build": "NODE_ENV=production && npm run base && npm run components && npm run utilities"
   },
   "devDependencies": {
-    "@tailwindcss/aspect-ratio": "^0.4.2",
-    "@tailwindcss/forms": "^0.5.3",
-    "@tailwindcss/typography": "^0.5.9",
     "autoprefixer": "^10.0.4",
+    "postcss": "^8.4.23",
     "postcss-cli": "10.1.0",
     "postcss-import": "15.1.0",
     "postcss-nested": "6.0.1",
-    "prejss-cli": "0.3.3",
     "prettier": "^2.7.1",
     "standard-version": "^9.5.0"
   },
   "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@tailwindcss/forms": "^0.5.3",
+    "@tailwindcss/typography": "^0.5.9",
     "color": "^4.2",
     "picocolors": "^1.0.0",
     "tailwindcss": "^3"
   },
   "peerDependencies": {
     "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.21",
+    "postcss": "^8.4.23",
     "tailwindcss": "^3"
   },
   "engines": {

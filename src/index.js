@@ -56,7 +56,9 @@ module.exports = require("tailwindcss/plugin")(mainFunction, {
 		},
 		fontFamily: {
 			'roboto': ['\'Roboto\'','ui-sans-serif','system-ui','-apple-system','BlinkMacSystemFont','\'Segoe UI\'','\'Helvetica Neue\'','sans-serif'],
-			'inter':['\'Inter\'','\'Helvetica Neue\'','ui-sans-serif','system-ui','sans-serif']
+			'inter':['\'Inter\'','\'Helvetica Neue\'','ui-sans-serif','system-ui','sans-serif'],
+			'notokufi': ['\'Noto Kufi Arabic\'','ui-sans-serif','\'Helvetica Neue\'','sans-serif'],
+			'alexandria': ['\'Alexandria\'','\'Helvetica Neue\'','ui-sans-serif','system-ui','sans-serif']
 		},
 		fontSize: {
 			'xs':'0.75rem',
