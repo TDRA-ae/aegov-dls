@@ -1,5 +1,7 @@
 .aegov-btn {
     /* Basic style properties of a button */
+    @apply cursor-pointer no-underline inline-flex flex-shrink-0 select-none flex-wrap items-center justify-center text-center transition duration-200 ease-in-out;
+    /* Specefic to the use of style */
     @apply h-12 px-6 text-base font-medium rounded border-2 border-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 gap-2;
     /* all aspects of colour */
     @apply bg-primary-600 text-whitely-50 hover:bg-primary-500 hover:text-primary-50 hover:shadow-button hover:shadow-primary-100 focus-visible:ring-primary-200;
