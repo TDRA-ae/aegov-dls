@@ -1,6 +1,6 @@
 {
   "name": "@aegov/design-system",
-  "version": "0.0.10",
+  "version": "0.0.12",
   "description": "A design system for the Government of the United Arab Emirates. The design system has been created based on research and information collected from in-depth studies conducted on user behaviour and benchmarking best practices. The primary use of this design system is to allow ministries of the United Arab Emirates to create consistent websites with components that are common and acceissible.",
   "keywords": [
     "design-system",
@@ -55,7 +55,7 @@
     "utilities": "cat src/utilities/*.css > dist/utilities.css",
     "postutilities": "prejss-cli dist/utilities.css --format commonjs",
     "build": "NODE_ENV=production && npm run base && npm run components && npm run utilities",
-    "install": "npm run build"
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.4",
@@ -65,14 +65,12 @@
     "postcss-nested": "6.0.1",
     "prejss-cli": "0.3.3",
     "prettier": "^2.7.1",
-    "standard-version": "^9.5.0"
+    "standard-version": "^9.5.0",
+    "color": "^4.2",
+    "picocolors": "^1.0.0"
   },
   "dependencies": {
-    "@tailwindcss/aspect-ratio": "^0.4.2",
     "@tailwindcss/forms": "^0.5.3",
-    "@tailwindcss/typography": "^0.5.9",
-    "color": "^4.2",
-    "picocolors": "^1.0.0",
     "tailwindcss": "^3"
   },
   "peerDependencies": {
