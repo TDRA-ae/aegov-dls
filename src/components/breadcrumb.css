@@ -10,7 +10,7 @@ nav.aegov-breadcrumb{
 		& a {
 			@apply flex relative px-1 py-2 truncate max-w-[140px] align-middle font-medium text-aeblack-300 hover:text-primary-600 no-underline hover:underline decoration-2 underline-offset-2;
 			& svg {
-				@apply w-5 h-5 inline-block mr-2 rtl:mr-0 rtl:ml-2;
+				@apply w-5 h-5 inline-block me-2;
 			}
 			& span {
 				@apply font-medium;
@@ -24,7 +24,7 @@ nav.aegov-breadcrumb{
 		& > ol,span {
 			@apply space-x-5 rtl:space-x-reverse;
 			& > li,span{
-				@apply after:absolute after:w-auto after:h-full after:top-2 after:-right-3 rtl:after:right-0 rtl:after:-left-3;
+				@apply after:absolute after:w-auto after:h-full after:top-2 after:-end-3;
 				@apply last:after:hidden;
 				&:after {
 					content:'/';
