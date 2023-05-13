@@ -1,0 +1,26 @@
+[type='text'],
+[type='email'],
+[type='url'],
+[type='password'],
+[type='number'],
+[type='date'],
+[type='datetime-local'],
+[type='month'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='week'],
+[multiple],
+select, textarea {
+	@apply appearance-none bg-whitely-50;
+}
+input[type="checkbox"],
+input[type="radio"] {
+	@apply appearance-none h-5 w-5 m-0 accent-primary-400 text-primary-400 border border-primary-400 relative flex-shrink-0;
+	@apply before:h-12 before:w-12 before:absolute before:-z-10 before:start-2/4 before:top-2/4 before:-translate-x-2/4 rtl:before:translate-x-2/4 before:-translate-y-2/4 before:rounded-full before:bg-primary-50 before:scale-0 hover:before:scale-100 before:transition-all;
+    @apply focus:outline-none focus:ring-2 focus:ring-primary-200 focus:ring-offset-2;
+    @apply disabled:border-primary-200 disabled:before:!hidden;
+}
+input[type="checkbox"] {
+	@apply rounded;
+}
