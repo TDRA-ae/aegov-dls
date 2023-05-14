@@ -66,3 +66,16 @@ input[type="checkbox"] {
 		}
 	}
 }
+
+/* Colour definations */
+
+.aegov-check-item,
+.aegov-check-group {
+	&.check-secondary {
+		input[type="checkbox"],
+		input[type="radio"] {
+			@apply accent-aeblack-900 text-aeblack-900 border border-aeblack-700 before:bg-aeblack-50;
+			@apply focus:ring-aeblack-200 disabled:border-aeblack-200;
+		}
+	}
+}
