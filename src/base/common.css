@@ -67,3 +67,20 @@ a {
   @apply rounded text-primary-600 hover:text-primary-500 relative inline-block underline underline-offset-1 transition-all duration-200 ease-in-out hover:decoration-2;
   @apply focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-primary-300;
 }
+
+[type='text'],
+[type='email'],
+[type='url'],
+[type='password'],
+[type='number'],
+[type='date'],
+[type='datetime-local'],
+[type='month'],
+[type='search'],
+[type='tel'],
+[type='time'],
+[type='week'],
+[multiple],
+select, textarea {
+  @apply appearance-none bg-whitely-50;
+}
