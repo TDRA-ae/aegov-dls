@@ -41,6 +41,7 @@
 	& > .alert-dismiss {
 		@apply absolute right-2 top-2;
 		& > button {
+			@apply hover:opacity-60;
 			@apply p-2;
 			& > svg {
 				@apply h-5 w-5;
