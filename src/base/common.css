@@ -81,6 +81,6 @@ a {
 [type='time'],
 [type='week'],
 [multiple],
-textarea,select {
+select, textarea {
   @apply appearance-none bg-whitely-50;
 }
