@@ -39,7 +39,7 @@ input[type="file"] {
 	}
 	@apply w-full overflow-hidden border-0 motion-reduce:transition-none outline-none;
 	@apply file:text-primary-700 file:bg-transparent file:bg-primary-50 file:me-4 file:h-full file:px-4;
-	@apply file:focus:z-10 file:border-0 file:focus:shadow-primary-400/20 file:ring-1 file:ring-inset file:ring-primary-300 file:py-3 file:rounded-s file:focus-within:ring-2 file:focus-within:ring-inset file:focus-within:ring-primary-600;
+	@apply file:focus:z-10 file:border-0 file:focus:shadow-primary-400/20 file:ring-1 file:ring-inset file:ring-primary-300 file:py-3 file:rounded-s file:focus-within:ring-2 file:focus-within:ring-inset file:focus-within:ring-primary-600 focus:outline-primary-500;
 	&:hover:not(:disabled):not([readonly])::file-selector-button {
 		@apply bg-primary-100;
 	}
@@ -49,7 +49,7 @@ input[type="file"] {
 		@apply block text-sm font-medium leading-6 text-aeblack-800 mb-1;
 	}
 	& .form-control-input {
-		@apply flex rounded-md shadow-sm focus:shadow-md ring-1 ring-inset ring-primary-400 focus-within:ring-2 focus-within:ring-inset focus-within:ring-primary-600;
+		@apply relative bg-whitely-50 flex rounded-md shadow-sm focus:shadow-md ring-1 ring-inset ring-primary-400 focus-within:ring-2 focus-within:ring-inset focus-within:ring-primary-600;
 		& .control-prefix,
 		& .control-suffix {
 			@apply flex select-none items-center text-aeblack-300;
@@ -73,6 +73,14 @@ input[type="file"] {
 		}
 		& .control-suffix {
 			@apply pe-3;
+		}
+		& input[type="date"],input[type="datetime-local"],input[type="month"] {
+			& + .control-suffix{
+				@apply absolute end-1 top-2/4 -translate-y-2/4 pe-0 pointer-events-none appearance-none bg-inherit;
+				& svg{
+					@apply focus-within:ring-2 focus-within:ring-inset focus-within:ring-primary-600;
+				}
+			}
 		}
 	}
 	& select{
@@ -115,4 +123,14 @@ input[type="file"] {
 	    	}
 	    }
     }
+	/* file with drag and drop style */
+	.form-control-dropbox{
+		@apply text-center block border border-dashed border-primary-400 relative bg-whitely-50 rounded-md shadow-sm focus:shadow-md;
+		& svg{
+			@apply mx-auto h-10 w-10 xl:h-12 xl:w-12 text-slate-300;
+		}
+		& label{
+			@apply relative inline-block cursor-pointer rounded-md bg-whitely-50 font-semibold text-primary-600 focus-within:outline-none focus-within:ring-2 focus-within:ring-primary-600 focus-within:ring-offset-2 hover:text-primary-500;
+		}
+	}
 }
