@@ -49,9 +49,9 @@ input[type="file"] {
 		@apply block text-sm font-medium leading-6 text-aeblack-800 mb-1;
 	}
 	& .form-control-input {
-		@apply relative bg-whitely-50 flex rounded-md shadow-sm focus:shadow-md ring-1 ring-inset ring-primary-400 focus-within:ring-2 focus-within:ring-inset focus-within:ring-primary-600;
+		@apply relative bg-whitely-50 flex rounded-md shadow-sm focus:shadow-md ring-1 ring-inset ring-primary-400 focus-within:ring-2 focus-within:ring-inset focus-within:ring-primary-600 ; 
 		& .control-prefix,
-		& .control-suffix {
+		& .control-suffix {	
 			@apply flex select-none items-center text-aeblack-300;
 
 			& + input {
@@ -80,6 +80,14 @@ input[type="file"] {
 				& svg{
 					@apply focus-within:ring-2 focus-within:ring-inset focus-within:ring-primary-600;
 				}
+			}
+		}
+		&:focus-within{
+			& .control-prefix {
+				@apply text-primary-900;
+			}
+			& .control-suffix {
+				@apply text-primary-900;
 			}
 		}
 	}
