@@ -4,7 +4,7 @@
   		@apply ms-3;
 	}
 	input[type="checkbox"] {
-		@apply hidden;
+		@apply absolute;
 	}
 }
 .aegov-toggle-item {
