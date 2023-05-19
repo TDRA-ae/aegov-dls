@@ -22,10 +22,7 @@ input[type="range"] {
 	@apply appearance-none my-3 text-base inline-block align-middle bg-aeblack-200/50 rounded bg-gradient-to-r from-primary-300 to-primary-500 bg-no-repeat h-2 w-full;
 }
 input[type="range"]::-webkit-slider-thumb {
-	@apply appearance-none w-5 h-5 rounded-full bg-primary-800;
-	cursor: ew-resize;
-	box-shadow: 0 0 2px 0 #555;
-	transition: background .3s ease-in-out;
+	@apply appearance-none w-5 h-5 rounded-full bg-primary-800 cursor-[ew-resize] transition-colors shadow-sm;
 }
 input[type="range"]::-webkit-slider-thumb:hover {
 	@apply bg-primary-700;

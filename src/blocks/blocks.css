@@ -1,3 +1,2 @@
-body{
-    background-color: red !important;
-}
+@import "./header/header.css";
+@import "./footer/footer.css";

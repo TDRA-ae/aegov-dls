@@ -7,6 +7,7 @@ const aegovColors = require("./color/index");
 
 const aegovBase = require("../dist/base");
 const aegovComponents = require("../dist/components");
+const aegovBlocks = require("../dist/blocks");
 const aegovUtil = require("../dist/utilities");
 
 
@@ -25,6 +26,10 @@ const mainFunction = ({ addBase, addComponents, addUtilities, config, postcss })
 	// Include the components style
 	addComponents(aegovComponents);
 	aegovIncludedItems.push("aegov-Components");
+
+	// Include the blocks style
+	addComponents(aegovBlocks);
+	aegovIncludedItems.push("aegov-Blocks");
 
 	// Include the utilities
 	addComponents(aegovUtil, { variants: ["responsive"] });

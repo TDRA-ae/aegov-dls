@@ -1,3 +1,115 @@
-body{
-    background-color: red !important;
+header{
+    @apply relative pt-2 before:bg-gradient-to-b before:from-primary-400 before:to-primary-600 before:absolute before:top-0 before:h-2 before:w-full;
+}
+.custom-divide-common{
+    @apply before:absolute before:top-2/4 before:-translate-y-2/4 before:end-0;
+}
+.custom-divide{
+    & > *{
+        @apply relative inline-flex;
+        &:not(:last-child){
+            @apply  custom-divide-common me-4 pe-4 before:h-3.5 before:w-px before:bg-aeblack-100;
+        }
+    }
+}
+.logos {
+    @apply flex items-center flex-shrink-0;
+    & .logo-item{
+        @apply relative ;
+    }
+    & .logo-item:not(:last-child) {
+        @apply me-4 pe-4 md:me-5 md:pe-5 lg:me-6 lg:pe-6 xl:me-10 xl:pe-10 custom-divide-common before:h-6 sm:before:h-8 md:before:h-10 before:w-0.5 before:bg-primary-100;
+    }
+}
+.logo{
+    @apply inline-block w-40 sm:w-48 md:w-56 xl:w-auto xl:max-w-[300px] ;
+}
+.rating-logo{
+    @apply inline-block w-8 md:w-10 lg:w-12 xl:w-auto ; 
+}
+.header-top{
+    @apply py-2.5 lg:py-3;
+}
+.hamburger-icon svg{
+    @apply w-8 h-8 inline-flex;
+}
+.header-common-links{
+    & li{
+        &:not(:last-child){
+            @apply before:bg-primary-300;
+        }   
+    }
+    & a{
+        @apply flex items-center gap-3 no-underline lg:text-xs xl:text-sm text-aeblack-700 hover:text-primary-500 font-medium;
+    }
+}
+.header-bottom{
+    @apply bg-aeblack-50 ;
+}
+
+.main-navigation{
+    & .nav-menu {
+        & > .menu-item{
+            
+            & > a{
+                @apply py-2 xl:py-4 2xl:py-6 px-2 lg:px-3 xl:px-5 2xl:px-7 border-b rounded-none md:border-b-2 xl:border-b-[3px] 2xl:border-b-4 border-transparent hover:border-primary-500 lg:text-sm xl:text-base 2xl:text-lg font-bold text-aeblack-700 hover:text-primary-500;
+            }
+        }
+    }
+    & .menu-item{
+        & a{
+            @apply no-underline;
+        }
+        &.active-page{
+            & > a {
+                @apply border-primary-900 text-primary-900;
+            }
+        }
+    }
+    & .menu-item-has-children{
+        & > a{
+           @apply relative transition-colors inline-flex items-center after:h-4 after:w-4 gap-2 after:inline-flex after:items-center after:justify-center after:bg-center;
+        }
+        & > a:after{
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' fill='none'/%3E%3Cpolyline points='208 96 128 176 48 96' fill='none' stroke='%2392722A' stroke-linecap='round' stroke-linejoin='round' stroke-width='16'/%3E%3C/svg%3E");
+        }
+    }
+    }
+.has-link-icon{
+   & a{
+    @apply gap-2 inline-flex items-center no-underline;
+    & svg{
+        @apply flex-shrink-0 h-4 w-4 xl:h-5 xl:w-5;
+    }
+   }
+}
+
+.header-bottom-right{
+    & li{
+        & a{
+            @apply text-sm xl:text-base text-primary-600 font-bold hover:text-primary-500;
+        }
+    }
+}
+
+.sub-menu{
+    @apply hidden top-full inset-x-0 bg-whitely-50 ;
+    & .submenu-title{
+        @apply px-2 lg:px-3 xl:px-4 2xl:px-6 pt-3 pb-6 capitalize;
+    }
+    & li{
+        & a{
+            @apply px-2 lg:px-3 xl:px-4 2xl:px-6 py-2 inline-block transition-colors hover:text-primary-900 hover:bg-primary-100;
+        }
+    }
+}
+.submenu-title{
+    @apply text-base text-primary-500 font-bold;
+}
+.menu-item-has-children{
+    &:hover{
+       & .sub-menu{
+            @apply block;
+        }
+    }
 }
