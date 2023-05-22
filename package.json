@@ -52,9 +52,11 @@
     "postbase": "prejss-cli dist/base.css --format commonjs",
     "components": "cat src/components/*.css > dist/components.css",
     "postcomponents": "prejss-cli dist/components.css --format commonjs",
+    "blocks": "postcss src/blocks/*.css -o dist/blocks.css --config src/blocks",
+    "postblocks": "prejss-cli dist/blocks.css --format commonjs",
     "utilities": "cat src/utilities/*.css > dist/utilities.css",
     "postutilities": "prejss-cli dist/utilities.css --format commonjs",
-    "build": "NODE_ENV=production && npm run base && npm run components && npm run utilities",
+    "build": "NODE_ENV=production && npm run base && npm run components && npm run blocks && npm run utilities",
     "prepare": "npm run build"
   },
   "devDependencies": {

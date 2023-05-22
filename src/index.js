@@ -57,7 +57,8 @@ module.exports = require("tailwindcss/plugin")(mainFunction, {
 				md:'0.875rem',
 				lg:'1.375rem',
 				xl:'1.25rem'
-			}
+			},
+			center: true
 		},
 		fontFamily: {
 			'roboto': ['\'Roboto\'','ui-sans-serif','system-ui','-apple-system','BlinkMacSystemFont','\'Segoe UI\'','\'Helvetica Neue\'','sans-serif'],
