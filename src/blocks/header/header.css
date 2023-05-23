@@ -53,10 +53,10 @@ header{
     & .nav-menu {
         & > .menu-item{
             & > a {
-                @apply xl:h-16 xl:inline-flex xl:items-center xl:px-3 border-b rounded-none md:border-b-2 xl:border-b-[3px] 2xl:border-b-4 border-transparent hover:border-primary-500 xl:text-base 2xl:text-lg font-bold text-aeblack-800 hover:text-primary-500;
+                @apply xl:h-16 xl:inline-flex xl:items-center xl:px-3 border-b rounded-none md:border-b-2 xl:border-b-[0.188rem] 2xl:border-b-4 border-transparent xl:text-base 2xl:text-lg font-bold text-aeblack-800 hover:text-primary-800 hover:border-primary-800;
                 &:hover{
                     &+button{
-                         @apply text-primary-500;
+                         @apply text-primary-800;
                     }
                 }
             }
@@ -102,11 +102,11 @@ header{
 .submenu{
     @apply hidden top-full inset-x-0 bg-whitely-50	;
     & .submenu-title{
-        @apply px-2 lg:px-3 xl:px-4 2xl:px-6 pt-3 pb-6 capitalize;
+        @apply mb-6 capitalize;
     }
     & li{
         & a{
-            @apply px-2 lg:px-3 xl:px-4 2xl:px-6 py-2 inline-block transition-colors text-aeblack-900 hover:text-primary-900 hover:bg-primary-100 ;
+            @apply px-3 py-2 inline-block transition-colors text-aeblack-900 hover:text-primary-900 hover:bg-primary-100 ;
         }
     }
 }
