@@ -8,7 +8,7 @@ header{
     & > *{
         @apply relative inline-flex;
         &:not(:last-child){
-            @apply custom-divide-common me-4 pe-4 before:h-3.5 before:w-px before:bg-aeblack-100;
+            @apply custom-divide-common me-3 pe-3 xl:me-4 xl:pe-4 before:h-3.5 before:w-px before:bg-aeblack-100;
         }
     }
 }
@@ -16,9 +16,9 @@ header{
     @apply flex items-center flex-shrink-0;
     & .logo-item{
         @apply relative ;
-    }
-    & .logo-item:not(:last-child) {
-        @apply me-4 pe-4 md:me-5 md:pe-5 lg:me-6 lg:pe-6 xl:me-10 xl:pe-10 custom-divide-common before:h-6 sm:before:h-8 md:before:h-10 before:w-0.5 before:bg-primary-100;
+        &:not(:last-child) {
+            @apply me-4 pe-4 md:me-5 md:pe-5 lg:me-6 lg:pe-6 xl:me-10 xl:pe-10 custom-divide-common before:h-6 sm:before:h-8 md:before:h-10 before:w-0.5 before:bg-primary-100;
+        }
     }
 }
 .logo {
@@ -42,7 +42,7 @@ header{
         }   
     }
     & a{
-        @apply flex items-center gap-3 no-underline lg:text-xs xl:text-sm text-aeblack-700 hover:text-primary-500 font-medium;
+        @apply flex items-center gap-3 no-underline text-sm text-aeblack-700 hover:text-primary-500 font-medium;
     }
 }
 .header-bottom{
@@ -53,12 +53,7 @@ header{
     & .nav-menu {
         & > .menu-item{
             & > a {
-                @apply xl:h-16 xl:inline-flex xl:items-center xl:px-3 border-b rounded-none md:border-b-2 xl:border-b-[0.188rem] 2xl:border-b-4 border-transparent xl:text-base 2xl:text-lg font-bold text-aeblack-800 hover:text-primary-800 hover:border-primary-800;
-                &:hover{
-                    &+button{
-                         @apply text-primary-800;
-                    }
-                }
+                @apply lg:h-14 xl:h-16 inline-flex items-center lg:px-2 xl:px-3 border-b rounded-none md:border-b-2 xl:border-b-[0.188rem] 2xl:border-b-4 border-transparent lg:text-sm xl:text-base 2xl:text-lg font-bold text-aeblack-800;
             }
         }
     }
@@ -73,10 +68,10 @@ header{
         }
         &.menu-item-has-children{
             & > a {
-               @apply relative transition-colors inline-flex items-center gap-2 xl:pr-7;
+               @apply transition-colors inline-flex items-center gap-2 lg:pe-6 xl:pe-8 2xl:pe-9;
             }
             & .submenu-btn{
-                @apply h-4 w-4 -ms-5 inline-flex items-center justify-center relative;
+                @apply lg:h-3 lg:w-3 2xl:h-4 2xl:w-4 lg:-ms-3 2xl:-ms-4 lg:-translate-x-2  xl:-translate-x-3 lg:rtl:translate-x-2 xl:rtl:translate-x-3 inline-flex items-center justify-center relative focus:ring-2 focus:ring-offset-2 focus:ring-primary-400 focus:outline-none;
             }
         }
     }
@@ -94,24 +89,24 @@ header{
 .header-bottom-right{
     & li{
         & a{
-            @apply text-sm xl:text-base text-primary-600 font-bold hover:text-primary-500;
+            @apply text-sm lg:text-xs xl:text-sm text-primary-600 font-bold hover:text-primary-500;
         }
     }
 }
 
 .submenu{
-    @apply hidden top-full inset-x-0 bg-whitely-50	;
+    @apply hidden top-full bg-whitely-50	;
     & .submenu-title{
-        @apply mb-6 capitalize;
+        @apply lg:mb-4 xl:mb-5 2xl:mb-6 capitalize;
     }
     & li{
         & a{
-            @apply px-3 py-2 inline-block transition-colors text-aeblack-900 hover:text-primary-900 hover:bg-primary-100 ;
+            @apply px-3 py-2 text-sm xl:text-base inline-block transition-colors text-aeblack-900 hover:text-primary-900 hover:bg-primary-100 ;
         }
     }
 }
 .submenu-title{
-    @apply text-base text-primary-500 font-bold;
+    @apply lg:text-sm xl:text-base text-primary-500 font-bold;
 }
 .menu-item-has-children{
     &:hover{
@@ -119,4 +114,7 @@ header{
             @apply block;
         }
     }
+}
+.rounded-bordered{
+    @apply rounded-lg border border-aeblack-100;
 }
