@@ -1,0 +1,47 @@
+/* footer  */
+
+.aegov-footer{
+    @apply relative bg-aeblack-50 pt-2 before:bg-gradient-to-b before:from-primary-400 before:to-primary-600 before:absolute before:top-0 before:h-2 before:w-full;
+    & a{
+        @apply text-aeblack-700 hover:text-primary-600 text-sm xl:text-base font-normal no-underline;
+    }
+    .accordion-title{
+        & button{
+            @apply text-primary-700 sm:text-primary-500 text-lg lg:text-xl font-bold;
+        }
+    }
+    .accordion-content-body{
+        @apply space-y-3;
+    }
+}
+
+.footer-top {
+    @apply sm:py-6 md:py-8 lg:py-10 xl:py-12;
+}
+.footer-contact{
+    @apply max-sm:py-8 max-lg:text-center;
+    & li{
+        @apply py-3 xl:px-8 w-full justify-center;
+        & > a{
+            @apply text-aeblack-800 font-bold hover:text-aeblack-600;
+        }
+        & svg{
+            @apply flex-shrink-0 w-4 h-4 inline-block; 
+        }
+    }
+}
+.inline-with-gap{
+    @apply inline-flex items-center gap-3;
+}
+.social-sharing{
+    @apply flex items-center gap-6;
+    & a{
+        @apply text-aeblack-600 hover:text-aeblack-500;
+    }
+    & svg{
+        @apply h-8 w-8 inline-block;
+    }
+}
+.footer-bottom {
+    @apply py-6 md:py-8 lg:py-10 xl:py-12 border-t border-aeblack-100 max-lg:text-center;
+}

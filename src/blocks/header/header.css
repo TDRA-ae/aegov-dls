@@ -1,4 +1,4 @@
-header{
+.aegov-header{
     @apply relative pt-2 before:bg-gradient-to-b before:from-primary-400 before:to-primary-600 before:absolute before:top-0 before:h-2 before:w-full;
 }
 .custom-divide-common{
@@ -95,7 +95,7 @@ header{
 }
 
 .submenu{
-    @apply hidden top-full bg-whitely-50	;
+    @apply bg-whitely-50;
     & .submenu-title{
         @apply lg:mb-4 xl:mb-5 2xl:mb-6 capitalize;
     }
@@ -108,13 +108,13 @@ header{
 .submenu-title{
     @apply lg:text-sm xl:text-base text-primary-500 font-bold;
 }
-.menu-item-has-children{
+/* .menu-item-has-children{
     &:hover{
        & .submenu{
             @apply block;
         }
     }
-}
+} */
 .rounded-bordered{
     @apply rounded-lg border border-aeblack-100;
 }
