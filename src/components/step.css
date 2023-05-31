@@ -1,0 +1,72 @@
+.step-badge{
+    @apply relative flex flex-shrink-0 h-10 w-10 items-center justify-center rounded-full text-base font-bold bg-[length:1.5rem] text-aeblack-900 bg-whitely-50 border border-slate-200 no-underline outline-none;
+    &:not(.step-current .step-badge, .step-completed .step-badge){
+        @apply hover:bg-primary-100 hover:border-primary-100 hover:text-primary-800 ;
+    }
+    & svg{
+        @apply fill-current h-6 w-6 ;
+    }
+    &.step-badge-sm{
+        @apply h-8 w-8 text-sm bg-[length:1rem];
+        & svg{
+            @apply h-5 w-5 ;
+        }
+    }
+    &.step-badge-lg{
+        @apply h-12 w-12 text-lg bg-[length:2rem];
+        & svg{
+            @apply h-8 w-8;
+        }
+    }
+}
+.step-current{
+    & .step-badge{
+        @apply pointer-events-none ring-4 ring-primary-100 focus-visible:ring-2 focus-visible:ring-primary-300;
+    }
+}
+.step-current, .step-completed{
+    & .step-badge{
+        @apply text-whitely-50 bg-primary-500 border border-primary-500;
+    }
+}
+.step-completed{
+    & .step-badge{
+        @apply bg-no-repeat bg-center hover:ring-4 hover:ring-primary-100;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' fill='none'/%3E%3Cpolyline points='40 144 96 200 224 72' fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='16'/%3E%3C/svg%3E");
+    }
+}
+.step-disabled{
+    @apply opacity-50 pointer-events-none;
+}
+.aegov-step-title{
+    @apply relative p-6 bg-aeblack-50;
+    & .step-outof{
+        @apply text-xs font-normal text-primary-600 ;
+    }
+    & .step-title{
+        @apply text-lg font-medium text-aeblack-800;
+    }
+    & .step-title-progress{
+        @apply  overflow-hidden rounded-full bg-aeblack-200 w-full absolute bottom-0 inset-x-0;
+    }
+    & .step-title-progress-status{
+        @apply h-1 rounded-full bg-primary-500;
+    }
+}
+.step-connector{
+    @apply absolute inset-0 flex items-center;
+}
+.step-connector-state{
+    @apply w-full h-[0.188rem] bg-aeblack-200 rounded-full;
+}
+.step-connector-vertical{
+    @apply absolute start-2/4 ltr:-translate-x-2/4 rtl:translate-x-2/4 top-5 mt-[0.094rem] h-full w-[0.188rem];
+}
+.step-completed{
+    & .step-connector-state{
+        @apply bg-primary-500;
+    }
+}
+.step-text-below{
+    @apply absolute top-[calc(100%_+_1rem)] whitespace-nowrap text-aeblack-900 font-medium;
+}
