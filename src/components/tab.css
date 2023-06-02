@@ -1,0 +1,49 @@
+.aegov-tab{
+    &:not(.tab-as-button){
+        @apply border-b-2 border-aeblack-100;
+    }
+}
+.tab-items{
+    @apply flex -mb-px text-center;
+}
+.tab-button{
+    @apply inline-flex items-center gap-3 text-base rounded-t-lg font-medium text-aeblack-700 py-6 border-b-[0.188rem] border-transparent hover:text-aeblack-950 hover:border-primary-500;
+    @apply focus-visible:ring-2 focus-visible:ring-primary-400 focus-visible:outline-none;
+    & svg{
+        @apply h-6 w-6 fill-current;
+    }
+    & img {
+        @apply max-h-6 w-6;
+    }
+}
+.aegov-tab-active{
+    @apply text-primary-600 border-b-primary-500 pointer-events-none;
+}
+.aegov-tab-content{
+    @apply p-4 rounded-lg bg-aeblack-50;
+}
+
+/* tab sm */
+.tab-sm{
+   & .tab-button{
+        @apply py-4 text-sm;
+        & svg {
+            @apply h-5 w-5;
+        }
+        & img {
+            @apply max-h-5 w-5;
+        }
+    }
+}
+
+/* tab as button style */
+.tab-as-button{
+    & .tab-button{
+        @apply text-base font-medium rounded-lg border-2 border-transparent text-aeblack-800 bg-transparent py-0;
+        @apply hover:bg-aeblack-50;
+    }
+    .aegov-tab-active{
+        @apply text-primary-900 bg-primary-100;
+    }
+}
+
