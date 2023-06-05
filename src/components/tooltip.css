@@ -1,0 +1,54 @@
+/* tooltip */
+
+.tooltip-arrow,
+.tooltip-arrow:before {
+  @apply absolute h-4 w-4 rounded bg-inherit ;
+}
+
+.tooltip-arrow {
+  visibility: hidden;
+}
+
+.tooltip-arrow:before {
+  @apply visible rotate-45 start-0 content-[""] transition-none;
+}
+
+[data-tooltip-style^='light'] + .tooltip > .tooltip-arrow:before {
+  @apply border-solid border-aeblack-950;
+}
+
+[data-tooltip-style^='light'] + .tooltip[data-popper-placement^='top'] > .tooltip-arrow:before {
+  @apply border-b border-e;
+}
+
+[data-tooltip-style^='light'] + .tooltip[data-popper-placement^='right'] > .tooltip-arrow:before {
+  @apply border-b border-s;
+}
+
+[data-tooltip-style^='light'] + .tooltip[data-popper-placement^='bottom'] > .tooltip-arrow:before {
+  @apply border-t border-s;
+}
+
+[data-tooltip-style^='light'] + .tooltip[data-popper-placement^='left'] > .tooltip-arrow:before {
+  @apply border-t border-e;
+}
+
+.tooltip[data-popper-placement^='top'] > .tooltip-arrow {
+  @apply -bottom-1;
+}
+
+.tooltip[data-popper-placement^='bottom'] > .tooltip-arrow {
+   @apply -top-1;
+}
+
+.tooltip[data-popper-placement^='left'] > .tooltip-arrow {
+  @apply -end-1;
+}
+
+.tooltip[data-popper-placement^='right'] > .tooltip-arrow {
+  @apply -start-1;
+}
+
+.tooltip.in-visible > .tooltip-arrow:before {
+  visibility: hidden;
+}
