@@ -7,16 +7,21 @@
     }
     .accordion-title{
         & button{
-            @apply text-primary-700 sm:text-primary-500 text-lg lg:text-xl font-bold;
+            @apply !text-primary-700 sm:!text-primary-500 text-base md:text-lg lg:text-xl font-bold;
+            & svg{
+                @apply text-aeblack-600;
+            }
+            &.aegov-acc-open{
+                @apply text-primary-700;
+                & svg{
+                    @apply text-primary-700;
+                }
+            }
         }
     }
     .accordion-content-body{
         @apply space-y-3;
     }
-}
-
-.footer-top {
-    @apply sm:py-6 md:py-8 lg:py-10 xl:py-12;
 }
 .footer-contact{
     @apply max-sm:py-8 max-lg:text-center;
@@ -43,5 +48,5 @@
     }
 }
 .footer-bottom {
-    @apply py-6 md:py-8 lg:py-10 xl:py-12 border-t border-aeblack-100 max-lg:text-center;
+    @apply border-t border-aeblack-100 max-lg:text-center;
 }
