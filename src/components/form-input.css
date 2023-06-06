@@ -73,7 +73,7 @@ input[type="file"] {
 		}
 		& input[type="date"],input[type="datetime-local"],input[type="month"] {
 			& + .control-suffix{
-				@apply absolute end-1 top-2/4 -translate-y-2/4 pe-0 pointer-events-none appearance-none bg-inherit;
+				@apply absolute right-1 top-2/4 -translate-y-2/4 pe-0 pointer-events-none appearance-none bg-inherit;
 				& svg{
 					@apply focus-within:ring-2 focus-within:ring-inset focus-within:ring-primary-600;
 				}
@@ -89,7 +89,7 @@ input[type="file"] {
 		}
 	}
 	& select{
-		@apply text-primary-900 pe-9 rtl:bg-[0.5rem];
+		@apply text-primary-900 pe-9 ps-3 rtl:bg-[0.5rem];
 		background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%237C5E24' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
 	}
 	& textarea{
