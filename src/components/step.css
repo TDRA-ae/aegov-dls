@@ -1,22 +1,10 @@
 .step-badge{
-    @apply relative flex flex-shrink-0 h-10 w-10 items-center justify-center rounded-full text-base font-bold bg-[length:1.5rem] text-aeblack-900 bg-whitely-50 border border-slate-200 no-underline outline-none;
+    @apply relative flex flex-shrink-0 h-10 w-10 items-center justify-center rounded-full text-base leading-normal font-bold bg-[length:1.5rem] text-aeblack-900 bg-whitely-50 border border-slate-200 no-underline outline-none;
     &:not(.step-current .step-badge, .step-completed .step-badge){
         @apply hover:bg-primary-100 hover:border-primary-100 hover:text-primary-800 ;
     }
     & svg{
         @apply fill-current h-6 w-6 ;
-    }
-    &.step-badge-sm{
-        @apply h-8 w-8 text-sm bg-[length:1rem];
-        & svg{
-            @apply h-5 w-5 ;
-        }
-    }
-    &.step-badge-lg{
-        @apply h-12 w-12 text-lg bg-[length:2rem];
-        & svg{
-            @apply h-8 w-8;
-        }
     }
 }
 .step-current{
@@ -60,13 +48,54 @@
     @apply w-full h-[0.188rem] bg-aeblack-200 rounded-full;
 }
 .step-connector-vertical{
-    @apply absolute start-2/4 ltr:-translate-x-2/4 rtl:translate-x-2/4 top-5 mt-[0.094rem] h-full w-[0.188rem];
+    @apply absolute start-2/4 ltr:-translate-x-2/4 rtl:translate-x-2/4 top-5 h-full w-[0.188rem];
 }
 .step-completed{
     & .step-connector-state{
-        @apply bg-primary-500;
+        @apply bg-primary-500; 
     }
 }
 .step-text-below{
     @apply absolute top-[calc(100%_+_1rem)] whitespace-nowrap text-aeblack-900 font-medium;
 }
+
+/* step size */
+
+.aegov-step{
+    & .step-connector{
+        @apply start-12 w-[calc(100%_-_3.5rem)]
+    }
+    & .step-connector-vertical{
+        @apply top-12 h-[calc(100%_-_3.5rem)];
+    }
+    &.step-sm{
+        & .step-connector{
+            @apply start-10 w-[calc(100%_-_3rem)];
+        }
+        & .step-badge{
+            @apply h-8 w-8 text-sm bg-[length:1rem];
+            & svg{
+                @apply h-5 w-5 ;
+            }
+        }
+        & .step-connector-vertical{
+            @apply top-10 h-[calc(100%_-_3rem)];
+        }
+    }
+    &.step-lg{
+        & .step-connector{
+            @apply start-14 w-[calc(100%_-_4rem)];
+        }
+        & .step-badge{
+            @apply h-12 w-12 text-lg bg-[length:2rem];
+            & svg{
+                @apply h-8 w-8;
+            }
+        }
+        & .step-connector-vertical{
+            @apply top-14 h-[calc(100%_-_4rem)];
+        }
+    }
+}
+
+
