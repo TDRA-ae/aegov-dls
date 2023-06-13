@@ -1,0 +1,12 @@
+.aegov-dropdown{
+    @apply bg-whitely-50 rounded-lg shadow-xl;
+    & .dropdown-header{
+        @apply px-3 py-2 text-aeblack-900 border-b border-aeblack-50;
+    }
+}
+.dropdown-item{
+    @apply flex items-center gap-3 px-3 py-2 rounded-none hover:bg-aeblack-50 hover:text-inherit no-underline text-inherit;
+    & svg{
+        @apply h-5 w-5;
+    }
+}
