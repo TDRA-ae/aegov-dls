@@ -77,7 +77,7 @@ let colorObj = {
 		950 : '#441B04'
 	},
 	'slate' : {
-		50 : '#F8FSFA',
+		50 : '#F8FAFC',
 		100 : '#F1F5F9',
 		200 : '#E2E8F0',
 		300 : '#CBD5E1',
