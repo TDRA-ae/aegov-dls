@@ -2,7 +2,7 @@
     /* Basic style properties of a button */
     @apply cursor-pointer no-underline inline-flex flex-shrink-0 select-none flex-wrap items-center justify-center text-center transition duration-200 ease-in-out;
     /* Specefic to the use of style */
-    @apply h-12 px-6 text-base font-medium rounded border-2 border-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 gap-2;
+    @apply h-12 px-6 text-base font-medium rounded-lg border-2 border-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 gap-2;
     /* all aspects of colour */
     @apply bg-primary-600 text-whitely-50 hover:bg-primary-500 hover:text-primary-50 hover:shadow-button hover:shadow-primary-100 focus-visible:ring-primary-200;
     @apply disabled:!shadow-none disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-30;
@@ -20,13 +20,13 @@
 
 /* size */
 .aegov-btn.btn-xl {
-    @apply h-13 text-lg px-7 rounded-md gap-3;
+    @apply h-13 text-lg px-7 gap-3;
 }
 .aegov-btn.btn-sm {
     @apply h-10 text-base px-5;
 }
 .aegov-btn.btn-xs {
-    @apply h-8 text-sm px-4;
+    @apply h-8 text-sm px-4 rounded;
 }
 .aegov-btn.btn-block {
     @apply w-full;
@@ -95,37 +95,23 @@
 
 /* button secondary color */
 .aegov-btn.btn-secondary {
-    @apply bg-aeblack-900 text-whitely-50 hover:bg-aeblack-700 hover:text-aeblack-100 hover:shadow-aeblack-100 focus-visible:ring-aeblack-200;
+    @apply bg-secondary-800 text-secondary-50 hover:bg-secondary-950 hover:text-secondary-100 hover:shadow-secondary-100 focus-visible:ring-secondary-200;
 }
 .aegov-btn.btn-secondary.btn-soft {
-    @apply bg-aeblack-50 hover:bg-aeblack-100 text-aeblack-800 hover:text-aeblack-700 focus-visible:ring-aeblack-200 focus-visible:ring-offset-0 hover:shadow-none;
+    @apply bg-secondary-50 hover:bg-secondary-100 text-secondary-800 hover:text-secondary-800 focus-visible:ring-secondary-200 focus-visible:ring-offset-0 hover:shadow-none;
     @apply disabled:opacity-50;
 }
 .aegov-btn.btn-secondary.btn-link {
-    @apply bg-transparent text-aeblack-800 hover:bg-aeblack-50 focus-visible:ring-aeblack-200 focus-visible:ring-offset-0 focus-visible:ring-1 focus-visible:border-aeblack-200 hover:shadow-none;
+    @apply bg-transparent text-secondary-800 hover:bg-secondary-50 focus-visible:ring-secondary-200 focus-visible:ring-offset-0 focus-visible:ring-1 focus-visible:border-secondary-200 hover:shadow-none;
 }
 .aegov-btn.btn-secondary.btn-outline {
-    @apply bg-transparent text-aeblack-800 hover:bg-aeblack-100 border-aeblack-800 focus-visible:ring-aeblack-200 focus-visible:ring-offset-0 focus-visible:ring-1 focus-visible:border-aeblack-200 hover:shadow-none;
+    @apply bg-transparent text-secondary-800 hover:bg-secondary-100 border-secondary-800 focus-visible:ring-secondary-200 focus-visible:ring-offset-0 focus-visible:ring-1 focus-visible:border-secondary-200 hover:shadow-none;
 }
 
-/* button red color */
-.aegov-btn.btn-red {
-    @apply  bg-aered-600 text-whitely-50 hover:bg-aered-500 hover:text-aered-50 hover:shadow-button hover:shadow-aered-100 focus-visible:ring-aered-200;
-}
-.aegov-btn.btn-red.btn-soft {
-    @apply bg-aered-50 hover:bg-aered-100 text-aered-700 hover:text-aered-600 focus-visible:ring-aered-800 focus-visible:ring-offset-0 hover:shadow-none;
-    @apply disabled:opacity-50;
-}
-.aegov-btn.btn-red.btn-link {
-    @apply bg-transparent text-aered-600 hover:bg-aered-50 focus-visible:ring-aered-500 focus-visible:ring-offset-0 focus-visible:ring-1 focus-visible:border-aered-500 hover:shadow-none;
-}
-.aegov-btn.btn-red.btn-outline {
-    @apply bg-transparent text-aered-600 hover:bg-aered-100 border-aered-600 focus-visible:ring-aered-500 focus-visible:ring-offset-0 focus-visible:ring-1 focus-visible:border-aered-500 hover:shadow-none;
-}
 /* auto respond button size */
 [data-responsive='auto'] .aegov-btn {
-    @apply h-8 text-sm px-4;
-    @apply sm:h-10 sm:text-base sm:px-5;
-    @apply lg:h-12 lg:px-6 lg:text-base;
-    @apply 2xl:h-13 2xl:text-lg 2xl:px-7 2xl:rounded-md 2xl:gap-3;
+    @apply h-8 text-sm px-4 rounded;
+    @apply sm:h-10 sm:text-base sm:px-5 sm:rounded-lg;
+    @apply lg:h-12 lg:px-6 lg:text-base lg:rounded-lg;
+    @apply 2xl:h-13 2xl:text-lg 2xl:px-7 2xl:gap-3 lg:rounded-lg;
 }
