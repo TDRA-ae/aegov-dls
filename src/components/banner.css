@@ -1,15 +1,15 @@
-.aegov-banner{
-    @apply py-3 px-4 relative; 
-    & .aegov-link{
-        @apply m-0 p-0 flex-shrink-0;
+.aegov-banner {
+  @apply relative px-4 py-3;
+  & .aegov-link {
+    @apply m-0 flex-shrink-0 p-0;
+  }
+  .container {
+    @apply px-0;
+  }
+  & .banner-dismiss {
+    @apply p-0.5 hover:opacity-60;
+    & > svg {
+      @apply h-5 w-5;
     }
-    .container{
-        @apply px-0;
-    }
-    & .banner-dismiss {
-		@apply hover:opacity-60 p-0.5;
-        & > svg {
-            @apply h-5 w-5;
-        }
-	}
+  }
 }

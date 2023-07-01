@@ -1,27 +1,27 @@
 .aegov-toggle {
-	@apply relative inline-flex items-center cursor-pointer;
-	& .toggle-text {
-  		@apply ms-3;
-	}
-	input[type="checkbox"] {
-		@apply absolute;
-	}
+  @apply relative inline-flex cursor-pointer items-center;
+  & .toggle-text {
+    @apply ms-3;
+  }
+  input[type="checkbox"] {
+    @apply absolute;
+  }
 }
 .aegov-toggle-item {
-	@apply relative flex h-4 w-10 cursor-pointer items-center rounded-full bg-aeblack-100 px-0 outline-aeblack-400 transition-colors;
-	@apply before:h-5 before:w-5 before:rounded-full before:bg-whitely-50 before:border before:border-aeblack-100 before:shadow before:transition-transform before:duration-300;
-	@apply peer-checked:bg-primary-300 peer-checked:before:border-primary-600 peer-checked:before:translate-x-full rtl:peer-checked:before:-translate-x-full peer-focus-visible:outline peer-focus-visible:outline-offset-[3px] peer-focus-visible:outline-primary-500;
+  @apply bg-aeblack-100 outline-aeblack-400 relative flex h-4 w-10 cursor-pointer items-center rounded-full px-0 transition-colors;
+  @apply before:bg-whitely-50 before:border-aeblack-100 before:h-5 before:w-5 before:rounded-full before:border before:shadow before:transition-transform before:duration-300;
+  @apply peer-checked:bg-primary-300 peer-checked:before:border-primary-600 peer-focus-visible:outline-primary-500 peer-checked:before:translate-x-full peer-focus-visible:outline peer-focus-visible:outline-offset-[3px] rtl:peer-checked:before:-translate-x-full;
 }
 
 .toggle-icon {
-	@apply before:bg-no-repeat before:bg-center before:h-5 before:w-5 mb-0;
-	&:before {
-      	background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23BBBCBD' viewBox='0 0 256 256'%3E%3Cpath d='M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z'%3E%3C/path%3E%3C/svg%3E");
-      	@apply bg-[length:10px_10px];
- 	}
+  @apply mb-0 before:h-5 before:w-5 before:bg-center before:bg-no-repeat;
+  &:before {
+    background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23BBBCBD' viewBox='0 0 256 256'%3E%3Cpath d='M205.66,194.34a8,8,0,0,1-11.32,11.32L128,139.31,61.66,205.66a8,8,0,0,1-11.32-11.32L116.69,128,50.34,61.66A8,8,0,0,1,61.66,50.34L128,116.69l66.34-66.35a8,8,0,0,1,11.32,11.32L139.31,128Z'%3E%3C/path%3E%3C/svg%3E");
+    @apply bg-[length:10px_10px];
+  }
 }
 .peer:checked ~ .toggle-icon {
   &:before {
-      background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23D6BE8E' viewBox='0 0 256 256'%3E%3Cpath d='M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z'%3E%3C/path%3E%3C/svg%3E");
- }
+    background-image: url("data:image/svg+xml, %3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' fill='%23D6BE8E' viewBox='0 0 256 256'%3E%3Cpath d='M229.66,77.66l-128,128a8,8,0,0,1-11.32,0l-56-56a8,8,0,0,1,11.32-11.32L96,188.69,218.34,66.34a8,8,0,0,1,11.32,11.32Z'%3E%3C/path%3E%3C/svg%3E");
+  }
 }

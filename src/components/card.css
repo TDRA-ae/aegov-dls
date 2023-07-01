@@ -1,46 +1,46 @@
-.aegov-card-group{
-    @apply grid gap-px bg-primary-300 border border-primary-300 rounded-lg md:rounded-xl xl:rounded-2xl;  
-    &.card-stacked{
-        @apply overflow-hidden;
-        &>*{
-            @apply p-6 h-full card-element-space;
-        }
+.aegov-card-group {
+  @apply bg-primary-300 border-primary-300 grid gap-px rounded-lg border md:rounded-xl xl:rounded-2xl;
+  &.card-stacked {
+    @apply overflow-hidden;
+    & > * {
+      @apply card-element-space h-full p-6;
     }
+  }
 }
-.card-element-space{
-    &> *:not(:last-child) {
-        @apply mb-5 md:mb-6;
-    }
+.card-element-space {
+  & > *:not(:last-child) {
+    @apply mb-5 md:mb-6;
+  }
 }
-.aegov-card{
-    @apply rounded-lg md:rounded-xl xl:rounded-2xl ;
-    &.card-bordered{
-        @apply border border-primary-300 ;
-        &:not(.card-news){
-            @apply card-element-space;
-        }
-        &:not(.card-news){
-            @apply p-4;
-            & .card-image{
-                @apply rounded-2xl;
-            }
-        }
+.aegov-card {
+  @apply rounded-lg md:rounded-xl xl:rounded-2xl;
+  &.card-bordered {
+    @apply border-primary-300 border;
+    &:not(.card-news) {
+      @apply card-element-space;
     }
-    &.card-news{
-        @apply overflow-hidden;
-        & .card-image{
-            @apply aspect-[16/9];
-        }
-        &:not(.card-bordered){
-            @apply card-element-space;
-        }
-        & .card-content{
-            @apply card-element-space;
-        }
-        &.card-bordered{
-            & .card-content{
-                @apply p-5 md:p-6;
-            }
-        }
+    &:not(.card-news) {
+      @apply p-4;
+      & .card-image {
+        @apply rounded-2xl;
+      }
     }
+  }
+  &.card-news {
+    @apply overflow-hidden;
+    & .card-image {
+      @apply aspect-[16/9];
+    }
+    &:not(.card-bordered) {
+      @apply card-element-space;
+    }
+    & .card-content {
+      @apply card-element-space;
+    }
+    &.card-bordered {
+      & .card-content {
+        @apply p-5 md:p-6;
+      }
+    }
+  }
 }

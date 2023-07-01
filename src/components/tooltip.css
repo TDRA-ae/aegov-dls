@@ -2,7 +2,7 @@
 
 .tooltip-arrow,
 .tooltip-arrow:before {
-  @apply absolute h-4 w-4 rounded bg-inherit ;
+  @apply absolute h-4 w-4 rounded bg-inherit;
 }
 
 .tooltip-arrow {
@@ -10,42 +10,42 @@
 }
 
 .tooltip-arrow:before {
-  @apply visible rotate-45 start-0 content-[""] transition-none;
+  @apply visible start-0 rotate-45 transition-none content-[""];
 }
 
-[data-tooltip-style^='light'] + .tooltip > .tooltip-arrow:before {
-  @apply border-solid border-aeblack-950;
+[data-tooltip-style^="light"] + .tooltip > .tooltip-arrow:before {
+  @apply border-aeblack-950 border-solid;
 }
 
-[data-tooltip-style^='light'] + .tooltip[data-popper-placement^='top'] > .tooltip-arrow:before {
+[data-tooltip-style^="light"] + .tooltip[data-popper-placement^="top"] > .tooltip-arrow:before {
   @apply border-b border-e;
 }
 
-[data-tooltip-style^='light'] + .tooltip[data-popper-placement^='right'] > .tooltip-arrow:before {
+[data-tooltip-style^="light"] + .tooltip[data-popper-placement^="right"] > .tooltip-arrow:before {
   @apply border-b border-s;
 }
 
-[data-tooltip-style^='light'] + .tooltip[data-popper-placement^='bottom'] > .tooltip-arrow:before {
-  @apply border-t border-s;
+[data-tooltip-style^="light"] + .tooltip[data-popper-placement^="bottom"] > .tooltip-arrow:before {
+  @apply border-s border-t;
 }
 
-[data-tooltip-style^='light'] + .tooltip[data-popper-placement^='left'] > .tooltip-arrow:before {
-  @apply border-t border-e;
+[data-tooltip-style^="light"] + .tooltip[data-popper-placement^="left"] > .tooltip-arrow:before {
+  @apply border-e border-t;
 }
 
-.tooltip[data-popper-placement^='top'] > .tooltip-arrow {
+.tooltip[data-popper-placement^="top"] > .tooltip-arrow {
   @apply -bottom-1;
 }
 
-.tooltip[data-popper-placement^='bottom'] > .tooltip-arrow {
-   @apply -top-1;
+.tooltip[data-popper-placement^="bottom"] > .tooltip-arrow {
+  @apply -top-1;
 }
 
-.tooltip[data-popper-placement^='left'] > .tooltip-arrow {
+.tooltip[data-popper-placement^="left"] > .tooltip-arrow {
   @apply -end-1;
 }
 
-.tooltip[data-popper-placement^='right'] > .tooltip-arrow {
+.tooltip[data-popper-placement^="right"] > .tooltip-arrow {
   @apply -start-1;
 }
 

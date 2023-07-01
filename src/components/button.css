@@ -1,117 +1,117 @@
 .aegov-btn {
-    /* Basic style properties of a button */
-    @apply cursor-pointer no-underline inline-flex flex-shrink-0 select-none flex-wrap items-center justify-center text-center transition duration-200 ease-in-out;
-    /* Specefic to the use of style */
-    @apply h-12 px-6 text-base font-medium rounded-lg border-2 border-transparent focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 gap-2;
-    /* all aspects of colour */
-    @apply bg-primary-600 text-whitely-50 hover:bg-primary-500 hover:text-primary-50 hover:shadow-button hover:shadow-primary-100 focus-visible:ring-primary-200;
-    @apply disabled:!shadow-none disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-30;
+  /* Basic style properties of a button */
+  @apply inline-flex flex-shrink-0 cursor-pointer select-none flex-wrap items-center justify-center text-center no-underline transition duration-200 ease-in-out;
+  /* Specefic to the use of style */
+  @apply h-12 gap-2 rounded-lg border-2 border-transparent px-6 text-base font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+  /* all aspects of colour */
+  @apply bg-primary-600 text-whitely-50 hover:bg-primary-500 hover:text-primary-50 hover:shadow-button hover:shadow-primary-100 focus-visible:ring-primary-200;
+  @apply disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-30 disabled:!shadow-none;
 }
 .aegov-btn.btn-soft {
-    @apply bg-primary-50 hover:bg-primary-100 text-primary-700 hover:text-primary-600 focus-visible:ring-primary-800 focus-visible:ring-offset-0 hover:shadow-none;
-    @apply disabled:opacity-50;
+  @apply bg-primary-50 hover:bg-primary-100 text-primary-700 hover:text-primary-600 focus-visible:ring-primary-800 hover:shadow-none focus-visible:ring-offset-0;
+  @apply disabled:opacity-50;
 }
 .aegov-btn.btn-link {
-    @apply bg-transparent text-primary-600 hover:bg-primary-50 focus-visible:ring-primary-500 focus-visible:ring-offset-0 focus-visible:ring-1 focus-visible:border-primary-500 hover:shadow-none;
+  @apply text-primary-600 hover:bg-primary-50 focus-visible:ring-primary-500 focus-visible:border-primary-500 bg-transparent hover:shadow-none focus-visible:ring-1 focus-visible:ring-offset-0;
 }
 .aegov-btn.btn-outline {
-    @apply bg-transparent text-primary-600 hover:bg-primary-100 border-primary-600 focus-visible:ring-primary-500 focus-visible:ring-offset-0 focus-visible:ring-1 focus-visible:border-primary-500 hover:shadow-none;
+  @apply text-primary-600 hover:bg-primary-100 border-primary-600 focus-visible:ring-primary-500 focus-visible:border-primary-500 bg-transparent hover:shadow-none focus-visible:ring-1 focus-visible:ring-offset-0;
 }
 
 /* size */
 .aegov-btn.btn-xl {
-    @apply h-13 text-lg px-7 gap-3;
+  @apply h-13 gap-3 px-7 text-lg;
 }
 .aegov-btn.btn-sm {
-    @apply h-10 text-base px-5;
+  @apply h-10 px-5 text-base;
 }
 .aegov-btn.btn-xs {
-    @apply h-8 text-sm px-4 rounded;
+  @apply h-8 rounded px-4 text-sm;
 }
 .aegov-btn.btn-block {
-    @apply w-full;
+  @apply w-full;
 }
 /* icons */
 .aegov-btn > svg,
 .aegov-btn > img {
-    @apply w-6 h-6 fill-current;
+  @apply h-6 w-6 fill-current;
 }
 .aegov-btn:has(> svg),
 .aegov-btn:has(> img) {
-    @apply px-5
+  @apply px-5;
 }
 .aegov-btn:has(> svg + svg),
 .aegov-btn:has(> img + img) {
-    @apply px-4
+  @apply px-4;
 }
 .aegov-btn.btn-xl > svg,
 .aegov-btn.btn-xl > img {
-    @apply w-7 h-7;
+  @apply h-7 w-7;
 }
 .aegov-btn.btn-xl:has(> svg),
 .aegov-btn.btn-xl:has(> img) {
-    @apply px-6
+  @apply px-6;
 }
 .aegov-btn.btn-xl:has(> svg + svg),
 .aegov-btn.btn-xl:has(> img + img) {
-    @apply px-5
+  @apply px-5;
 }
 .aegov-btn.btn-sm > svg,
 .aegov-btn.btn-sm > img {
-    @apply w-5 h-5;
+  @apply h-5 w-5;
 }
 .aegov-btn.btn-sm:has(> svg),
 .aegov-btn.btn-sm:has(> img) {
-    @apply px-4
+  @apply px-4;
 }
 .aegov-btn.btn-sm:has(> svg + svg),
 .aegov-btn.btn-sm:has(> img + img) {
-    @apply px-3
+  @apply px-3;
 }
 .aegov-btn.btn-xs > svg,
 .aegov-btn.btn-xs > img {
-    @apply w-4.5 h-4.5;
+  @apply w-4.5 h-4.5;
 }
 .aegov-btn.btn-xs:has(> svg),
 .aegov-btn.btn-xs:has(> img) {
-    @apply px-3;
+  @apply px-3;
 }
 .aegov-btn.btn-xs:has(> svg + svg),
 .aegov-btn.btn-xs:has(> img + img) {
-    @apply px-2;
+  @apply px-2;
 }
 .aegov-btn.btn-icon {
-    @apply px-0 w-12 gap-0;
+  @apply w-12 gap-0 px-0;
 }
 .aegov-btn.btn-xl.btn-icon {
-    @apply w-13 px-0 gap-0;
+  @apply w-13 gap-0 px-0;
 }
 .aegov-btn.btn-sm.btn-icon {
-    @apply w-10 px-0 gap-0;
+  @apply w-10 gap-0 px-0;
 }
 .aegov-btn.btn-xs.btn-icon {
-    @apply w-8 px-0 gap-0;
+  @apply w-8 gap-0 px-0;
 }
 
 /* button secondary color */
 .aegov-btn.btn-secondary {
-    @apply bg-secondary-800 text-secondary-50 hover:bg-secondary-950 hover:text-secondary-100 hover:shadow-secondary-100 focus-visible:ring-secondary-200;
+  @apply bg-secondary-800 text-secondary-50 hover:bg-secondary-950 hover:text-secondary-100 hover:shadow-secondary-100 focus-visible:ring-secondary-200;
 }
 .aegov-btn.btn-secondary.btn-soft {
-    @apply bg-secondary-50 hover:bg-secondary-100 text-secondary-800 hover:text-secondary-800 focus-visible:ring-secondary-200 focus-visible:ring-offset-0 hover:shadow-none;
-    @apply disabled:opacity-50;
+  @apply bg-secondary-50 hover:bg-secondary-100 text-secondary-800 hover:text-secondary-800 focus-visible:ring-secondary-200 hover:shadow-none focus-visible:ring-offset-0;
+  @apply disabled:opacity-50;
 }
 .aegov-btn.btn-secondary.btn-link {
-    @apply bg-transparent text-secondary-800 hover:bg-secondary-50 focus-visible:ring-secondary-200 focus-visible:ring-offset-0 focus-visible:ring-1 focus-visible:border-secondary-200 hover:shadow-none;
+  @apply text-secondary-800 hover:bg-secondary-50 focus-visible:ring-secondary-200 focus-visible:border-secondary-200 bg-transparent hover:shadow-none focus-visible:ring-1 focus-visible:ring-offset-0;
 }
 .aegov-btn.btn-secondary.btn-outline {
-    @apply bg-transparent text-secondary-800 hover:bg-secondary-100 border-secondary-800 focus-visible:ring-secondary-200 focus-visible:ring-offset-0 focus-visible:ring-1 focus-visible:border-secondary-200 hover:shadow-none;
+  @apply text-secondary-800 hover:bg-secondary-100 border-secondary-800 focus-visible:ring-secondary-200 focus-visible:border-secondary-200 bg-transparent hover:shadow-none focus-visible:ring-1 focus-visible:ring-offset-0;
 }
 
 /* auto respond button size */
-[data-responsive='auto'] .aegov-btn {
-    @apply h-8 text-sm px-4 rounded;
-    @apply sm:h-10 sm:text-base sm:px-5 sm:rounded-lg;
-    @apply lg:h-12 lg:px-6 lg:text-base lg:rounded-lg;
-    @apply 2xl:h-13 2xl:text-lg 2xl:px-7 2xl:gap-3 lg:rounded-lg;
+[data-responsive="auto"] .aegov-btn {
+  @apply h-8 rounded px-4 text-sm;
+  @apply sm:h-10 sm:rounded-lg sm:px-5 sm:text-base;
+  @apply lg:h-12 lg:rounded-lg lg:px-6 lg:text-base;
+  @apply 2xl:h-13 lg:rounded-lg 2xl:gap-3 2xl:px-7 2xl:text-lg;
 }

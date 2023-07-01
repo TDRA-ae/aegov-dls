@@ -38,8 +38,6 @@ const mainFunction = ({ addBase, addComponents, addUtilities, config, postcss })
 	console.log(pc.green("✔︎ Including: ") + aegovIncludedItems.join(", "));
 	console.groupEnd();
 	console.groupEnd();
-	
-
 };
 
 module.exports = require("tailwindcss/plugin")(mainFunction, {

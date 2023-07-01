@@ -1,28 +1,31 @@
 .aegov-pagination {
-    @apply inline-flex items-center space-x-2;
-    & a{
-      @apply no-underline  text-lg lg:text-2xl;
-    }
-    .pages{
-      @apply text-lg;
-    }
+  @apply inline-flex items-center space-x-2;
+  & a {
+    @apply text-lg  no-underline lg:text-2xl;
   }
-  .aegov-pagination-first, .aegov-pagination-last, .aegov-pagination-previous, .aegov-pagination-next {
-    @apply  text-lg lg:text-2xl inline-flex no-underline items-center gap-2 lg:px-2 py-1 text-aeblack-800 hover:text-primary-500;
-    & svg {
-        @apply w-5 h-5 lg:w-6 lg:h-6;
-   }
+  .pages {
+    @apply text-lg;
   }
-  .aegov-pagination-page, .aegov-pagination-current {
-    @apply text-lg lg:text-2xl w-10 h-10 lg:w-11 lg:h-11 rounded-full inline-flex items-center justify-center;
+}
+.aegov-pagination-first,
+.aegov-pagination-last,
+.aegov-pagination-previous,
+.aegov-pagination-next {
+  @apply text-aeblack-800 hover:text-primary-500 inline-flex items-center gap-2 py-1 text-lg no-underline lg:px-2 lg:text-2xl;
+  & svg {
+    @apply h-5 w-5 lg:h-6 lg:w-6;
   }
-  .aegov-pagination-page {
-    @apply text-aeblack-800 hover:bg-primary-50 hover:text-primary-800;
-  }
-  .aegov-pagination-current {
-    @apply bg-primary-500 text-primary-50;
-  }
-  .aegov-pagination-extend {
-    @apply text-aeblack-300;
-  }
-  
+}
+.aegov-pagination-page,
+.aegov-pagination-current {
+  @apply inline-flex h-10 w-10 items-center justify-center rounded-full text-lg lg:h-11 lg:w-11 lg:text-2xl;
+}
+.aegov-pagination-page {
+  @apply text-aeblack-800 hover:bg-primary-50 hover:text-primary-800;
+}
+.aegov-pagination-current {
+  @apply bg-primary-500 text-primary-50;
+}
+.aegov-pagination-extend {
+  @apply text-aeblack-300;
+}

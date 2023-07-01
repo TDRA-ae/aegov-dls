@@ -5,6 +5,7 @@ yarn.lock
 .next
 /dist/*.css
 /dist/*.js
-!/dist/index.js
+/dist/*.map
+/static
 .idea
 .DS_Store

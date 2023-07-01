@@ -1,81 +1,84 @@
 input[type="checkbox"],
 input[type="radio"] {
-	@apply appearance-none h-5 w-5 m-0 accent-primary-400 text-primary-400 border border-primary-400 relative flex-shrink-0;
-	@apply before:h-12 before:w-12 before:absolute before:-z-10 before:start-2/4 before:top-2/4 before:-translate-x-2/4 rtl:before:translate-x-2/4 before:-translate-y-2/4 before:rounded-full before:bg-primary-50 before:scale-0 hover:before:scale-100 before:transition-all;
-    @apply focus:outline-none focus:ring-2 focus:ring-primary-200 focus:ring-offset-2;
-    @apply disabled:border-primary-200 disabled:before:!hidden;
+  @apply accent-primary-400 text-primary-400 border-primary-400 relative m-0 h-5 w-5 flex-shrink-0 appearance-none border;
+  @apply before:bg-primary-50 before:absolute before:start-2/4 before:top-2/4 before:-z-10 before:h-12 before:w-12 before:-translate-x-2/4 before:-translate-y-2/4 before:scale-0 before:rounded-full before:transition-all hover:before:scale-100 rtl:before:translate-x-2/4;
+  @apply focus:ring-primary-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  @apply disabled:border-primary-200 disabled:before:!hidden;
 }
 input[type="checkbox"] {
-	@apply rounded;
+  @apply rounded;
 }
 /* Creating the checkbox group component */
 .aegov-check-item {
-	@apply flex justify-start items-center space-x-4 rtl:space-x-reverse;
-	&:has(input:disabled) {
-    	& label {
-    		@apply text-aeblack-300;
-    	}
+  @apply flex items-center justify-start space-x-4 rtl:space-x-reverse;
+  &:has(input:disabled) {
+    & label {
+      @apply text-aeblack-300;
     }
+  }
 }
 .aegov-check-group {
-	@apply relative flex items-start text-aeblack-400 space-x-4 rtl:space-x-reverse;
-	& input {
-		@apply mt-1;
-	}
-	& label{
-        @apply font-semibold text-aeblack-800 inline-block;
-    }
-    & p {
-    	@apply mb-0;
-    }
+  @apply text-aeblack-400 relative flex items-start space-x-4 rtl:space-x-reverse;
+  & input {
+    @apply mt-1;
+  }
+  & label {
+    @apply text-aeblack-800 inline-block font-semibold;
+  }
+  & p {
+    @apply mb-0;
+  }
 
-    &.group-list {
-    	@apply flex items-center justify-between py-5;
-    	& label {
-    		@apply select-none pe-4;
-    	}
+  &.group-list {
+    @apply flex items-center justify-between py-5;
+    & label {
+      @apply select-none pe-4;
     }
-    &:has(input:disabled) {
-    	@apply text-aeblack-200;
-    	& label {
-    		@apply text-aeblack-300;
-    	}
+  }
+  &:has(input:disabled) {
+    @apply text-aeblack-200;
+    & label {
+      @apply text-aeblack-300;
     }
+  }
 }
 
 /* Size definations */
 
 .aegov-check-item,
 .aegov-check-group {
-	&.check-lg {
-		@apply text-lg;
-		& input[type="checkbox"], input[type="radio"] {
-			@apply h-6 w-6;
-		}
-	}
-	&.check-base {
-		@apply text-base;
-		& input[type="checkbox"], input[type="radio"] {
-			@apply h-5 w-5;
-		}
-	}
-	&.check-sm {
-		@apply text-sm;
-		& input[type="checkbox"], input[type="radio"] {
-			@apply h-4 w-4 before:h-10 before:w-10;
-		}
-	}
+  &.check-lg {
+    @apply text-lg;
+    & input[type="checkbox"],
+    input[type="radio"] {
+      @apply h-6 w-6;
+    }
+  }
+  &.check-base {
+    @apply text-base;
+    & input[type="checkbox"],
+    input[type="radio"] {
+      @apply h-5 w-5;
+    }
+  }
+  &.check-sm {
+    @apply text-sm;
+    & input[type="checkbox"],
+    input[type="radio"] {
+      @apply h-4 w-4 before:h-10 before:w-10;
+    }
+  }
 }
 
 /* Colour definations */
 
 .aegov-check-item,
 .aegov-check-group {
-	&.check-secondary {
-		input[type="checkbox"],
-		input[type="radio"] {
-			@apply accent-aeblack-900 text-aeblack-900 border border-aeblack-700 before:bg-aeblack-50;
-			@apply focus:ring-aeblack-200 disabled:border-aeblack-200;
-		}
-	}
+  &.check-secondary {
+    input[type="checkbox"],
+    input[type="radio"] {
+      @apply accent-aeblack-900 text-aeblack-900 border-aeblack-700 before:bg-aeblack-50 border;
+      @apply focus:ring-aeblack-200 disabled:border-aeblack-200;
+    }
+  }
 }
