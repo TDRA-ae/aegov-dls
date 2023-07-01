@@ -1,8 +1,8 @@
 class Events {
-    private _eventType: string;
-    private _eventFunctions: EventListener[];
+    _eventType;
+    _eventFunctions;
 
-    constructor(eventType: string, eventFunctions: EventListener[] = []) {
+    constructor(eventType, eventFunctions) {
         this._eventType = eventType;
         this._eventFunctions = eventFunctions;
     }
