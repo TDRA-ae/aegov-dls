@@ -3,6 +3,7 @@ import { initCollapses } from './collapse';
 import { initDismisses } from './dismiss';
 import { initDropdowns } from './dropdown';
 import { initModals } from './modal';
+import { initTabs } from './tabs';
 import { initTooltips } from './tooltip';
 
 export function initAEGov() {
@@ -11,6 +12,7 @@ export function initAEGov() {
   initDismisses();
   initDropdowns();
   initModals();
+  initTabs();
   initTooltips();
 }
 

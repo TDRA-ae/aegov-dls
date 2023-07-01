@@ -4,6 +4,7 @@ import Collapse, { initCollapses } from './components/collapse';
 import Dismiss, { initDismisses } from './components/dismiss';
 import Dropdown, { initDropdowns } from './components/dropdown';
 import Modal, { initModals } from './components/modal';
+import Tabs, { initTabs } from './components/tabs';
 import Tooltip, { initTooltips } from './components/tooltip';
 import './components/index';
 //import Events from './dom/events';
@@ -14,9 +15,10 @@ const events = new Events("load", [
   initDismisses,
   initDropdowns,
   initModals,
+  initTabs,
   initTooltips
 ]);
-events.init()
+events.init();
 
 export default {
   Accordion,
@@ -24,5 +26,6 @@ export default {
   Dismiss,
   Dropdown,
   Modal,
+  Tabs,
   Tooltip
-}
+};
