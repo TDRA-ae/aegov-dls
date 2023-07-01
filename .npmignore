@@ -3,5 +3,6 @@ yarn.lock
 /package-lock.json
 .next
 !/dist/
+/static
 .idea
 .DS_Store
