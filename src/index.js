@@ -90,7 +90,7 @@ module.exports = require("tailwindcss/plugin")(mainFunction, {
 		},
 		colors: {
 			...aegovColors,
-			primary:aegovColors.aegold
+			primary:aegovColors.aegold,
 			secondary:aegovColors.aeblack
 		},
 		extend: {
