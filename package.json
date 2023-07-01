@@ -1,6 +1,6 @@
 {
   "name": "@aegov/design-system",
-  "version": "0.0.12",
+  "version": "0.1.1",
   "description": "A design system for the Government of the United Arab Emirates. The design system has been created based on research and information collected from in-depth studies conducted on user behaviour and benchmarking best practices. The primary use of this design system is to allow ministries of the United Arab Emirates to create consistent websites with components that are common and acceissible.",
   "keywords": [
     "design-system",
@@ -68,6 +68,7 @@
   "devDependencies": {
     "@babel/core": "^7.14.8",
     "@babel/preset-env": "^7.14.8",
+    "@babel/plugin-transform-runtime": "^7.22.5",
     "@typescript-eslint/eslint-plugin": "^5.60.1",
     "@typescript-eslint/parser": "^5.60.1",
     "autoprefixer": "^10.0.4",
@@ -99,7 +100,6 @@
     "yarn": "^1.22.10"
   },
   "dependencies": {
-    "@babel/plugin-transform-runtime": "^7.22.5",
     "@popperjs/core": "^2.11.8",
     "@tailwindcss/forms": "^0.5.3",
     "tailwindcss": "^3"
