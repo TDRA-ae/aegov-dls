@@ -5,7 +5,7 @@
   & .accordion-title {
     & button {
       @apply text-aeblack-900 hover:text-primary-700 flex items-center justify-between text-base font-semibold;
-      &.aegov-acc-open {
+      &.accordion-active {
         @apply text-primary-700;
       }
       & svg {

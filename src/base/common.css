@@ -482,6 +482,9 @@ p {
   &.text-xs {
     @apply mb-6;
   }
+  &:last-child{
+    @apply mb-0;
+  }
 }
 
 a {

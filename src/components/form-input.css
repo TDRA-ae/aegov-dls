@@ -18,6 +18,7 @@ select {
   @apply disabled:pointer-events-none disabled:cursor-not-allowed;
 }
 
+/* range slider */
 input[type="range"] {
   @apply bg-aeblack-200/50 from-primary-300 to-primary-500 my-3 inline-block h-2 w-full appearance-none rounded bg-gradient-to-r bg-no-repeat align-middle text-base;
 }
@@ -30,6 +31,8 @@ input[type="range"]::-webkit-slider-thumb:hover {
 input[type="range"]::-webkit-slider-runnable-track {
   @apply appearance-none border-0 bg-transparent shadow-none;
 }
+
+/* input file upload */
 input[type="file"] {
   &:not(:disabled):not([readonly]) {
     @apply cursor-pointer;
@@ -135,7 +138,7 @@ input[type="file"] {
     }
   }
   /* file with drag and drop style */
-  .form-control-dropbox {
+  & .form-control-dropbox {
     @apply border-primary-400 bg-whitely-50 relative block rounded-md border border-dashed text-center shadow-sm focus:shadow-md;
     & svg {
       @apply mx-auto h-10 w-10 text-slate-300 xl:h-12 xl:w-12;
@@ -143,5 +146,66 @@ input[type="file"] {
     & label {
       @apply bg-whitely-50 text-primary-600 focus-within:ring-primary-600 hover:text-primary-500 relative inline-block cursor-pointer rounded-md font-semibold focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2;
     }
+  }
+}
+/* secondary */
+.aegov-form-control {
+  &.control-secondary{
+    & .form-control-input {
+      @apply bg-whitely-50 ring-secondary-400 focus-within:ring-secondary-600;
+      & input[type="date"],
+      input[type="datetime-local"],
+      input[type="month"] {
+        & + .control-suffix {
+          & svg {
+            @apply focus-within:ring-secondary-600;
+          }
+        }
+      }
+      &:focus-within {
+        & .control-prefix {
+          @apply text-secondary-900;
+        }
+        & .control-suffix {
+          @apply text-secondary-900;
+        }
+      }
+    }
+    & select {
+      @apply text-secondary-900 pe-9 ps-3 rtl:bg-[0.5rem];
+      background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%233E4046' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    }
+    /* file with drag and drop style */
+    & .form-control-dropbox {
+      @apply border-secondary-400 bg-whitely-50;
+      & svg {
+        @apply text-slate-300;
+      }
+      & label {
+        @apply bg-whitely-50 text-secondary-600 focus-within:ring-secondary-600 hover:text-secondary-500;
+      }
+    }
+    
+    /* range slider */
+    input[type="range"] {
+      @apply bg-secondary-200/50 from-secondary-300 to-secondary-500;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      @apply bg-secondary-800;
+    }
+    input[type="range"]::-webkit-slider-thumb:hover {
+      @apply bg-secondary-700;
+    }
+
+    /* input file upload */
+    input[type="file"] {
+      
+      @apply file:text-secondary-700 file:bg-secondary-50;
+      @apply file:focus:shadow-secondary-400/20 file:ring-secondary-300 file:focus-within:ring-secondary-600 focus:outline-secondary-500;
+      &:hover:not(:disabled):not([readonly])::file-selector-button {
+        @apply bg-secondary-100;
+      }
+    }
+
   }
 }

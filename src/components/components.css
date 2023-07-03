@@ -1,6 +1,7 @@
 @import "./accordion.css";
 @import "./alert.css";
 @import "./avatar.css";
+@import "./banner.css";
 @import "./blockquote.css";
 @import "./breadcrumb.css";
 @import "./button.css";
@@ -11,6 +12,7 @@
 
 @import "./form-input.css";
 @import "./form-checks.css";
+@import "./toggle.css";
 
 @import "./dropdown.css";
 @import "./modal.css";

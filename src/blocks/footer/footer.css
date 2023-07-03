@@ -11,7 +11,7 @@
       & svg {
         @apply text-aeblack-600;
       }
-      &.aegov-acc-open {
+      &.accordion-active {
         @apply text-primary-700;
         & svg {
           @apply text-primary-700;
