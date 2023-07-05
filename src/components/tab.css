@@ -16,10 +16,10 @@
     @apply max-h-6 w-6;
   }
 }
-.aegov-tab-active {
+.tab-active {
   @apply text-primary-600 border-b-primary-500 pointer-events-none;
 }
-.aegov-tab-content {
+.tab-content {
   @apply bg-aeblack-50 rounded-lg p-4;
 }
 
@@ -42,7 +42,7 @@
     @apply text-aeblack-800 rounded-lg border-2 border-transparent bg-transparent py-0 text-base font-medium;
     @apply hover:bg-aeblack-50;
   }
-  .aegov-tab-active {
+  .tab-active {
     @apply text-primary-900 bg-primary-100;
   }
 }

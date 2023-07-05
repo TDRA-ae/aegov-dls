@@ -32,7 +32,7 @@
       .alert-link {
         @apply mb-0 mt-3 text-sm md:ml-6 md:mt-0;
         & a {
-          @apply whitespace-nowrap font-medium;
+          @apply whitespace-nowrap font-medium no-underline ;
         }
       }
     }
@@ -69,7 +69,7 @@
         }
       }
       & a {
-        @apply text-aered-700 underline;
+        @apply text-aered-700 hover:text-aered-600 underline;
       }
     }
   }
@@ -89,7 +89,7 @@
         }
       }
       & a {
-        @apply text-aegreen-700 underline;
+        @apply text-aegreen-700 hover:text-aegreen-600 underline;
       }
     }
   }
@@ -109,7 +109,7 @@
         }
       }
       & a {
-        @apply text-techblue-700 underline;
+        @apply text-techblue-700 hover:text-techblue-600 underline;
       }
     }
   }
@@ -129,7 +129,7 @@
         }
       }
       & a {
-        @apply text-camel-700 underline;
+        @apply text-camel-700 hover:text-camel-600 underline;
       }
     }
   }

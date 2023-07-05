@@ -4,7 +4,7 @@
   }
   & .accordion-title {
     & button {
-      @apply text-aeblack-900 hover:text-primary-700 flex items-center justify-between text-base font-semibold;
+      @apply text-aeblack-900 hover:text-primary-700 flex items-start justify-between text-base font-semibold;
       &.accordion-active {
         @apply text-primary-700;
       }
@@ -16,7 +16,7 @@
   &:not(.aegov-mobile-accordion) {
     & .accordion-title {
       & button {
-        @apply text-aeblack-900 hover:text-primary-700 focus-visible:ring-primary-100 flex items-center justify-between px-3 py-4 text-base font-semibold focus-visible:outline-none focus-visible:ring-2 md:py-5 xl:py-6;
+        @apply focus-visible:ring-primary-100 px-3 py-4 focus-visible:outline-none focus-visible:ring-2 md:py-5 xl:py-6;
       }
     }
     & .accordion-content {
