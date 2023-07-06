@@ -4,7 +4,7 @@ import { ModalInterface } from './interface';
 
 const Default: ModalOptions = {
     placement: 'center',
-    backdropClasses:'aegov-backdrop',
+    backdropClasses:'aegov-modal-backdrop',
     backdrop: 'dynamic',
     closable: true,
     onHide: () => {},
