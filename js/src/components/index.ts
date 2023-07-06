@@ -1,6 +1,7 @@
 import { initAccordions } from "./accordion"
 import { initCollapses } from './collapse';
 import { initDismisses } from './dismiss';
+import { initDrawers } from './drawer';
 import { initDropdowns } from './dropdown';
 import { initModals } from './modal';
 import { initTabs } from './tabs';
@@ -12,6 +13,7 @@ export function initAEGov() {
   initDismisses();
   initDropdowns();
   initModals();
+  initDrawers();
   initTabs();
   initTooltips();
 }
