@@ -108,6 +108,7 @@ module.exports = require("tailwindcss/plugin")(mainFunction, {
 		}
 	},
 	plugins: [
-		require('@tailwindcss/forms')
+		require('@tailwindcss/forms'),
+		require('@tailwindcss/typography')
 	]
 });
