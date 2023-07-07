@@ -1,21 +1,21 @@
-.aegov-quote{
-	@apply relative px-10 py-6 text-base text-aeblack-800 font-medium;
-	& .quote-icon{
-        @apply absolute top-0 start-0  h-12 w-12 rtl:-scale-x-100;
-    }
-    & .quote-author{
-        @apply text-sm font-medium text-primary-700 mb-1; 
-    }
-    & .quote-cite{
-        @apply text-sm text-primary-600 font-normal; 
-    }
-    & .quote-footer{
-        @apply mt-10; 
-    }
-    &:not(.quote-colored){
-        @apply pl-14 pr-10 rtl:pr-14 rtl:pl-10 py-6;
-    } 
+.aegov-quote {
+  @apply text-aeblack-800 relative px-10 py-6 text-base font-medium;
+  & .quote-icon {
+    @apply absolute start-0 top-0  h-12 w-12 rtl:-scale-x-100;
+  }
+  & .quote-author {
+    @apply text-primary-700 mb-1 text-sm font-medium;
+  }
+  & .quote-cite {
+    @apply text-primary-600 text-sm font-normal;
+  }
+  & .quote-footer {
+    @apply mt-10;
+  }
+  &:not(.quote-colored) {
+    @apply py-6 pl-14 pr-10 rtl:pl-10 rtl:pr-14;
+  }
 }
-.aegov-quote.quote-colored{
-    @apply bg-primary-50 border-s-[10px] border-primary-500;
+.aegov-quote.quote-colored {
+  @apply bg-primary-50 border-primary-500 border-s-[10px];
 }

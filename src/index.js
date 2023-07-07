@@ -7,6 +7,7 @@ const aegovColors = require("./color/index");
 
 const aegovBase = require("../dist/base");
 const aegovComponents = require("../dist/components");
+const aegovBlocks = require("../dist/blocks");
 const aegovUtil = require("../dist/utilities");
 
 
@@ -26,6 +27,10 @@ const mainFunction = ({ addBase, addComponents, addUtilities, config, postcss })
 	addComponents(aegovComponents);
 	aegovIncludedItems.push("aegov-Components");
 
+	// Include the blocks style
+	addComponents(aegovBlocks);
+	aegovIncludedItems.push("aegov-Blocks");
+
 	// Include the utilities
 	addComponents(aegovUtil, { variants: ["responsive"] });
 	aegovIncludedItems.push("aegov-Util");
@@ -33,11 +38,18 @@ const mainFunction = ({ addBase, addComponents, addUtilities, config, postcss })
 	console.log(pc.green("✔︎ Including: ") + aegovIncludedItems.join(", "));
 	console.groupEnd();
 	console.groupEnd();
-	
-
 };
 
 module.exports = require("tailwindcss/plugin")(mainFunction, {
+	safelist: [
+		'aegov-backdrop',
+		{
+			pattern: /(?:^|\s)(justify|items)-(start|center|end)(?:\s|$)/,
+		},
+	  ],
+	future: {
+	hoverOnlyWhenSupported: true,
+	},
 	theme: { 
 		screens:{
 			'sm':'640px',
@@ -52,7 +64,8 @@ module.exports = require("tailwindcss/plugin")(mainFunction, {
 				md:'0.875rem',
 				lg:'1.375rem',
 				xl:'1.25rem'
-			}
+			},
+			center: true
 		},
 		fontFamily: {
 			'roboto': ['\'Roboto\'','ui-sans-serif','system-ui','-apple-system','BlinkMacSystemFont','\'Segoe UI\'','\'Helvetica Neue\'','sans-serif'],
@@ -77,7 +90,8 @@ module.exports = require("tailwindcss/plugin")(mainFunction, {
 		},
 		colors: {
 			...aegovColors,
-			primary:aegovColors.aegold
+			primary:aegovColors.aegold,
+			secondary:aegovColors.aeblack
 		},
 		extend: {
 			boxShadow: {
@@ -94,6 +108,7 @@ module.exports = require("tailwindcss/plugin")(mainFunction, {
 		}
 	},
 	plugins: [
-		require('@tailwindcss/forms')
+		require('@tailwindcss/forms'),
+		require('@tailwindcss/typography')
 	]
 });

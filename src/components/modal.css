@@ -1,0 +1,30 @@
+.aegov-modal {
+  @apply fixed left-0 right-0 top-0 h-[calc(100%-1rem)] max-h-full w-full overflow-y-auto overflow-x-hidden p-4 md:inset-0;
+}
+.aegov-modal-wrapper {
+  @apply bg-whitely-50 shadow-aeblack-900/10 relative max-h-full rounded-lg shadow-xl;
+}
+.aegov-backdrop {
+  @apply bg-aeblack-900 fixed inset-0 z-40 bg-opacity-50 dark:bg-opacity-80;
+}
+.aegov-modal-close {
+  @apply text-aeblack-400 hover:bg-aeblack-50 hover:text-aeblack-600 focus-within:ring-primary-400 absolute ml-auto inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm focus-within:ring-2 focus:outline-none;
+}
+.lang-header {
+  @apply mb-6 flex items-center justify-center gap-6 md:mb-8 md:gap-8 xl:mb-10 xl:gap-10 2xl:mb-12;
+}
+.lang-primary {
+  @apply text-aeblack-800 text-xl font-bold no-underline md:text-2xl xl:text-3xl;
+}
+.lang-primary-divider {
+  @apply bg-aeblack-300 inline-block h-4 w-px xl:h-6;
+}
+.lang-other-title {
+  @apply text-aeblack-300 border-aeblack-100 !mb-0 border-b pb-6 text-center text-sm font-normal;
+}
+.lang-other-link {
+  @apply text-aeblack-700 block p-4 text-center text-base font-normal no-underline;
+}
+.lang-bottom-text {
+  @apply text-aeblack-300 !mb-0 text-center text-xs font-normal;
+}

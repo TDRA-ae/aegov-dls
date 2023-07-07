@@ -1,35 +1,39 @@
-nav.aegov-breadcrumb{
-	& > ol,span {
-		@apply flex flex-wrap items-center text-aeblack-300;
-		& > li,span{
-			@apply relative text-sm flex align-middle items-center last:font-semibold;
-		}
-		& [aria-current="page"] {
-			@apply relative px-0.5 truncate max-w-[160px] text-aeblack-800 font-semibold relative inline-block no-underline;
-		}
-		& a {
-			@apply flex relative px-1 py-2 truncate max-w-[140px] align-middle font-medium text-aeblack-300 hover:text-primary-600 no-underline hover:underline decoration-2 underline-offset-2;
-			& svg {
-				@apply w-5 h-5 inline-block me-2;
-			}
-			& span {
-				@apply font-medium;
-				&:hover {
-					@apply text-primary-600;
-				}
-			}
-		}
-	}
-	&.with-seperator {
-		& > ol,span {
-			@apply space-x-5 rtl:space-x-reverse;
-			& > li,span{
-				@apply after:absolute after:w-auto after:h-full after:top-2 after:-end-3;
-				@apply last:after:hidden;
-				&:after {
-					content:'/';
-				}
-			}
-		}
-	}
+nav.aegov-breadcrumb {
+  & > ol,
+  span {
+    @apply text-aeblack-300 flex flex-wrap items-center;
+    & > li,
+    span {
+      @apply relative flex items-center align-middle text-sm last:font-semibold;
+    }
+    & [aria-current="page"] {
+      @apply text-aeblack-800 relative relative inline-block max-w-[160px] truncate px-0.5 font-semibold no-underline;
+    }
+    & a {
+      @apply text-aeblack-300 hover:text-primary-600 relative flex max-w-[140px] truncate px-1 py-2 align-middle font-medium no-underline decoration-2 underline-offset-2 hover:underline;
+      & svg {
+        @apply me-2 inline-block h-5 w-5;
+      }
+      & span {
+        @apply font-medium;
+        &:hover {
+          @apply text-primary-600;
+        }
+      }
+    }
+  }
+  &.with-seperator {
+    & > ol,
+    span {
+      @apply space-x-5 rtl:space-x-reverse;
+      & > li,
+      span {
+        @apply after:absolute after:-end-3 after:top-2 after:h-full after:w-auto;
+        @apply last:after:hidden;
+        &:after {
+          content: "/";
+        }
+      }
+    }
+  }
 }

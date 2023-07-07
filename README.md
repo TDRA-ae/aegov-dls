@@ -13,11 +13,11 @@
 
 # The United Arab Emirates Design System
 
-The design system has been created based on research and information collected from in-depth studies conducted on user behaviour and benchmarking best practices. 
+The design system has been created based on research and information collected from in-depth studies conducted on user behaviour and benchmarking best practices.
 
 The purpose of the design system is to create a set of components, blocks and patterns with detailed guidelines on how to create web UI for Federal Ministries and Authorities of the United Arab Emirates.
 
-------
+---
 
 ## Documentation
 
@@ -25,7 +25,7 @@ For full documentation, visit [UAE Design Language System](https://dls.governmen
 
 ## Getting started
 
-The Design Language System is built with standards and components that will help you build websites faster and with a consistent UI adhering to accessibility principles. 
+The Design Language System is built with standards and components that will help you build websites faster and with a consistent UI adhering to accessibility principles.
 
 The Design Language System (DLS) is built with [TailwindCSS](https://tailwindcss.com) and to get started, you simply need to add the the DLS plugin to your existing or new TailwindCSS Project.
 

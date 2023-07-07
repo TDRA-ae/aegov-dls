@@ -1,0 +1,39 @@
+.aegov-accordion {
+  & .accordion-item {
+    @apply border-aeblack-100 border-b;
+  }
+  & .accordion-title {
+    & button {
+      @apply text-aeblack-900 hover:text-primary-700 flex items-start justify-between text-base font-semibold;
+      &.accordion-active {
+        @apply text-primary-700;
+      }
+      & svg {
+        @apply text-inherit;
+      }
+    }
+  }
+  &:not(.aegov-mobile-accordion) {
+    & .accordion-title {
+      & button {
+        @apply focus-visible:ring-primary-100 px-3 py-4 focus-visible:outline-none focus-visible:ring-2 md:py-5 xl:py-6;
+      }
+    }
+    & .accordion-content {
+      & .accordion-content-body {
+        @apply px-3 py-4 md:py-5 xl:py-6;
+      }
+    }
+  }
+}
+.accordion-title {
+  & button {
+    @apply w-full flex-nowrap justify-start gap-x-4 text-start font-semibold transition-all;
+    & svg {
+      @apply text-aeblack-600 h-6 w-6 flex-shrink-0 fill-current;
+    }
+  }
+}
+.accordion-content {
+  @apply text-aeblack-800;
+}

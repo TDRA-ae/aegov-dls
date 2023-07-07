@@ -1,0 +1,100 @@
+.step-badge {
+  @apply text-aeblack-900 bg-whitely-50 relative flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border border-slate-200 bg-[length:1.5rem] text-base font-bold leading-normal no-underline outline-none;
+  &:not(.step-current .step-badge, .step-completed .step-badge) {
+    @apply hover:bg-primary-100 hover:border-primary-100 hover:text-primary-800;
+  }
+  & svg {
+    @apply h-6 w-6 fill-current;
+  }
+}
+.step-current {
+  & .step-badge {
+    @apply ring-primary-100 focus-visible:ring-primary-300 pointer-events-none ring-4 focus-visible:ring-2;
+  }
+}
+.step-current,
+.step-completed {
+  & .step-badge {
+    @apply text-whitely-50 bg-primary-500 border-primary-500 border;
+  }
+}
+.step-completed {
+  & .step-badge {
+    @apply hover:ring-primary-100 bg-center bg-no-repeat hover:ring-4;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 256 256'%3E%3Crect width='256' height='256' fill='none'/%3E%3Cpolyline points='40 144 96 200 224 72' fill='none' stroke='%23ffffff' stroke-linecap='round' stroke-linejoin='round' stroke-width='16'/%3E%3C/svg%3E");
+  }
+}
+.step-disabled {
+  @apply pointer-events-none opacity-50;
+}
+.aegov-step-title {
+  @apply bg-aeblack-50 relative p-6;
+  & .step-outof {
+    @apply text-primary-600 text-xs font-normal;
+  }
+  & .step-title {
+    @apply text-aeblack-800 text-lg font-medium;
+  }
+  & .step-title-progress {
+    @apply bg-aeblack-200 absolute inset-x-0 bottom-0 w-full overflow-hidden rounded-full;
+  }
+  & .step-title-progress-status {
+    @apply bg-primary-500 h-1 rounded-full;
+  }
+}
+.step-connector {
+  @apply absolute inset-0 flex items-center;
+}
+.step-connector-state {
+  @apply bg-aeblack-200 h-[0.188rem] w-full rounded-full;
+}
+.step-connector-vertical {
+  @apply absolute start-2/4 top-5 h-full w-[0.188rem] ltr:-translate-x-2/4 rtl:translate-x-2/4;
+}
+.step-completed {
+  & .step-connector-state {
+    @apply bg-primary-500;
+  }
+}
+.step-text-below {
+  @apply text-aeblack-900 absolute top-[calc(100%_+_1rem)] whitespace-nowrap font-medium;
+}
+
+/* step size */
+
+.aegov-step {
+  & .step-connector {
+    @apply start-12 w-[calc(100%_-_3.5rem)];
+  }
+  & .step-connector-vertical {
+    @apply top-12 h-[calc(100%_-_3.5rem)];
+  }
+  &.step-sm {
+    & .step-connector {
+      @apply start-10 w-[calc(100%_-_3rem)];
+    }
+    & .step-badge {
+      @apply h-8 w-8 bg-[length:1rem] text-sm;
+      & svg {
+        @apply h-5 w-5;
+      }
+    }
+    & .step-connector-vertical {
+      @apply top-10 h-[calc(100%_-_3rem)];
+    }
+  }
+  &.step-lg {
+    & .step-connector {
+      @apply start-14 w-[calc(100%_-_4rem)];
+    }
+    & .step-badge {
+      @apply h-12 w-12 bg-[length:2rem] text-lg;
+      & svg {
+        @apply h-8 w-8;
+      }
+    }
+    & .step-connector-vertical {
+      @apply top-14 h-[calc(100%_-_4rem)];
+    }
+  }
+}
