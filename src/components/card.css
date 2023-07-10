@@ -3,24 +3,30 @@
   &.card-stacked {
     @apply overflow-hidden;
     & > * {
-      @apply card-element-space h-full p-6;
+      @apply card-element-space h-full p-4 md:p-5 xl:p-6;
     }
   }
 }
-.card-element-space {
+.card-element-space:not(.card-lg) {
   & > *:not(:last-child) {
-    @apply mb-5 md:mb-6;
+    @apply mb-4 md:mb-5 xl:mb-6;
   }
 }
+.card-lg{
+  & > *:not(:last-child) {
+    @apply mb-4 md:mb-6 xl:mb-8;
+  }
+}
+
 .aegov-card {
   @apply rounded-lg md:rounded-xl xl:rounded-2xl;
-  &.card-bordered {
+  &.card-bordered{
     @apply border-primary-300 border;
     &:not(.card-news) {
       @apply card-element-space;
     }
     &:not(.card-news) {
-      @apply p-4;
+      @apply p-4 md:p-5 xl:p-6;
       & .card-image {
         @apply rounded-2xl;
       }
@@ -29,7 +35,7 @@
   &.card-news {
     @apply overflow-hidden;
     & .card-image {
-      @apply aspect-[16/9];
+      @apply aspect-[16/9] object-cover w-full;
     }
     &:not(.card-bordered) {
       @apply card-element-space;
@@ -39,7 +45,7 @@
     }
     &.card-bordered {
       & .card-content {
-        @apply p-5 md:p-6;
+        @apply p-4 md:p-5 xl:p-6;
       }
     }
   }
