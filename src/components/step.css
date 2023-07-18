@@ -49,7 +49,7 @@
   @apply bg-aeblack-200 h-[0.188rem] w-full rounded-full;
 }
 .step-connector-vertical {
-  @apply absolute start-2/4 top-5 h-full w-[0.188rem] ltr:-translate-x-2/4 rtl:translate-x-2/4;
+  @apply absolute start-5 -ms-px top-5 h-full w-[0.188rem];
 }
 .step-completed {
   & .step-connector-state {
@@ -80,7 +80,7 @@
       }
     }
     & .step-connector-vertical {
-      @apply top-10 h-[calc(100%_-_3rem)];
+      @apply top-10 start-4 h-[calc(100%_-_3rem)];
     }
   }
   &.step-lg {
@@ -94,7 +94,7 @@
       }
     }
     & .step-connector-vertical {
-      @apply top-14 h-[calc(100%_-_4rem)];
+      @apply top-14 start-6 h-[calc(100%_-_4rem)];
     }
   }
 }

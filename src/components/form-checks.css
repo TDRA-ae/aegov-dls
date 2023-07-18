@@ -49,22 +49,28 @@ input[type="checkbox"] {
 .aegov-check-group {
   &.check-lg {
     @apply text-lg;
-    & input[type="checkbox"],
-    input[type="radio"] {
+    & input[type="checkbox"]{
+      @apply h-6 w-6;
+    }
+    & input[type="radio"]{
       @apply h-6 w-6;
     }
   }
   &.check-base {
     @apply text-base;
-    & input[type="checkbox"],
-    input[type="radio"] {
+    & input[type="checkbox"]{
+      @apply h-5 w-5;
+    }
+    & input[type="radio"]{
       @apply h-5 w-5;
     }
   }
   &.check-sm {
     @apply text-sm;
-    & input[type="checkbox"],
-    input[type="radio"] {
+    & input[type="checkbox"]{
+      @apply h-4 w-4 before:h-10 before:w-10;
+    }
+    & input[type="radio"] {
       @apply h-4 w-4 before:h-10 before:w-10;
     }
   }
