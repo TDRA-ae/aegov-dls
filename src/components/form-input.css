@@ -209,3 +209,71 @@ input[type="file"] {
 
   }
 }
+
+/* error */
+.aegov-form-control {
+  &.control-error{
+    & label{
+      @apply text-aered-600;
+    }
+    & .error-message{
+      @apply text-aered-600 text-sm mt-1;
+    }
+    & .form-control-input {
+      @apply bg-aered-50 ring-aered-400 focus-within:ring-aered-600;
+      & input[type="date"],
+      input[type="datetime-local"],
+      input[type="month"] {
+        & + .control-suffix {
+          & svg {
+            @apply focus-within:ring-aered-600;
+          }
+        }
+      }
+      &:focus-within {
+        & .control-prefix {
+          @apply text-aered-900;
+        }
+        & .control-suffix {
+          @apply text-aered-900;
+        }
+      }
+    }
+    & select {
+      @apply text-aered-900 pe-9 ps-3 rtl:bg-[0.5rem];
+      background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%233E4046' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+    }
+    /* file with drag and drop style */
+    & .form-control-dropbox {
+      @apply border-aered-400 bg-aered-50;
+      & svg {
+        @apply text-slate-300;
+      }
+      & label {
+        @apply bg-aered-50 text-aered-600 focus-within:ring-aered-600 hover:text-aered-500;
+      }
+    }
+    
+    /* range slider */
+    input[type="range"] {
+      @apply bg-aered-200/50 from-aered-300 to-aered-500;
+    }
+    input[type="range"]::-webkit-slider-thumb {
+      @apply bg-aered-800;
+    }
+    input[type="range"]::-webkit-slider-thumb:hover {
+      @apply bg-aered-700;
+    }
+
+    /* input file upload */
+    input[type="file"] {
+      
+      @apply file:text-aered-700 file:bg-aered-50;
+      @apply file:focus:shadow-aered-400/20 file:ring-aered-300 file:focus-within:ring-aered-600 focus:outline-aered-500;
+      &:hover:not(:disabled):not([readonly])::file-selector-button {
+        @apply bg-aered-100;
+      }
+    }
+
+  }
+}

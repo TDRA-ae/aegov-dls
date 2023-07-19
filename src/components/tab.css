@@ -20,7 +20,7 @@
   @apply text-primary-600 border-b-primary-500 pointer-events-none;
 }
 .tab-content {
-  @apply bg-aeblack-50 rounded-lg p-4;
+  @apply rounded-lg p-4;
 }
 
 /* tab sm */
