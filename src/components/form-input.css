@@ -94,8 +94,11 @@ input[type="file"] {
     }
   }
   & select {
-    @apply text-primary-900 pe-9 ps-3 rtl:bg-[0.5rem];
+    @apply text-primary-900 pe-9 ps-3 rtl:bg-[0.5rem] bg-no-repeat;
     background-image: url("data:image/svg+xml,%0A%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%237C5E24' stroke-width='2' stroke-linecap='round' stroke-linejoin='round' class='feather feather-chevron-down'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+  }
+  & [multiple]{
+    @apply bg-none pr-3;
   }
   & textarea {
     @apply h-auto;
