@@ -42,14 +42,14 @@ const mainFunction = ({ addBase, addComponents, addUtilities, config, postcss })
 
 module.exports = require("tailwindcss/plugin")(mainFunction, {
 	safelist: [
-		'aegov-drawer-backdrop','.aegov-modal-backdrop',
-
+		'aegov-drawer-backdrop',
+		'.aegov-modal-backdrop',
 		{
 			pattern: /(?:^|\s)(justify|items)-(start|center|end)(?:\s|$)/,
 		},
 	  ],
 	future: {
-	hoverOnlyWhenSupported: true,
+		hoverOnlyWhenSupported: true,
 	},
 	theme: { 
 		screens:{
