@@ -1,6 +1,6 @@
 node_modules
-js
-src
+/js
+/src/*
 yarn.lock
 /package-lock.json
 .next
