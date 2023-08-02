@@ -1,6 +1,7 @@
 node_modules
 /js
 /src/*
+!/src/color/index.js
 yarn.lock
 /package-lock.json
 .next
