@@ -29,9 +29,9 @@
 .rating-logo {
   @apply inline-block w-8 md:w-10 lg:w-12 xl:w-auto;
 }
-.header-top {
+/* .header-top {
   @apply py-2.5 lg:py-3;
-}
+} */
 .hamburger-icon svg {
   @apply inline-flex h-8 w-8;
 }
@@ -45,7 +45,7 @@
     @apply text-aeblack-700 hover:text-primary-500 flex items-center gap-3 text-sm font-medium no-underline;
   }
 }
-.header-bottom {
+.header-navs {
   @apply bg-aeblack-50;
 }
 
@@ -85,7 +85,7 @@
   }
 }
 
-.header-bottom-right {
+.header-navs-right {
   & li {
     & a {
       @apply text-primary-600 hover:text-primary-500 text-sm font-bold lg:text-xs xl:text-sm;
