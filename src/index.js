@@ -44,6 +44,8 @@ module.exports = require("tailwindcss/plugin")(mainFunction, {
 	safelist: [
 		'aegov-drawer-backdrop',
 		'aegov-modal-backdrop',
+		'opacity-100',
+		'opacity-0',
 		{
 			pattern: /(?:^|\s)(justify|items)-(start|center|end)(?:\s|$)/,
 		},

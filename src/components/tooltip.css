@@ -1,5 +1,7 @@
 /* tooltip */
-
+.tooltip{
+  @apply absolute invisible inline-block px-6 py-2.5 text-xs font-normal text-whitely-50 transition-all bg-aeblack-900 rounded shadow-sm opacity-0;
+}
 .tooltip-arrow,
 .tooltip-arrow:before {
   @apply absolute h-4 w-4 rounded bg-inherit;
