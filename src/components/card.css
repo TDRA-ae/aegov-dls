@@ -20,8 +20,16 @@
 
 .aegov-card {
   @apply rounded-lg md:rounded-xl xl:rounded-2xl;
+  & .card-image {
+    @apply aspect-[16/9] object-cover w-full;
+  }
+  &:not(.card-bordered) {
+    & .card-image {
+      @apply rounded-lg md:rounded-xl xl:rounded-2xl;
+    }
+  }
   &.card-bordered{
-    @apply border-primary-300 border;
+    @apply border-primary-300 border overflow-hidden;;
     &:not(.card-news) {
       @apply card-element-space;
     }
@@ -33,10 +41,6 @@
     }
   }
   &.card-news {
-    @apply overflow-hidden;
-    & .card-image {
-      @apply aspect-[16/9] object-cover w-full;
-    }
     &:not(.card-bordered) {
       @apply card-element-space;
     }
