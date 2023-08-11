@@ -1,7 +1,7 @@
 .aegov-dropdown {
-  @apply bg-whitely-50 rounded-lg shadow-xl;
+  @apply bg-whitely-50 rounded-lg shadow-xl z-50 hidden;
   & .dropdown-header {
-    @apply text-aeblack-900 border-aeblack-50 border-b px-3 py-2 z-50 hidden;
+    @apply text-aeblack-900 border-aeblack-50 border-b px-3 py-2;
   }
 }
 .dropdown-item {
