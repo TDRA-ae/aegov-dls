@@ -20,7 +20,7 @@
   }
 
   /* Sizing */
-  &.btn-xl {
+  &.btn-lg {
     @apply h-13 gap-3 px-7 text-lg;
     & > svg {
       @apply h-7 w-7;
