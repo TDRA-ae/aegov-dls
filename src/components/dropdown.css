@@ -3,10 +3,17 @@
   & .dropdown-header {
     @apply text-aeblack-900 border-aeblack-50 border-b px-3 py-2;
   }
+  & .dropwdown-body {
+    @apply text-aeblack-700;
+
+    & a {
+      @apply text-inherit active:text-inherit visited:text-inherit hover:text-inherit no-underline;
+    }
+  }
 }
 .dropdown-item {
-  @apply hover:bg-aeblack-50 flex items-center gap-3 rounded-none px-3 py-2 text-inherit no-underline hover:text-inherit;
+  @apply flex items-center gap-3 rounded-none px-3 py-2;
   & svg {
-    @apply h-5 w-5;
+    @apply h-5 w-5 text-current;
   }
 }
