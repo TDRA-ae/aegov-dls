@@ -40,6 +40,17 @@
     &:has(svg + svg) {
       @apply px-5;
     }
+    & > img {
+      @apply h-7 w-7;
+    }
+
+    &:has(img) {
+      @apply px-6;
+    }
+
+    &:has(img + img) {
+      @apply px-5;
+    }
 
     .btn-icon {
       @apply w-13 gap-0 px-0;
@@ -64,6 +75,17 @@
     &:has(svg + svg) {
       @apply px-3;
     }
+    & > img {
+      @apply h-5 w-5;
+    }
+
+    &:has(img) {
+      @apply px-4;
+    }
+
+    &:has(img + img) {
+      @apply px-3;
+    }
 
     &.btn-icon {
       @apply w-10 gap-0 px-0;
@@ -82,6 +104,18 @@
     }
 
     &:has(svg + svg) {
+      @apply px-2;
+    }
+
+    & > img {
+      @apply w-4.5 h-4.5;
+    }
+
+    &:has(img) {
+      @apply px-3;
+    }
+
+    &:has(img + img) {
       @apply px-2;
     }
 
@@ -108,6 +142,18 @@
     @apply px-4;
   }
 
+  & > img {
+    @apply h-6 w-6 fill-current;
+  }
+
+  &:has(img) {
+    @apply px-5;
+  }
+
+  &:has(img + img) {
+    @apply px-4;
+  }
+
   /* Only icon */
   &.btn-icon {
     @apply w-12 gap-0 px-0;
@@ -116,18 +162,24 @@
   /* Secondary */
   &.btn-secondary {
     @apply bg-secondary-800 text-secondary-50 hover:bg-secondary-950 hover:text-secondary-100 hover:shadow-secondary-100 focus-visible:ring-secondary-200;
-  
+    @apply active:text-secondary-100;
+    @apply visited:text-secondary-50;
+
     &.btn-soft {
       @apply bg-secondary-50 hover:bg-secondary-100 text-secondary-800 hover:text-secondary-800 focus-visible:ring-secondary-200 hover:shadow-none focus-visible:ring-offset-0;
       @apply disabled:opacity-50;
+      @apply active:text-secondary-800
+      @apply visited:text-secondary-800;
     }
 
     &.btn-link {
       @apply text-secondary-800 hover:bg-secondary-50 focus-visible:ring-secondary-200 focus-visible:border-secondary-200 bg-transparent hover:shadow-none focus-visible:ring-1 focus-visible:ring-offset-0;
+      @apply visited:text-secondary-800;
     }
 
     &.btn-outline {
       @apply text-secondary-800 hover:bg-secondary-100 border-secondary-800 focus-visible:ring-secondary-200 focus-visible:border-secondary-200 bg-transparent hover:shadow-none focus-visible:ring-1 focus-visible:ring-offset-0;
+      @apply visited:text-secondary-800;
     }
   }
 }
