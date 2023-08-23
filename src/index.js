@@ -46,6 +46,7 @@ module.exports = require("tailwindcss/plugin")(mainFunction, {
 		'aegov-modal-backdrop',
 		'opacity-100',
 		'opacity-0',
+		'aegov-backdrop',
 		{
 			pattern: /(?:^|\s)(justify|items)-(start|center|end)(?:\s|$)/,
 		},
