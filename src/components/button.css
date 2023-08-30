@@ -126,7 +126,7 @@
 
   /* Icons */
   & > svg {
-    @apply h-6 w-6 fill-current;
+    @apply h-6 w-6 fill-current flex-shrink-0;
   }
 
   &:has(svg) {
@@ -138,7 +138,7 @@
   }
 
   & > img {
-    @apply h-6 w-6 fill-current;
+    @apply h-6 w-6 fill-current flex-shrink-0;
   }
 
   &:has(img) {
