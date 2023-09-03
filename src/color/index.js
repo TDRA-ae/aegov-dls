@@ -58,10 +58,10 @@ let colorObj = {
   whitely: {
     50: "#FFFFFF",
     100: "#FCFCFC",
-    200: "#FAFAFA",
-    300: "#F7F7F7",
-    400: "#F5F5F5",
-    500: "#F2F2F2"
+    200: "#F7F7F7",
+    300: "#F2F2F2",
+    400: "#EDEDED",
+    500: "#E8E8E8"
   },
   camel: {
     50: "#FFFBEB",
