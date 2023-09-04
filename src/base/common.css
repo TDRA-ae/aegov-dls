@@ -370,13 +370,13 @@ h3 {
   @apply text-h3 font-extrabold;
 }
 h4 {
-  @apply text-h4 font-bold;
+  @apply text-h4 font-bold leading-tight;
 }
 h5 {
-  @apply text-h5 font-bold;
+  @apply text-h5 font-bold leading-tight;
 }
 h6 {
-  @apply text-base font-semibold;
+  @apply text-base font-semibold leading-snug;
 }
 
 button {
