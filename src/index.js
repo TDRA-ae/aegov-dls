@@ -79,33 +79,47 @@ module.exports = require("tailwindcss/plugin")(mainFunction, {
 		},
 		fontSize: {
 			'xs':['0.75rem',{
-				lineHeight: '1rem'
+				lineHeight: '1'
 			}],
 			'sm':['0.875rem',{
-				lineHeight: '1.25rem'
+				lineHeight: '1.25'
 			}],
 			'base':['1rem', {
-				lineHeight: '1.5rem'
+				lineHeight: '1.5'
 			}],
 			'lg':['1.125rem', {
-				lineHeight: '1.75rem'
+				lineHeight: '1.5'
 			}],
 			'xl':['1.25rem',{
-				lineHeight: '1.75rem'
+				lineHeight: '1.5'
 			}],
 			'2xl':['1.5rem',{
-				lineHeight: '2rem'
+				lineHeight: '1.375'
 			}],
 			'3xl':['1.875rem',{
-				lineHeight: '2.25rem'
+				lineHeight: '1.375'
 			}],
-			'h6':'1.25rem',
-			'h5':'1.625rem',
-			'h4':'2rem',
-			'h3':'2.5rem',
-			'h2':'3rem',
-			'h1':'3.875rem',
-			'display':'4.75rem'
+			'h6':['1.25rem',{
+				lineHeight: '1.5'
+			}],
+			'h5':['1.625rem',{
+				lineHeight: '1.375'
+			}],
+			'h4':['2rem', {
+				lineHeight: '1.25'
+			}],
+			'h3':['2.5rem', {
+				lineHeight: '1'
+			}],
+			'h2':['3rem', {
+				lineHeight: '1'
+			}],
+			'h1':['3.875rem', {
+				lineHeight: '1'
+			}],
+			'display':['4.75rem', {
+				lineHeight: '1'
+			}]
 		},
 		colors: {
 			...aegovColors,
