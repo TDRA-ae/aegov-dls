@@ -433,7 +433,16 @@ body {
 body[dir="rtl"] {
   @apply font-notokufi;
 }
-
+body[dir="rtl"] {
+  & .font-roboto{
+      @apply font-notokufi;
+  }
+}
+body[dir="rtl"] {
+  & .font-inter{
+      @apply font-alexandria;
+  }
+}
 h1,
 h2,
 h3,

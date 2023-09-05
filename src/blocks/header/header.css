@@ -12,6 +12,13 @@
     }
   }
 }
+.custom-divide-sm {
+  & > * {
+    &:not(:last-child) {
+      @apply me-1.5 pe-1.5 before:h-3.5 before:w-px xl:me-2 xl:pe-2;
+    }
+  }
+}
 .logos {
   @apply flex flex-shrink-0 items-center;
   & .logo-item {
