@@ -79,46 +79,46 @@ module.exports = require("tailwindcss/plugin")(mainFunction, {
 		},
 		fontSize: {
 			'xs':['0.75rem',{
-				lineHeight: '1'
+				lineHeight: '1rem'
 			}],
 			'sm':['0.875rem',{
-				lineHeight: '1.25'
+				lineHeight: '1.25rem'
 			}],
 			'base':['1rem', {
-				lineHeight: '1.5'
+				lineHeight: '1.5rem'
 			}],
 			'lg':['1.125rem', {
-				lineHeight: '1.5'
+				lineHeight: '1.5rem'
 			}],
 			'xl':['1.25rem',{
-				lineHeight: '1.5'
+				lineHeight: '1.75rem'
 			}],
 			'2xl':['1.5rem',{
-				lineHeight: '1.375'
+				lineHeight: '2rem'
 			}],
 			'3xl':['1.875rem',{
-				lineHeight: '1.375'
+				lineHeight: '2.25rem'
 			}],
 			'h6':['1.25rem',{
-				lineHeight: '1.5'
+				lineHeight: '1.75rem'
 			}],
 			'h5':['1.625rem',{
-				lineHeight: '1.375'
+				lineHeight: '2.125rem'
 			}],
 			'h4':['2rem', {
-				lineHeight: '1.25'
+				lineHeight: '2.375rem'
 			}],
 			'h3':['2.5rem', {
-				lineHeight: '1'
+				lineHeight: '1.2'
 			}],
 			'h2':['3rem', {
-				lineHeight: '1'
+				lineHeight: '1.2'
 			}],
 			'h1':['3.875rem', {
-				lineHeight: '1'
+				lineHeight: '1.1'
 			}],
 			'display':['4.75rem', {
-				lineHeight: '1'
+				lineHeight: '1.1'
 			}]
 		},
 		colors: {
