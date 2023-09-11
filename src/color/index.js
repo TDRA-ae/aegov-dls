@@ -89,7 +89,7 @@ let colorObj = {
     900: "#0F172A",
     950: "#020617"
   },
-  fushia: {
+  fuchsia: {
     50: "#FDF4FF",
     100: "#FAE8FF",
     200: "#F5D0FE",
