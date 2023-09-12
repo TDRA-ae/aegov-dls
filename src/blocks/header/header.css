@@ -24,7 +24,7 @@
   & .logo-item {
     @apply relative;
     &:not(:last-child) {
-      @apply custom-divide-common before:bg-primary-100 me-4 pe-4 before:h-6 before:w-0.5 sm:before:h-8 md:me-5 md:pe-5 md:before:h-10 lg:me-2 lg:pe-2 xl:me-10 xl:pe-10;
+      @apply  me-4 md:me-5 lg:me-6 xl:me-10 ;
     }
   }
 }
@@ -33,11 +33,11 @@
     @apply block max-h-12 sm:max-h-14 md:max-h-16 lg:max-h-[4.688rem] xl:max-h-20 2xl:max-h-24 max-w-[8.75rem] sm:max-w-[10.625rem] md:max-w-[11.25rem] lg:max-w-[13rem] xl:max-w-[15rem] 2xl:max-w-[25rem];
   }
 }
-.rating-logo {
+/* .rating-logo {
   @apply inline-block w-8 md:w-10 lg:w-12 xl:w-auto;
-}
+} */
 .secondary-logo {
-  @apply w-10 h-10 md:w-16 md:h-16 lg:w-20 lg:h-20 xl:w-[5.625rem] xl:h-[5.625rem] object-contain;
+  @apply w-10 h-10 md:w-14 md:h-14 lg:w-16 lg:h-16 xl:w-[5rem] xl:h-[5rem];
 }
 /* .header-top {
   @apply py-2.5 lg:py-3;
@@ -128,6 +128,6 @@
   @apply border-aeblack-100 rounded-lg border;
 }
 
-.aegov-backdrop + .aegov-backdrop {
+.aegov-backdrop + .aegov-backdrop, .aegov-modal-backdrop + .aegov-modal-backdrop {
   @apply z-50;
 }
