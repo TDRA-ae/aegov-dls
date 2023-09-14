@@ -39,7 +39,7 @@
     }
   }
   &.card-glow {
-    @apply transition-shadow duration-300 ease-in-out hover:shadow-xl hover:shadow-primary-500/30;
+    @apply transition-all duration-300 ease-in-out hover:shadow-xl hover:shadow-primary-500/30;
   }
   &.card-news {
     &:not(.card-bordered) {
@@ -54,6 +54,15 @@
     &.card-bordered {
       & .card-content {
         @apply p-4 md:p-5 xl:p-6;
+      }
+    }
+  }
+  &.card-service {
+    @apply transition-all hover:bg-primary-50;
+    & .card-service-title {
+      @apply !text-lg lg:!text-xl xl:!text-2xl !leading-normal;
+      & > a {
+        @apply text-aeblack-800 hover:text-primary-800;
       }
     }
   }
