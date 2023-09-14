@@ -16,3 +16,16 @@
        }
     }
 }
+
+/* fix slick slider issue in RTL  */
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+    direction: ltr;
+}
+[dir="rtl"]{
+    .slick-slider {
+        .slick-slide{
+            direction: rtl;
+        }
+    }
+}
