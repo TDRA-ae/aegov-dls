@@ -38,9 +38,15 @@
       }
     }
   }
+  &.card-glow {
+    @apply transition-shadow duration-300 ease-in-out hover:shadow-xl hover:shadow-primary-500/30;
+  }
   &.card-news {
     &:not(.card-bordered) {
       @apply card-element-space;
+      & img {
+        @apply rounded-lg md:rounded-xl xl:rounded-2xl hover:opacity-90;
+      }
     }
     & .card-content {
       @apply card-element-space;
