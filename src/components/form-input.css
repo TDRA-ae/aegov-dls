@@ -161,16 +161,16 @@ input[type="file"] {
     & .form-control-input {
       @apply text-sm;
       & input {
-        @apply py-2 text-sm;
+        @apply py-2.5 text-sm;
       }
       & select {
-        @apply py-2 text-sm;
+        @apply py-2.5 text-sm;
       }
       & textarea {
-        @apply py-2 text-sm;
+        @apply py-2.5 text-sm;
       }
       & input[type="file"]{
-        @apply file:py-2 text-sm h-10;
+        @apply file:py-2.5 text-sm h-10;
       }
       & .control-prefix,
       & .control-suffix {
