@@ -71,6 +71,9 @@ input[type="file"] {
     & .control-prefix {
       @apply ps-4;
     }
+    & .control-prefix select{
+      @apply ps-0;
+    }
     & .control-suffix {
       @apply pe-4;
     }
