@@ -323,3 +323,25 @@ input[type="file"] {
 
   }
 }
+
+.aegov-form-control{
+  &.aegov-file-input-control {
+    .file-input-label {
+        @apply m-0 !text-base !text-whitely-50 !inline-flex flex-shrink-0 cursor-pointer select-none flex-wrap items-center justify-center text-center no-underline;
+
+        &.file-input-disabled {
+          @apply opacity-40;
+        }
+    }
+    input[type="file"] {
+        @apply hidden;
+    }
+    .file-input-summary {
+        @apply space-y-4 mt-4;
+
+        .file-input-summary-item {
+            @apply flex flex-wrap gap-3 items-center justify-start text-center text-aeblack-500 font-medium;
+        }
+    }
+  }
+}
