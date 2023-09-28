@@ -1,5 +1,5 @@
 .aegov-banner {
-  @apply relative px-4 py-3;
+  @apply relative px-4 py-3 bg-camel-50 border-camel-500;
   & .aegov-link {
     @apply m-0 flex-shrink-0 p-0;
   }
@@ -12,4 +12,22 @@
       @apply h-5 w-5;
     }
   }
+}
+
+.banner-top{
+  @apply border-b-2;
+}
+.banner-bottom{
+  @apply border-t-2;
+}
+.banner-content{
+  @apply text-base text-camel-600;
+}
+.banner-link{
+  @apply text-camel-600 hover:text-camel-700 focus-visible:ring-camel-400 focus-visible:ring-offset-camel-50;
+}
+
+/* banner notice */
+.banner-notice{
+  @apply gap-4 flex flex-col justify-between w-full md:flex-row;
 }
