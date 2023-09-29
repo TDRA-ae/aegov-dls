@@ -1,9 +1,9 @@
 input[type="checkbox"],
 input[type="radio"] {
   @apply accent-primary-400 text-primary-400 border-primary-400 relative m-0 h-5 w-5 flex-shrink-0 appearance-none border;
-  @apply before:bg-primary-50 before:absolute before:start-2/4 before:top-2/4 before:-z-10 before:h-12 before:w-12 before:-translate-x-2/4 before:-translate-y-2/4 before:scale-0 before:rounded-full before:transition-all hover:before:scale-100 rtl:before:translate-x-2/4;
+  @apply before:bg-primary-50 before:absolute before:start-2/4 before:top-2/4 before:mix-blend-multiply before:h-12 before:w-12 before:-translate-x-2/4 before:-translate-y-2/4 before:scale-0 before:rounded-full before:transition-all hover:before:scale-100 rtl:before:translate-x-2/4;
   @apply focus:ring-primary-200 focus:outline-none focus:ring-2 focus:ring-offset-2;
-  @apply disabled:border-primary-200 disabled:before:!hidden;
+  @apply disabled:border-primary-200 disabled:before:!hidden disabled:pointer-events-none;
 }
 input[type="checkbox"] {
   @apply rounded;
@@ -49,22 +49,28 @@ input[type="checkbox"] {
 .aegov-check-group {
   &.check-lg {
     @apply text-lg;
-    & input[type="checkbox"],
-    input[type="radio"] {
+    & input[type="checkbox"]{
+      @apply h-6 w-6;
+    }
+    & input[type="radio"]{
       @apply h-6 w-6;
     }
   }
   &.check-base {
     @apply text-base;
-    & input[type="checkbox"],
-    input[type="radio"] {
+    & input[type="checkbox"]{
+      @apply h-5 w-5;
+    }
+    & input[type="radio"]{
       @apply h-5 w-5;
     }
   }
   &.check-sm {
     @apply text-sm;
-    & input[type="checkbox"],
-    input[type="radio"] {
+    & input[type="checkbox"]{
+      @apply h-4 w-4 before:h-10 before:w-10;
+    }
+    & input[type="radio"] {
       @apply h-4 w-4 before:h-10 before:w-10;
     }
   }

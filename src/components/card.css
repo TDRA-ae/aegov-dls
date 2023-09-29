@@ -3,43 +3,66 @@
   &.card-stacked {
     @apply overflow-hidden;
     & > * {
-      @apply card-element-space h-full p-6;
+      @apply card-element-space h-full p-4 md:p-5 xl:p-6;
     }
   }
 }
-.card-element-space {
+.card-element-space:not(.card-lg) {
+    @apply space-y-4 lg:space-y-5 xl:space-y-6;
+}
+.card-lg{
   & > *:not(:last-child) {
-    @apply mb-5 md:mb-6;
+    @apply space-y-5 lg:space-y-6 xl:space-y-8;
   }
 }
+
 .aegov-card {
   @apply rounded-lg md:rounded-xl xl:rounded-2xl;
-  &.card-bordered {
-    @apply border-primary-300 border;
+  & .card-image {
+    @apply aspect-[16/9] object-cover w-full;
+  }
+  &:not(.card-bordered) {
+    & .card-image {
+      @apply rounded-lg md:rounded-xl xl:rounded-2xl;
+    }
+  }
+  &.card-bordered{
+    @apply border-primary-300 border overflow-hidden;;
     &:not(.card-news) {
       @apply card-element-space;
     }
     &:not(.card-news) {
-      @apply p-4;
+      @apply p-4 md:p-5 xl:p-6;
       & .card-image {
         @apply rounded-2xl;
       }
     }
   }
+  &.card-glow {
+    @apply transition-all duration-300 ease-in-out hover:shadow-xl hover:shadow-primary-500/30;
+  }
   &.card-news {
-    @apply overflow-hidden;
-    & .card-image {
-      @apply aspect-[16/9];
-    }
     &:not(.card-bordered) {
       @apply card-element-space;
+      & img {
+        @apply rounded-lg md:rounded-xl xl:rounded-2xl hover:opacity-90;
+      }
     }
     & .card-content {
       @apply card-element-space;
     }
     &.card-bordered {
       & .card-content {
-        @apply p-5 md:p-6;
+        @apply p-4 md:p-5 xl:p-6;
+      }
+    }
+  }
+  &.card-service {
+    @apply transition-all hover:bg-primary-50;
+    & .card-service-title {
+      @apply !text-lg lg:!text-xl xl:!text-2xl !leading-normal;
+      & > a {
+        @apply text-aeblack-800 hover:text-primary-800;
       }
     }
   }

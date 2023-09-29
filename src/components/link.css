@@ -1,5 +1,5 @@
 .aegov-link {
-  @apply -ml-2 inline-flex items-center gap-2 bg-transparent px-2 py-2 align-middle font-semibold no-underline hover:underline rtl:-mr-2 rtl:ml-0;
+  @apply -ml-2.5 inline-flex items-center gap-2 bg-transparent px-2.5 py-2 align-middle font-semibold no-underline hover:underline rtl:-mr-2.5 rtl:ml-0;
   @apply focus-visible:ring-primary-300 focus-visible:ring-offset-4;
   & > svg.link-icon {
     @apply h-5 w-5;

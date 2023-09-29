@@ -1,24 +1,24 @@
 .aegov-pagination {
-  @apply inline-flex items-center space-x-2;
+  @apply inline-flex items-center space-x-1;
   & a {
-    @apply text-lg  no-underline lg:text-2xl;
+    @apply text-base no-underline;
   }
   .pages {
-    @apply text-lg;
+    @apply text-base;
   }
 }
 .aegov-pagination-first,
 .aegov-pagination-last,
 .aegov-pagination-previous,
 .aegov-pagination-next {
-  @apply text-aeblack-800 hover:text-primary-500 inline-flex items-center gap-2 py-1 text-lg no-underline lg:px-2 lg:text-2xl;
+  @apply text-aeblack-800 hover:text-primary-500 inline-flex items-center gap-2 py-1 no-underline lg:px-1 text-base;
   & svg {
-    @apply h-5 w-5 lg:h-6 lg:w-6;
+    @apply h-5 w-5;
   }
 }
 .aegov-pagination-page,
 .aegov-pagination-current {
-  @apply inline-flex h-10 w-10 items-center justify-center rounded-full text-lg lg:h-11 lg:w-11 lg:text-2xl;
+  @apply inline-flex h-8 w-8 items-center justify-center rounded-full text-base;
 }
 .aegov-pagination-page {
   @apply text-aeblack-800 hover:bg-primary-50 hover:text-primary-800;

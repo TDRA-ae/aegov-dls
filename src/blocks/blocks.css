@@ -1,2 +1,31 @@
 @import "./header/header.css";
 @import "./footer/footer.css";
+
+/* slick dots style */
+
+.aegovs-slider-style {
+    & .slick-dots {
+        @apply flex items-center justify-center gap-3 mt-4 lg:mt-6 xl:mt-8 2xl:mt-10;
+        & button{
+            @apply h-3 w-3 rounded-full bg-aeblack-400 text-[0px] focus:outline-none focus-visible:ring focus-visible:ring-primary-400 ; 
+        }
+       & .slick-active {
+        & button{
+            @apply bg-primary-600 ring-4 ring-primary-400/30;
+        }
+       }
+    }
+}
+
+/* fix slick slider issue in RTL  */
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+    direction: ltr;
+}
+[dir="rtl"]{
+    .slick-slider {
+        .slick-slide{
+            direction: rtl;
+        }
+    }
+}

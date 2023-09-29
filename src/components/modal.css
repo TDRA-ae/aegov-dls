@@ -4,7 +4,7 @@
 .aegov-modal-wrapper {
   @apply bg-whitely-50 shadow-aeblack-900/10 relative max-h-full rounded-lg shadow-xl;
 }
-.aegov-backdrop {
+.aegov-modal-backdrop, .aegov-backdrop {
   @apply bg-aeblack-900 fixed inset-0 z-40 bg-opacity-50 dark:bg-opacity-80;
 }
 .aegov-modal-close {

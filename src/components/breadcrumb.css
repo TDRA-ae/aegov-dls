@@ -10,9 +10,9 @@ nav.aegov-breadcrumb {
       @apply text-aeblack-800 relative relative inline-block max-w-[160px] truncate px-0.5 font-semibold no-underline;
     }
     & a {
-      @apply text-aeblack-300 hover:text-primary-600 relative flex max-w-[140px] truncate px-1 py-2 align-middle font-medium no-underline decoration-2 underline-offset-2 hover:underline;
+      @apply text-aeblack-300 hover:text-primary-600 relative inline-block max-w-[140px] truncate px-1 py-2 align-middle font-medium no-underline decoration-2 underline-offset-2 hover:underline;
       & svg {
-        @apply me-2 inline-block h-5 w-5;
+        @apply me-2 inline-block h-5 w-5 -mt-0.5;
       }
       & span {
         @apply font-medium;

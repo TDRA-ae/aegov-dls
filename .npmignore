@@ -1,4 +1,7 @@
 node_modules
+/js
+/src/*
+!/src/color/index.js
 yarn.lock
 /package-lock.json
 .next
@@ -6,3 +9,5 @@ yarn.lock
 /static
 .idea
 .DS_Store
+webpack.config.js
+tsconfig.json

@@ -393,9 +393,13 @@ p {
     @apply mb-6;
   }
 }
+body[dir="rtl"] p {
+  @apply leading-relaxed;
+}
 
 a {
-  @apply text-primary-600 hover:text-primary-500 relative inline-block rounded underline underline-offset-1 transition-all duration-200 ease-in-out hover:decoration-2;
+  @apply text-primary-600 relative inline-block rounded underline underline-offset-1 transition-all duration-200 ease-in-out;
+  @apply hover:text-primary-500 hover:decoration-2;
   @apply focus-visible:ring-primary-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
 }
 
@@ -416,96 +420,4 @@ select,
 textarea {
   @apply bg-whitely-50 appearance-none;
 }
-html {
-  -webkit-tap-highlight-color: transparent;
-  @apply scroll-smooth md:scroll-auto;
-}
 
-body {
-  @apply text-aeblack-800 m-0 p-0 text-base antialiased;
-  -webkit-print-color-adjust: exact !important;
-  print-color-adjust: exact !important;
-}
-body {
-  @apply font-roboto;
-}
-body[dir="rtl"] {
-  @apply font-notokufi;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  @apply font-inter;
-}
-[dir="rtl"] h1,
-[dir="rtl"] h2,
-[dir="rtl"] h3,
-[dir="rtl"] h4,
-[dir="rtl"] h5,
-[dir="rtl"] h6 {
-  @apply font-alexandria;
-}
-
-h1 {
-  @apply text-h1 font-extrabold;
-}
-h2 {
-  @apply text-h2 font-extrabold;
-}
-h3 {
-  @apply text-h3 font-extrabold;
-}
-h4 {
-  @apply text-h4 font-bold;
-}
-h5 {
-  @apply text-h5 font-bold;
-}
-h6 {
-  @apply text-base font-semibold;
-}
-
-button {
-  @apply inline-flex flex-shrink-0 cursor-pointer select-none flex-wrap items-center justify-center text-center no-underline;
-}
-
-/* typography */
-p {
-  @apply mb-8 text-base;
-  &.text-sm {
-    @apply mb-7;
-  }
-  &.text-xs {
-    @apply mb-6;
-  }
-  &:last-child{
-    @apply mb-0;
-  }
-}
-
-a {
-  @apply text-primary-600 hover:text-primary-500 relative inline-block rounded underline underline-offset-1 transition-all duration-200 ease-in-out hover:decoration-2;
-  @apply focus-visible:ring-primary-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
-}
-
-[type="text"],
-[type="email"],
-[type="url"],
-[type="password"],
-[type="number"],
-[type="date"],
-[type="datetime-local"],
-[type="month"],
-[type="search"],
-[type="tel"],
-[type="time"],
-[type="week"],
-[multiple],
-select,
-textarea {
-  @apply bg-whitely-50 appearance-none;
-}

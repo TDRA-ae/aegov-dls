@@ -42,13 +42,18 @@ const mainFunction = ({ addBase, addComponents, addUtilities, config, postcss })
 
 module.exports = require("tailwindcss/plugin")(mainFunction, {
 	safelist: [
+		'aegov-drawer-backdrop',
+		'aegov-modal-backdrop',
+		'opacity-100',
+		'opacity-0',
 		'aegov-backdrop',
+		'visible',
 		{
 			pattern: /(?:^|\s)(justify|items)-(start|center|end)(?:\s|$)/,
 		},
 	  ],
 	future: {
-	hoverOnlyWhenSupported: true,
+		hoverOnlyWhenSupported: true,
 	},
 	theme: { 
 		screens:{
@@ -74,19 +79,48 @@ module.exports = require("tailwindcss/plugin")(mainFunction, {
 			'alexandria': ['\'Alexandria\'','\'Helvetica Neue\'','ui-sans-serif','system-ui','sans-serif']
 		},
 		fontSize: {
-			'xs':'0.75rem',
-			'sm':'0.875rem',
-			'base':'1rem',
-			'lg':'1.125rem',
-			'xl':'1.25rem',
-			'2xl':'1.5rem',
-			'3xl':'1.875rem',
-			'h5':'1.375rem',
-			'h4':'1.75rem',
-			'h3':'2.375rem',
-			'h2':'3.125rem',
-			'h1':'4.25rem',
-			'display':'5.625rem'
+			'xs':['0.75rem',{
+				lineHeight: '1rem'
+			}],
+			'sm':['0.875rem',{
+				lineHeight: '1.25rem'
+			}],
+			'base':['1rem', {
+				lineHeight: '1.5rem'
+			}],
+			'lg':['1.125rem', {
+				lineHeight: '1.5rem'
+			}],
+			'xl':['1.25rem',{
+				lineHeight: '1.75rem'
+			}],
+			'2xl':['1.5rem',{
+				lineHeight: '2rem'
+			}],
+			'3xl':['1.875rem',{
+				lineHeight: '2.25rem'
+			}],
+			'h6':['1.25rem',{
+				lineHeight: '1.75rem'
+			}],
+			'h5':['1.625rem',{
+				lineHeight: '2.125rem'
+			}],
+			'h4':['2rem', {
+				lineHeight: '2.375rem'
+			}],
+			'h3':['2.5rem', {
+				lineHeight: '1.2'
+			}],
+			'h2':['3rem', {
+				lineHeight: '1.2'
+			}],
+			'h1':['3.875rem', {
+				lineHeight: '1.1'
+			}],
+			'display':['4.75rem', {
+				lineHeight: '1.1'
+			}]
 		},
 		colors: {
 			...aegovColors,
