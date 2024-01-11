@@ -113,7 +113,7 @@
   }
   & li {
     & a {
-      @apply text-aeblack-900 hover:text-primary-900 hover:bg-primary-100 inline-block px-3 py-2 text-sm transition-colors xl:text-base;
+      @apply text-aeblack-900 hover:text-primary-700 hover:underline inline-block px-3 py-2 text-sm transition-colors xl:text-base;
     }
   }
 }
