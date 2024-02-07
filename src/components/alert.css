@@ -58,13 +58,13 @@
 
   /* Define Error */
   &.alert-error {
-    @apply bg-aered-50 text-aered-600;
+    @apply bg-aered-50 text-aered-700;
     & .alert-icon {
-      @apply text-aered-500;
+      @apply text-aered-700;
     }
     & > .alert-content {
       & .alert-title {
-        @apply text-aered-900;
+        @apply text-aered-700;
       }
       & .alert-footer {
         & a {
@@ -83,13 +83,13 @@
   }
   /* Define Success */
   &.alert-success {
-    @apply bg-aegreen-50 text-aegreen-600;
+    @apply bg-aegreen-50 text-aegreen-700;
     & .alert-icon {
-      @apply text-aegreen-500;
+      @apply text-aegreen-700;
     }
     & > .alert-content {
       & .alert-title {
-        @apply text-aegreen-900;
+        @apply text-aegreen-700;
       }
       & .alert-footer {
         & a {
@@ -108,13 +108,13 @@
   }
   /* Define Info */
   &.alert-info {
-    @apply bg-techblue-50 text-techblue-600;
+    @apply bg-techblue-50 text-techblue-700;
     & .alert-icon {
-      @apply text-techblue-500;
+      @apply text-techblue-700;
     }
     & > .alert-content {
       & .alert-title {
-        @apply text-techblue-900;
+        @apply text-techblue-700;
       }
       & .alert-footer {
         & a {
@@ -133,13 +133,13 @@
   }
   /* Define Warning */
   &.alert-warning {
-    @apply bg-camel-50 text-camel-600;
+    @apply bg-camel-50 text-camel-700;
     & .alert-icon {
-      @apply text-camel-500;
+      @apply text-camel-700;
     }
     & > .alert-content {
       & .alert-title {
-        @apply text-camel-900;
+        @apply text-camel-700;
       }
       & .alert-footer {
         & a {
