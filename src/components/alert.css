@@ -3,15 +3,15 @@
 
   & > .alert-icon {
     & > svg {
-      @apply h-6 w-6 flex-shrink-0 fill-current;
+      @apply h-7 w-7 flex-shrink-0 fill-current;
     }
     & > img {
-      @apply h-6 w-6 flex-shrink-0;
+      @apply h-7 w-7 flex-shrink-0;
     }
   }
 
   & > .alert-content {
-    @apply text-base;
+    @apply text-base self-center;
     & p {
       @apply last:mb-0;
     }
@@ -197,7 +197,7 @@
     & > .alert-icon {
       & > svg,
       & > img {
-        @apply h-6 w-6;
+        @apply h-7 w-7;
       }
     }
     & .alert-link {
