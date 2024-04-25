@@ -39,8 +39,14 @@
 .secondary-logo {
   @apply w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-[4.5rem] xl:h-[4.5rem] object-contain;
 }
-.emblem-logo {
-  @apply w-10 h-10 md:w-12 md:h-12 lg:w-16 lg:h-16 xl:w-[5rem] xl:h-[5rem] object-contain;
+.header-top-right {
+  @apply relative min-w-10 md:min-w-12 lg:min-w-16 xl:min-w-20 min-h-10 md:min-h-12 xl:min-h-20; 
+  > a {
+    @apply absolute -top-2 right-0 min-w-max min-h-max;
+  }
+  .emblem-logo {
+    @apply w-12 h-12 md:w-14 md:h-14 lg:w-[4.5rem] lg:h-[4.5rem] xl:w-24 xl:h-24 max-w-max;
+  }
 }
 /* .header-top {
   @apply py-2.5 lg:py-3;
@@ -85,6 +91,32 @@
       }
       & .submenu-btn {
         @apply focus:ring-primary-400 relative inline-flex items-center justify-center focus:outline-none focus:ring-2  focus:ring-offset-2 lg:-ms-3 lg:h-3 lg:w-3 lg:-translate-x-2 lg:rtl:translate-x-2 xl:-translate-x-3 xl:rtl:translate-x-3 2xl:-ms-4 2xl:h-4 2xl:w-4;
+      }
+    }
+  }
+}
+
+[dir="rtl"] {
+  .aegov-header {
+    .main-navigation {
+      & .nav-menu {
+        & > .menu-item {
+          & > a {
+           @apply font-medium lg:font-bold lg:text-xs xl:text-sm 2xl:text-base;
+          }
+          &.menu-item-has-children {
+            & > a {
+              @apply gap-1 lg:gap-2;
+            }
+          }
+          &:first-child {
+            & > a {
+              & > span {
+                display:none;
+              }
+            }
+          }
+        }
       }
     }
   }
