@@ -84,7 +84,7 @@
         @apply inline-flex items-center gap-2 transition-colors lg:pe-6 xl:pe-8 2xl:pe-9;
       }
       & .submenu-btn {
-        @apply focus:ring-primary-400 relative inline-flex items-center justify-center focus:outline-none focus:ring-2  focus:ring-offset-2 lg:-ms-3 lg:h-3 lg:w-3 lg:-translate-x-2 lg:rtl:translate-x-2 xl:-translate-x-3 xl:rtl:translate-x-3 2xl:-ms-4 2xl:h-4 2xl:w-4;
+        @apply focus:ring-primary-400 relative inline-block focus:outline-none focus:ring-2  focus:ring-offset-2 lg:-ms-3 lg:h-3 lg:w-3 lg:-translate-x-2 lg:rtl:translate-x-2 xl:-translate-x-3 xl:rtl:translate-x-3 2xl:-ms-4 2xl:h-4 2xl:w-4;
       }
     }
   }
