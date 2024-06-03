@@ -1,6 +1,6 @@
 {
   "name": "@aegov/design-system",
-  "version": "2.1.3",
+  "version": "2.1.4",
   "description": "A design system for the Government of the United Arab Emirates. The design system has been created based on research and information collected from in-depth studies conducted on user behaviour and benchmarking best practices. The primary use of this design system is to allow ministries of the United Arab Emirates to create consistent websites with components that are common and acceissible.",
   "keywords": [
     "design-system",
@@ -61,7 +61,7 @@
     "copy:js:dist": "copyfiles --flat static/*.js dist && copyfiles --flat static/*.js.map dist",
     "build:dist": "run-s build:js copy:js:dist",
     "clean:dist": "shx rm -rf dist",
-    "build:npm": "run-s clean:lib build:lib clean:dist build:dist",
+    "build:npm": "run-s clean:dist build:dist",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx --ignore-path .gitignore",
     "build": "shx rm -rf dist && mkdir dist && run-s base components blocks utilities build:webpack copy:js:dist"
   },
