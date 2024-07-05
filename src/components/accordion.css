@@ -4,9 +4,9 @@
   }
   & .accordion-title {
     & button {
-      @apply text-aeblack-900 hover:text-primary-700 flex items-start justify-between text-base font-semibold;
+      @apply text-aeblack-800 hover:text-primary-600 flex items-start justify-between text-base font-semibold;
       &.accordion-active {
-        @apply text-primary-700;
+        @apply text-primary-600;
       }
       & svg {
         @apply text-inherit;

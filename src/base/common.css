@@ -400,7 +400,7 @@ body[dir="rtl"] p {
 a {
   @apply text-primary-600 relative inline-block rounded underline underline-offset-1 transition-all duration-200 ease-in-out;
   @apply hover:text-primary-500 hover:decoration-2;
-  @apply focus-visible:ring-primary-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
+  @apply focus-visible:ring-primary-support-400 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
 }
 
 [type="text"],
