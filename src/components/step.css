@@ -9,7 +9,7 @@
 }
 .step-current {
   & .step-badge {
-    @apply ring-primary-100 focus-visible:ring-primary-300 pointer-events-none ring-4 focus-visible:ring-2;
+    @apply ring-primary-100 focus-visible:ring-primary-support-400 pointer-events-none ring-4 focus-visible:ring-2;
   }
 }
 .step-current,
