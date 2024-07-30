@@ -1,5 +1,22 @@
 .aegov-modal {
   @apply fixed left-0 right-0 top-0 h-[calc(100%-1rem)] max-h-full w-full overflow-y-auto overflow-x-hidden p-4 md:inset-0;
+  &.modal-serious{
+    & .aegov-btn{
+      @apply bg-aered-600 text-aered-50 hover:bg-aered-500 hover:text-aered-50 hover:shadow-aered-50 focus-visible:ring-aered-support-300;
+
+    &.btn-soft {
+      @apply bg-aered-50 hover:bg-aered-100 text-aered-600 hover:text-aered-600;
+    }
+
+    &.btn-link {
+      @apply text-aered-600 hover:bg-aered-50 focus-visible:ring-aered-support-400 focus-visible:border-aered-support-400 bg-transparent hover:shadow-none focus-visible:ring-1 focus-visible:ring-offset-0;
+    }
+
+    &.btn-outline {
+      @apply text-aered-600 hover:bg-aered-100 border-aered-600 focus-visible:border-aered-support-300;
+    }
+    }
+  }
 }
 .aegov-modal-wrapper {
   @apply bg-whitely-50 shadow-aeblack-900/10 relative max-h-full rounded-lg shadow-xl;
