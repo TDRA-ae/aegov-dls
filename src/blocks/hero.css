@@ -1,0 +1,137 @@
+/* Aegov Hero */
+
+.aegov-hero {
+  @apply w-full m-auto;
+
+  & picture {
+    & img {
+      @apply w-full;
+    }
+  }
+  & .hero-viewport {
+    @apply overflow-hidden;
+  }
+
+  & .hero-container {
+    backface-visibility: hidden;
+    touch-action: pan-y pinch-zoom;
+    /* margin-left: calc(1rem * -1); */
+    @apply flex rtl:flex-row-reverse;
+  }
+
+  & .hero-slide {
+    @apply min-w-0 flex-[0_0_100%];
+  }
+
+  & .hero-controls {
+    @apply flex items-center justify-between gap-3 lg:absolute lg:bottom-5 xl:bottom-7 mt-2 md:mt-4 lg:mt-0 px-4 md:px-8 lg:px-0 lg:start-12 xl:start-[4.25rem];
+  }
+
+  & .hero-buttons {
+    @apply flex gap-3 items-center;
+  }
+
+  & .hero-button {
+    @apply appearance-none bg-transparent touch-manipulation inline-flex no-underline cursor-pointer border-0 p-0 m-0 shadow-none w-7 h-7 z-[1] items-center justify-center rounded-full;
+    &:disabled {
+      @apply opacity-40;
+    }
+  }
+
+  & .hero-dots {
+    @apply flex flex-wrap justify-end items-center;
+    & button {
+      @apply appearance-none bg-transparent touch-manipulation inline-flex no-underline cursor-pointer border-0 p-0 m-0 shadow-none w-6 h-6 items-center justify-center rounded-3xl text-[0px] after:bg-aeblack-800/30 after:w-3 after:h-3 after:rounded-full after:flex after:items-center;
+    }
+    & button.hero-dot-selected {
+      &:after {
+        @apply bg-aeblack-800;
+      }
+    }
+  }
+
+  & .hero-row {
+    @apply flex md:flex-row flex-col-reverse bg-primary-100 rtl:[direction:rtl];
+  }
+
+  & .hero-col-left {
+    @apply relative sm:basis-2/4 md:basis-8/12 lg:basis-2/4 pt-5 xl:pt-12 px-8 xl:px-12 pb-10 lg:pb-24 xl:pb-32 flex items-center md:before:absolute md:before:inset-0 md:before:z-10 md:before:w-[130%] md:before:h-full md:before:bg-gradient-to-r rtl:md:before:bg-gradient-to-l md:before:from-primary-100 md:before:from-80%;
+  }
+
+  & .hero-col-right {
+    @apply sm:basis-2/4 md:basis-4/12 lg:basis-2/4 relative;
+    & img{
+      @apply md:absolute md:inset-0 w-full md:h-full object-cover 2xl:aspect-[4/2.8] 2xl:static;
+    }
+  }
+
+  & .hero-col-content {
+    @apply space-y-4 xl:space-y-5 text-center md:text-left rtl:md:text-right relative z-20;
+  }
+
+  & .hero-hero-title-wrap {
+    @apply absolute top-6 md:top-2/4 md:-translate-y-2/4 text-center px-4 sm:px-0 left-0 right-0 sm:right-auto sm:text-left rtl:sm:text-right sm:start-6 md:start-8 lg:start-12 xl:start-[4.25rem] space-y-4 md:space-y-5 xl:space-y-10 rtl:[direction:rtl];
+  }
+
+  & .hero-title {
+    @apply text-h4 md:text-h3 xl:text-h2 text-aegold-700 font-inter font-semibold line-clamp-2;
+  }
+
+  & .hero-hero-title {
+    @apply text-h4 md:text-h3 lg:text-h1 xl:text-display font-light text-whitely-50 sm:w-7/12 lg:w-[54%] xl:w-7/12 font-inter line-clamp-2;
+  }
+
+  & .hero-description {
+    @apply text-h6 md:text-h5 xl:text-h4 text-aegold-700 font-inter font-extralight line-clamp-3;
+  }
+}
+/* .has-ratio-image {
+  @apply max-sm:[&_picture_img]:aspect-[4/3] sm:[&_picture_img]:aspect-[4/2.7] md:[&_picture_img]:aspect-[4/6.1] lg:[&_picture_img]:aspect-[4/3.5] xl:[&_picture_img]:aspect-[4/2.8] [&_picture_img]:object-cover [&_picture_img]:!w-full;
+} */
+ .has-ratio-image {
+  @apply 2xl:[&_picture_img]:aspect-[4/2.8] [&_picture_img]:object-cover [&_picture_img]:!w-full;
+}
+/* Hero slick  */
+
+.hero-dots {
+  & ul {
+    @apply flex items-center mt-0 space-x-0;
+    & li {
+      @apply flex;
+      &.slick-active {
+        & button{
+          &::after {
+            @apply bg-aeblack-800;
+          }
+        }
+      }
+    }
+    
+  }
+}
+
+.aegov-hero {
+  & .slick-slide {
+    @apply rtl:float-left;
+    & .slick-track, .slick-list{
+      direction: ltr;
+    }
+  }
+}
+
+/* Hero static */
+
+.aegov-hero-static {
+  @apply py-8 md:py-12 xl:py-16 bg-no-repeat bg-cover;
+  & .hero-static-header {
+    @apply text-center max-w-4xl mx-auto mb-8 md:mb-10 lg:mb-12 xl:mb-14;
+  }
+  
+  & .hero-static-title-sm {
+    @apply uppercase text-primary-700 font-inter text-base md:text-lg xl:text-xl font-extralight mb-4;
+  }
+  
+  & .hero-static-title {
+    @apply text-primary-500 font-inter text-h4 md:text-h3 lg:text-h2 xl:text-h1 font-extrabold mb-10 md:mb-12 xl:mb-14;
+  }
+}

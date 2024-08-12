@@ -127,7 +127,9 @@ module.exports = require("tailwindcss/plugin")(mainFunction, {
 			primary:aegovColors.aegold,
 			secondary:aegovColors.aeblack,
 			"primary-support":aegovColors.camel,
-			"secondary-support":aegovColors.seablue
+			"secondary-support":aegovColors.seablue,
+			"aered-support":aegovColors.aered,
+
 		},
 		extend: {
 			boxShadow: {

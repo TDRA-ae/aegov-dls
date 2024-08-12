@@ -76,7 +76,7 @@
       @apply w-full object-cover;
     }
     & .card-content {
-      @apply text-primary-50 absolute inset-x-0 bottom-0 text-whitely-50 z-10 text-[2.5rem] p-7 font-inter font-extrabold;
+      @apply text-primary-50 absolute inset-x-0 bottom-0 text-whitely-50 z-10 text-[2.5rem] leading-[1.15] p-7 font-inter font-extrabold;
     }
   }
   /* Size variation */
