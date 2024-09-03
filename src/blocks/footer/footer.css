@@ -7,7 +7,7 @@
   }
   .accordion-title {
     & button {
-      @apply !text-primary-700 sm:!text-primary-500 text-base font-bold md:text-lg lg:text-xl;
+      @apply !text-primary-600 text-base font-bold md:text-lg lg:text-xl;
       & svg {
         @apply text-aeblack-600;
       }
