@@ -32,6 +32,9 @@
 }
 .lang-primary {
   @apply text-aeblack-800 text-xl font-bold no-underline md:text-2xl xl:text-3xl;
+  &.active{
+    @apply text-primary-500;
+  }
 }
 .lang-primary-divider {
   @apply bg-aeblack-300 inline-block h-4 w-px xl:h-6;

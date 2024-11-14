@@ -7,7 +7,7 @@ nav.aegov-breadcrumb {
       @apply relative flex items-center align-middle text-sm last:font-semibold;
     }
     & [aria-current="page"] {
-      @apply text-aeblack-800 relative relative inline-block max-w-[160px] truncate px-0.5 font-semibold no-underline;
+      @apply text-aeblack-800 relative inline-block max-w-[160px] truncate px-0.5 font-semibold no-underline;
     }
     & a {
       @apply text-aeblack-500 hover:text-primary-600 relative inline-block max-w-[140px] truncate px-1 py-2 align-middle font-medium no-underline decoration-2 underline-offset-2 hover:underline;

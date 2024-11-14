@@ -83,7 +83,7 @@ input[type="checkbox"] {
   &.check-secondary {
     input[type="checkbox"],
     input[type="radio"] {
-      @apply accent-secondary-800 text-secondary-800 border-secondary-700 before:bg-secondary-50 border;
+      @apply accent-secondary-800 text-secondary-800 border-secondary-700 before:bg-secondary-50 border-2;
       @apply focus:ring-secondary-support-300 disabled:border-secondary-200;
     }
   }

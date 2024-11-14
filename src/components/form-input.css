@@ -39,7 +39,7 @@ input[type="file"] {
   }
   @apply w-full !py-0 overflow-hidden border-0 outline-none motion-reduce:transition-none;
   @apply file:text-primary-700 file:bg-primary-50 file:me-4 file:h-full file:bg-transparent file:px-4;
-  @apply file:focus:shadow-primary-support-400/20 file:ring-primary-300 file:focus-within:ring-primary-support-400 focus:outline-primary-500 file:rounded-s file:border-0 file:py-3 file:ring-1 file:ring-inset file:focus-within:ring-2 file:focus-within:ring-inset file:focus:z-10;
+  @apply file:focus:shadow-primary-support-400/20 file:ring-primary-300 file:focus-within:ring-primary-support-400 focus:outline-primary-500 file:rounded-s file:border-0 file:py-3 file:ring-2 file:ring-inset file:focus-within:ring-2 file:focus-within:ring-inset file:focus:z-10;
   &:hover:not(:disabled):not([readonly])::file-selector-button {
     @apply bg-primary-100;
   }
@@ -49,7 +49,7 @@ input[type="file"] {
     @apply text-aeblack-800 mb-1 block text-sm font-medium leading-6;
   }
   & .form-control-input {
-    @apply bg-whitely-50 ring-primary-400 focus-within:ring-primary-support-400 relative flex rounded-md shadow-sm ring-1 ring-inset focus-within:ring-2 focus-within:ring-inset focus:shadow-md;
+    @apply bg-whitely-50 ring-primary-400 focus-within:ring-primary-support-400 relative flex rounded-lg shadow-sm ring-2 ring-inset focus-within:ring-2 focus-within:ring-inset focus:shadow-md;
     & .control-prefix,
     & .control-suffix {
       @apply text-aeblack-300 flex select-none items-center;
@@ -67,6 +67,14 @@ input[type="file"] {
     }
     &:has([type="range"]) {
       @apply border-0 shadow-none ring-0;
+    }
+    & input[type="search"]  {
+      + .control-suffix {
+        @apply focus-within:outline-none focus-within:!text-primary-support-400;
+      }
+    }
+    & input[type=file] {
+      @apply rounded-lg;
     }
     & .control-prefix {
       @apply ps-4;
@@ -185,12 +193,12 @@ input[type="file"] {
   }
   /* file with drag and drop style */
   & .form-control-dropbox {
-    @apply border-primary-400 bg-whitely-50 relative block rounded-md border border-dashed text-center shadow-sm focus:shadow-md;
+    @apply border-primary-400 bg-whitely-50 relative block rounded-lg border border-dashed text-center shadow-sm focus:shadow-md;
     & svg {
       @apply mx-auto h-10 w-10 text-slate-300 xl:h-12 xl:w-12;
     }
     & label {
-      @apply bg-whitely-50 text-primary-600 focus-within:ring-primary-support-400 hover:text-primary-500 relative inline-block cursor-pointer rounded-md font-semibold focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2;
+      @apply bg-whitely-50 text-primary-600 focus-within:ring-primary-support-400 hover:text-primary-500 relative inline-block cursor-pointer rounded-lg font-semibold focus-within:outline-none focus-within:ring-2 focus-within:ring-offset-2;
     }
   }
 }
@@ -214,6 +222,11 @@ input[type="file"] {
         }
         & .control-suffix {
           @apply text-secondary-900;
+        }
+      }
+      & input[type="search"]  {
+        + .control-suffix {
+          @apply focus-within:outline-none focus-within:!text-secondary-support-400;
         }
       }
     }
@@ -245,7 +258,6 @@ input[type="file"] {
 
     /* input file upload */
     input[type="file"] {
-      
       @apply file:text-secondary-700 file:bg-secondary-50;
       @apply file:focus:shadow-secondary-support-300/20 file:ring-secondary-300 file:focus-within:ring-secondary-support-300 focus:outline-secondary-support-300;
       &:hover:not(:disabled):not([readonly])::file-selector-button {

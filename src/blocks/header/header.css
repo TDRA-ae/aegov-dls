@@ -37,7 +37,7 @@
   @apply inline-block w-8 md:w-10 lg:w-12 xl:w-auto;
 } */
 .secondary-logo {
-  @apply w-8 h-8 md:w-12 md:h-12 lg:w-14 lg:h-14 xl:w-[4.5rem] xl:h-[4.5rem] object-contain;
+  @apply h-8 md:h-12 lg:h-14 xl:h-[4.5rem] object-contain;
 }
 .header-top-right {
   @apply relative min-w-10 md:min-w-12 lg:min-w-16 xl:min-w-20 min-h-10 md:min-h-12 xl:min-h-20; 
@@ -90,7 +90,7 @@
         @apply inline-flex items-center gap-2 transition-colors lg:pe-6 xl:pe-8 2xl:pe-9;
       }
       & .submenu-btn {
-        @apply focus:ring-primary-400 relative inline-block focus:outline-none focus:ring-2 focus:ring-offset-0 lg:-ms-5 xl:-ms-8 lg:h-4 lg:w-4 xl:h-6 xl:w-6;
+        @apply focus:ring-primary-400 relative inline-block focus:outline-none focus:ring-2 focus:ring-offset-0 lg:-ms-5 xl:-ms-8 lg:w-4 xl:w-6 lg:h-14 xl:h-16;
         & svg, & img{
           @apply lg:w-3 lg:h-3 mx-auto;
         }
