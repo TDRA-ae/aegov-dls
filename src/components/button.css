@@ -56,7 +56,7 @@
   }
 
   &.btn-sm {
-    @apply h-10 px-5 text-base;
+    @apply h-10 rounded-md px-5 text-base;
 
     & > svg {
       @apply h-5 w-5;
