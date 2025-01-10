@@ -23,7 +23,7 @@ input[type="range"] {
   @apply bg-aeblack-200/50 from-primary-300 to-primary-500 my-3 inline-block h-2 w-full appearance-none rounded bg-gradient-to-r bg-no-repeat align-middle text-base;
 }
 input[type="range"]::-webkit-slider-thumb {
-  @apply bg-primary-800 h-5 w-5 cursor-[ew-resize] appearance-none rounded-full shadow-sm transition-colors;
+  @apply bg-primary-800 cursor-[ew-resize] appearance-none rounded-full shadow-sm transition-colors;
 }
 input[type="range"]::-webkit-slider-thumb:hover {
   @apply bg-primary-700;

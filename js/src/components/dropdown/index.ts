@@ -324,6 +324,39 @@ subMenuButtonTriggers.forEach((button) => {
 
         toggleButtonState(button, !isVisible);
     });
+    button.addEventListener('hover', () => {
+        const subMenuId = button.getAttribute('data-dropdown-toggle');
+        const isVisible = isSubMenuVisible(subMenuId);
+        const subMenu = document.querySelector(`#${subMenuId}`);
+        if(subMenuId != undefined)
+        {
+            if (!subMenu.matches(':hover')) {
+                toggleButtonState(button, !(isMouseClick && isVisible));
+            }
+        }
+        
+    });
+
+    button.addEventListener('mouseleave', () => {
+        const subMenuId = button.getAttribute('data-dropdown-toggle');
+        const isVisible = isSubMenuVisible(subMenuId);
+        const subMenu = document.querySelector(`#${subMenuId}`);
+        if(subMenu != undefined)
+        {
+            if (!subMenu.matches(':hover')) {
+                // console.log("mouse leave button");
+                toggleButtonState(button, false);
+            }
+            subMenu.addEventListener('mouseleave', () => {
+                if (!button.matches(':hover')) {
+                    // console.log("button mouse leave button");
+                    toggleButtonState(button, false);
+                }
+            });
+        }
+        
+        
+    });
 });
 
 

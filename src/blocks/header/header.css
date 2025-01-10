@@ -72,7 +72,7 @@
   & .nav-menu {
     & > .menu-item {
       & > a {
-        @apply text-aeblack-800 inline-flex items-center rounded-none border-b border-transparent font-bold md:border-b-2 lg:h-14 lg:px-2 lg:text-sm xl:h-16 xl:border-b-[0.188rem] xl:px-3 xl:text-base 2xl:border-b-4 2xl:text-lg;
+        @apply text-aeblack-800 inline-flex items-center rounded-none border-b border-transparent font-bold md:border-b-2 lg:h-14 lg:px-2 lg:text-sm xl:h-16 xl:border-b-[0.188rem] xl:px-3 xl:text-base 2xl:border-b-4 2xl:text-lg delay-200;
       }
     }
   }
