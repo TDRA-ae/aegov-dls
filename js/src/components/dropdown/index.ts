@@ -274,4 +274,91 @@ if (typeof window !== 'undefined') {
     window.initDropdowns = initDropdowns;
 }
 
+
+// Custom Js 
+
+const subMenuButtonTriggers = document.querySelectorAll('.submenu-btn');
+let isMouseClick = false;
+
+subMenuButtonTriggers.forEach((button) => {
+    const toggleButtonState = (button: Element, isActive: boolean) => {
+        if (isActive) {
+            button.classList.add('active-ic-btn');
+            button.classList.remove('inactive-ic-btn');
+        } else {
+            button.classList.add('inactive-ic-btn');
+            button.classList.remove('active-ic-btn');
+        }
+    };
+
+    const isSubMenuVisible = (menuId: string) => {
+        if (!menuId) return false;
+        const subMenu = document.querySelector(`#${menuId}`);
+        return subMenu?.classList.contains('block') || false;
+    };
+
+    button.addEventListener('mousedown', () => {
+        isMouseClick = true;
+    });
+
+    button.addEventListener('keydown', (event) => {
+        if (event.key === 'Tab') {
+            isMouseClick = false; // Reset flag for keyboard navigation
+        }
+    });
+
+    button.addEventListener('focus', () => {
+        const subMenuId = button.getAttribute('data-dropdown-toggle');
+        const isVisible = isSubMenuVisible(subMenuId);
+
+        toggleButtonState(button, !(isMouseClick && isVisible));
+    });
+
+    button.addEventListener('blur', () => {
+        toggleButtonState(button, false);
+    });
+
+    button.addEventListener('click', () => {
+        const subMenuId = button.getAttribute('data-dropdown-toggle');
+        const isVisible = isSubMenuVisible(subMenuId);
+
+        toggleButtonState(button, !isVisible);
+    });
+    button.addEventListener('hover', () => {
+        const subMenuId = button.getAttribute('data-dropdown-toggle');
+        const isVisible = isSubMenuVisible(subMenuId);
+        const subMenu = document.querySelector(`#${subMenuId}`);
+        if(subMenuId != undefined)
+        {
+            if (!subMenu.matches(':hover')) {
+                toggleButtonState(button, !(isMouseClick && isVisible));
+            }
+        }
+        
+    });
+
+    button.addEventListener('mouseleave', () => {
+        const subMenuId = button.getAttribute('data-dropdown-toggle');
+        const isVisible = isSubMenuVisible(subMenuId);
+        const subMenu = document.querySelector(`#${subMenuId}`);
+        if(subMenu != undefined)
+        {
+            if (!subMenu.matches(':hover')) {
+                // console.log("mouse leave button");
+                toggleButtonState(button, false);
+            }
+            subMenu.addEventListener('mouseleave', () => {
+                if (!button.matches(':hover')) {
+                    // console.log("button mouse leave button");
+                    toggleButtonState(button, false);
+                }
+            });
+        }
+        
+        
+    });
+});
+
+
+
 export default Dropdown;

@@ -72,7 +72,7 @@
   & .nav-menu {
     & > .menu-item {
       & > a {
-        @apply text-aeblack-800 inline-flex items-center rounded-none border-b border-transparent font-bold md:border-b-2 lg:h-14 lg:px-2 lg:text-sm xl:h-16 xl:border-b-[0.188rem] xl:px-3 xl:text-base 2xl:border-b-4 2xl:text-lg;
+        @apply text-aeblack-800 inline-flex items-center rounded-none border-b border-transparent font-bold md:border-b-2 lg:h-14 lg:px-2 lg:text-sm xl:h-16 xl:border-b-[0.188rem] xl:px-3 xl:text-base 2xl:border-b-4 2xl:text-lg delay-200;
       }
     }
   }
@@ -90,7 +90,7 @@
         @apply inline-flex items-center gap-2 transition-colors lg:pe-6 xl:pe-8 2xl:pe-9;
       }
       & .submenu-btn {
-        @apply focus:ring-primary-400 relative inline-block focus:outline-none focus:ring-2 focus:ring-offset-0 lg:-ms-5 xl:-ms-8 lg:w-4 xl:w-6 lg:h-14 xl:h-16;
+        @apply focus:ring-primary-support-400 relative inline-block focus:outline-none focus:ring-2 focus:ring-offset-0 lg:-ms-5 xl:-ms-8 lg:w-4 xl:w-6 lg:h-14 xl:h-16 [&.active-ic-btn]:ring-2 [&.active-ic-btn]:ring-primary-support-400 [&.inactive-ic-btn]:!ring-0;
         & svg, & img{
           @apply lg:w-3 lg:h-3 mx-auto;
         }

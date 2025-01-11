@@ -9,6 +9,7 @@ import Tabs, { initTabs } from './components/tabs';
 import Tooltip, { initTooltips } from './components/tooltip';
 import './components/index';
 import Events from './dom/events';
+import { initCustom } from './components/custom';
 
 const events = new Events("load", [
   initAccordions,
@@ -18,7 +19,8 @@ const events = new Events("load", [
   initModals,
   initDrawers,
   initTabs,
-  initTooltips
+  initTooltips,
+  initCustom
 ]);
 events.init();
 

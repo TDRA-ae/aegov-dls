@@ -23,5 +23,6 @@ declare global {
         initTabs: () => void;
         initTooltips: () => void;
         initAEGov: () => void;
+        initCustom:() => void;
     }
 }
