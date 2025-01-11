@@ -15,7 +15,7 @@ textarea,
 select {
   @apply text-primary-900 placeholder:text-aeblack-300 block w-full flex-1 border-0 bg-transparent py-3 px-4 text-base leading-6 focus:ring-0;
   @apply motion-reduce:transition-none;
-  @apply disabled:pointer-events-none disabled:cursor-not-allowed;
+  @apply disabled:pointer-events-none disabled:cursor-not-allowed disabled:select-none;
 }
 
 /* range slider */
