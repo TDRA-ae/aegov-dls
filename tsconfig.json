@@ -1,9 +1,11 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
     "lib": ["dom", "es2015"],
     "outDir": "./lib/cjs/",
     "rootDir": "./js/src/",
     "sourceMap": true,
+    "composite": false,
     "declaration": true,
     "declarationMap": true,
     "noImplicitAny": true,
@@ -14,5 +16,5 @@
     "moduleResolution": "node"
   },
   "include": ["js/src/**/*.ts"],
-  "exclude": ["node_modules", "dist", "lib"]
+  "exclude": ["node_modules", "node", "dist", "lib"]
 }
