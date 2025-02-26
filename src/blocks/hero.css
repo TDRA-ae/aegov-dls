@@ -74,15 +74,15 @@
   }
 
   & .hero-title {
-    @apply text-h4 md:text-h3 xl:text-h2 text-aegold-700 font-inter font-semibold line-clamp-2;
+    @apply text-h4 md:text-h3 xl:text-h2 text-aegold-700 font-inter rtl:font-alexandria font-semibold line-clamp-2;
   }
 
   & .hero-hero-title {
-    @apply text-h4 md:text-h3 lg:text-h1 xl:text-display font-light text-whitely-50 sm:w-7/12 lg:w-[54%] xl:w-7/12 font-inter line-clamp-2;
+    @apply text-h4 md:text-h3 lg:text-h1 xl:text-display font-light text-whitely-50 sm:w-7/12 lg:w-[54%] xl:w-7/12 font-inter rtl:font-alexandria line-clamp-2;
   }
 
   & .hero-description {
-    @apply text-h6 md:text-h5 xl:text-h4 text-aegold-700 font-inter font-extralight line-clamp-3;
+    @apply text-h6 md:text-h5 xl:text-h4 text-aegold-700 font-inter rtl:font-notokufi font-extralight line-clamp-3;
   }
 }
 /* .has-ratio-image {

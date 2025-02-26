@@ -72,6 +72,9 @@ input[type="file"] {
       + .control-suffix {
         @apply focus-within:outline-none focus-within:!text-primary-support-400;
       }
+      &::-webkit-search-cancel-button {
+        cursor: pointer;
+      }      
     }
     & input[type=file] {
       @apply rounded-lg;

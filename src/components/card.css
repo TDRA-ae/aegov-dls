@@ -17,7 +17,7 @@
     @apply text-primary-500 w-10 h-10;
   }
   & .card-title {
-    @apply text-h5 font-extrabold font-inter;
+    @apply text-h5 font-extrabold font-inter rtl:font-alexandria;
   }
   & .card-image {
     @apply aspect-[16/9] object-cover w-full;
