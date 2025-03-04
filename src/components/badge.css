@@ -1,0 +1,241 @@
+.aegov-badge {
+  @apply bg-primary-50 text-primary-700 rounded px-2 py-0.5 text-sm/6 font-semibold whitespace-nowrap inline-flex items-center gap-2;
+  & .badge-icon {
+    @apply w-5 h-5;
+  }
+
+  /* Define Success Soft*/
+  &.badge-soft {
+    @apply bg-primary-50 text-primary-700;
+
+    & .badge-icon {
+      @apply text-primary-700;
+    }
+
+    &>.badge-dismiss {
+      &>button {
+        @apply focus-visible:ring-primary-700;
+      }
+    }
+  }
+
+  /* Define Success Solid*/
+  &.badge-solid {
+    @apply bg-primary-600 text-whitely-50;
+
+    & .badge-icon {
+      @apply text-whitely-50;
+    }
+
+    &>.badge-dismiss {
+      &>button {
+        @apply focus-visible:ring-whitely-50;
+      }
+    }
+  }
+
+  /* Define Error */
+
+  &.badge-error {
+    @apply bg-aered-50 text-aered-700;
+
+    & .badge-icon {
+      @apply text-aered-700;
+    }
+
+    &>.badge-dismiss {
+      &>button {
+        @apply focus-visible:ring-aered-700;
+      }
+    }
+  }
+
+  /* Define Error soft*/
+  &.badge-error.badge-soft {
+    @apply bg-aered-50 text-aered-700;
+
+    & .badge-icon {
+      @apply text-aered-700;
+    }
+
+    &>.badge-dismiss {
+      &>button {
+        @apply focus-visible:ring-aered-700;
+      }
+    }
+  }
+
+  /* Define Error Solid  */
+  &.badge-error.badge-solid {
+    @apply bg-aered-600 text-whitely-50;
+
+    & .badge-icon {
+      @apply text-whitely-50;
+    }
+
+    &>.badge-dismiss {
+      &>button {
+        @apply focus-visible:ring-whitely-50;
+      }
+    }
+  }
+
+
+  /* Define Success */
+  &.badge-success {
+    @apply bg-aegreen-50 text-aegreen-700;
+
+    & .badge-icon {
+      @apply text-aegreen-700;
+    }
+
+    &>.badge-dismiss {
+      &>button {
+        @apply focus-visible:ring-aegreen-700;
+      }
+    }
+  }
+
+  /* Define Success Soft*/
+  &.badge-success.badge-soft {
+    @apply bg-aegreen-50 text-aegreen-700;
+
+    & .badge-icon {
+      @apply text-aegreen-700;
+    }
+
+    &>.badge-dismiss {
+      &>button {
+        @apply focus-visible:ring-aegreen-700;
+      }
+    }
+  }
+
+  /* Define Success Solid*/
+  &.badge-success.badge-solid {
+    @apply bg-aegreen-600 text-whitely-50;
+
+    & .badge-icon {
+      @apply text-whitely-50;
+    }
+
+    &>.badge-dismiss {
+      &>button {
+        @apply focus-visible:ring-whitely-50;
+      }
+    }
+  }
+
+  /* Define Info */
+  &.badge-info {
+    @apply bg-techblue-50 text-techblue-700;
+
+    & .badge-icon {
+      @apply text-techblue-700;
+    }
+
+    &>.badge-dismiss {
+      &>button {
+        @apply focus-visible:ring-techblue-700;
+      }
+    }
+  }
+
+  /* Define Info Soft*/
+  &.badge-info.badge-soft {
+    @apply bg-techblue-50 text-techblue-700;
+
+    & .badge-icon {
+      @apply text-techblue-700;
+    }
+
+    &>.badge-dismiss {
+      &>button {
+        @apply focus-visible:ring-techblue-700;
+      }
+    }
+  }
+
+  /* Define Info Solid*/
+  &.badge-info.badge-solid {
+    @apply bg-techblue-600 text-whitely-50;
+
+    & .badge-icon {
+      @apply text-whitely-50;
+    }
+
+    &>.badge-dismiss {
+      &>button {
+        @apply focus-visible:ring-whitely-50;
+      }
+    }
+  }
+
+  /* Define Warning */
+  &.badge-warning {
+    @apply bg-camel-50 text-camel-700;
+
+    & .badge-icon {
+      @apply text-camel-700;
+    }
+
+    &>.badge-dismiss {
+      &>button {
+        @apply focus-visible:ring-camel-700;
+      }
+    }
+  }
+
+  /* Define Warning Soft*/
+  &.badge-warning.badge-soft {
+    @apply bg-camel-50 text-camel-700;
+
+    & .badge-icon {
+      @apply text-camel-700;
+    }
+
+    &>.badge-dismiss {
+      &>button {
+        @apply focus-visible:ring-camel-700;
+      }
+    }
+  }
+
+  /* Define Warning Solid*/
+  &.badge-warning.badge-solid {
+    @apply bg-camel-600 text-whitely-50;
+
+    & .badge-icon {
+      @apply text-whitely-50;
+    }
+
+    &>.badge-dismiss {
+      &>button {
+        @apply focus-visible:ring-whitely-50;
+      }
+    }
+  }
+
+  /** Size definations **/
+
+  &.badge-base {
+    @apply rounded px-3 py-1 text-sm/6;
+
+    &>span.badge-indicator {
+      @apply h-2.5 w-2.5;
+    }
+  }
+
+  &.badge-lg {
+    @apply rounded px-4 py-1.5 text-base/6;
+
+    &>span.badge-indicator {
+      @apply h-3 w-3;
+    }
+  }
+
+}
+
+a.aegov-badge {
+  @apply hover:bg-primary-200;
+}

@@ -1,0 +1,19 @@
+.aegov-popover {
+  @apply bg-whitely-50 rounded-lg shadow-xl z-50 opacity-0 invisible;
+  & .popover-header {
+    @apply text-aeblack-900 border-aeblack-50 border-b ;
+  }
+  & .dropwdown-body {
+    @apply text-aeblack-700;
+
+    & a {
+      @apply text-inherit active:text-inherit visited:text-inherit hover:text-inherit no-underline;
+    }
+  }
+}
+.popover-item {
+  @apply flex items-center gap-3 rounded-none px-3 py-2 text-inherit active:text-inherit visited:text-inherit hover:text-inherit hover:bg-secondary-50 no-underline;
+  & svg {
+    @apply h-5 w-5 text-current;
+  }
+}

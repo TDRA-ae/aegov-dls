@@ -16,5 +16,8 @@
 
 @import "./dropdown.css";
 @import "./modal.css";
+@import "./popover.css";
 @import "./tab.css";
 @import "./tooltip.css";
+@import "./toast.css";
+@import "./badge.css";
