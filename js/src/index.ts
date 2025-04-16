@@ -7,6 +7,7 @@ import { initModals } from './components/modal';
 import { initDrawers } from './components/drawer';
 import { initTabs } from './components/tabs';
 import { initTooltips } from './components/tooltip';
+import { initPopovers } from './components/popover';
 import './components/index';
 
 const events = new Events("load", [
@@ -17,7 +18,8 @@ const events = new Events("load", [
     initModals,
     initDrawers,
     initTabs,
-	initTooltips
+	initTooltips,
+    initPopovers
 ]);
 events.init();
 
@@ -28,6 +30,7 @@ export { default as Dismiss } from './components/dismiss';
 export { default as Drawer } from './components/drawer';
 export { default as Dropdown } from './components/dropdown';
 export { default as Modal } from './components/modal';
+export { default as Popover } from './components/popover';
 export { default as Tabs } from './components/tabs';
 export { default as Tooltip } from './components/tooltip';
 
@@ -38,6 +41,7 @@ export * from './components/dismiss/types';
 export * from './components/drawer/types';
 export * from './components/dropdown/types';
 export * from './components/modal/types';
+export * from './components/popover/types';
 export * from './components/tabs/types';
 export * from './components/tooltip/types';
 
@@ -48,6 +52,7 @@ export * from './components/dismiss/interface';
 export * from './components/drawer/interface';
 export * from './components/dropdown/interface';
 export * from './components/modal/interface';
+export * from './components/popover/interface';
 export * from './components/tabs/interface';
 export * from './components/tooltip/interface';
 

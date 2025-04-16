@@ -1,0 +1,24 @@
+.aegov-toast {
+  @apply rounded-lg shadow-xl p-4 text-aeblack-500 bg-whitely-50 border-aeblack-100 border;
+  & .popover-header {
+    @apply text-aeblack-900 border-aeblack-50 border-b ;
+  }
+  & .toast-body {
+    @apply ms-3 text-sm font-normal;
+  }
+  & .toast-dismiss {
+    @apply ms-auto -mx-1.5 -my-1.5 bg-whitely-50 text-aeblack-400 hover:bg-aeblack-50 hover:text-aeblack-600 focus-within:ring-primary-support-400 inline-flex items-center rounded-lg bg-transparent p-1.5 text-sm focus-within:ring-2 focus:outline-none;
+    & svg {
+      @apply h-5 w-5;
+    }
+  }
+  & .toast-icon {
+    @apply flex-shrink-0;
+    & > svg {
+      @apply h-7 w-7 flex-shrink-0 fill-current;
+    }
+    & > img {
+      @apply h-7 w-7 flex-shrink-0 object-cover;
+    }
+  }
+}

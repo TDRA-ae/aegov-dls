@@ -5,6 +5,7 @@ import Dismiss, { initDismisses } from './components/dismiss';
 import Drawer, { initDrawers } from './components/drawer';
 import Dropdown, { initDropdowns } from './components/dropdown';
 import Modal, { initModals } from './components/modal';
+import Popover, { initPopovers } from './components/popover';
 import Tabs, { initTabs } from './components/tabs';
 import Tooltip, { initTooltips } from './components/tooltip';
 import './components/index';
@@ -17,6 +18,7 @@ const events = new Events("load", [
   initDismisses,
   initDropdowns,
   initModals,
+  initPopovers,
   initDrawers,
   initTabs,
   initTooltips,
@@ -30,6 +32,7 @@ export default {
   Dismiss,
   Dropdown,
   Modal,
+  Popover,
   Drawer,
   Tabs,
   Tooltip
