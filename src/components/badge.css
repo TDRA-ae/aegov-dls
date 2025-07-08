@@ -219,7 +219,7 @@
   /** Size definations **/
 
   &.badge-base {
-    @apply rounded px-3 py-1 text-sm/6;
+    @apply rounded px-2 py-0.5 text-sm/6;
 
     &>span.badge-indicator {
       @apply h-2.5 w-2.5;

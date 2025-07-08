@@ -52,7 +52,35 @@
   }
 
   &.btn-base {
-    @apply h-12 gap-2 px-6;
+    @apply h-12 gap-2 px-6 text-base;
+    
+    & > svg {
+      @apply h-6 w-6;
+    }
+
+    &:has(svg) {
+      @apply px-5;
+    }
+
+    &:has(svg + svg) {
+      @apply px-4;
+    }
+
+    & > img {
+      @apply h-6 w-6;
+    }
+
+    &:has(img) {
+      @apply px-5;
+    }
+
+    &:has(img + img) {
+      @apply px-4;
+    }
+
+    &.btn-icon {
+      @apply w-12 gap-0 px-0;
+    }
   }
 
   &.btn-sm {
