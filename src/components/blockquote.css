@@ -7,7 +7,7 @@
     @apply text-primary-700 mb-1 text-sm font-medium;
   }
   & .quote-cite {
-    @apply text-primary-600 text-sm font-normal;
+    @apply text-primary-700 text-sm font-normal;
   }
   & .quote-footer {
     @apply mt-10;

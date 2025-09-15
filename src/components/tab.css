@@ -9,7 +9,7 @@
 }
 .tab-link {
   @apply text-aeblack-700 hover:text-aeblack-950 hover:border-primary-500 inline-flex items-center gap-3 rounded-t-lg rounded-b-none no-underline border-b-[0.188rem] border-transparent py-6 text-base font-medium;
-  @apply focus-visible:ring-primary-support-400 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-0;
+  @apply focus-visible:ring-primary-support-600 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-0;
   & svg {
     @apply h-6 w-6 fill-current;
   }
