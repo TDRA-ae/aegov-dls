@@ -24,7 +24,7 @@
   @apply text-aeblack-800 hover:bg-primary-50 hover:text-primary-800;
 }
 .aegov-pagination-current {
-  @apply bg-primary-500 text-primary-50;
+  @apply bg-primary-600 text-whitely-50;
 }
 .aegov-pagination-extend {
   @apply text-aeblack-300;

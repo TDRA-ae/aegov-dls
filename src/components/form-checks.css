@@ -1,8 +1,8 @@
 input[type="checkbox"],
 input[type="radio"] {
-  @apply accent-primary-400 text-primary-400 border-primary-400 relative m-0 h-5 w-5 flex-shrink-0 appearance-none border;
+  @apply accent-primary-600 text-primary-600 border-primary-600 relative m-0 h-5 w-5 flex-shrink-0 appearance-none border;
   @apply before:bg-primary-50 before:absolute before:start-2/4 before:top-2/4 before:mix-blend-multiply before:h-12 before:w-12 before:-translate-x-2/4 before:-translate-y-2/4 before:scale-0 before:rounded-full before:transition-all hover:before:scale-100 rtl:before:translate-x-2/4;
-  @apply focus:ring-primary-support-400 focus:outline-none focus:ring-2 focus:ring-offset-2;
+  @apply focus:ring-primary-support-600 focus:outline-none focus:ring-2 focus:ring-offset-2;
   @apply disabled:border-primary-200 disabled:before:!hidden disabled:pointer-events-none;
 }
 input[type="checkbox"] {

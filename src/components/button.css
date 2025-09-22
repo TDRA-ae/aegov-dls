@@ -4,19 +4,19 @@
   /* Specefic to the use of style */
   @apply h-12 gap-2 rounded-lg border-2 border-transparent px-6 text-base font-medium focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2;
   /* all aspects of colour */
-  @apply bg-primary-600 text-whitely-50 hover:bg-primary-500 hover:text-primary-50 hover:shadow-button hover:shadow-primary-100 focus-visible:ring-primary-support-300;
+  @apply bg-primary-600 text-whitely-50 hover:bg-primary-500 hover:text-primary-50 hover:shadow-button hover:shadow-primary-100 focus-visible:ring-primary-support-600;
   @apply disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-30 disabled:!shadow-none;
 
   /* Style */
   &.btn-soft {
-    @apply bg-primary-50 hover:bg-primary-100 text-primary-700 hover:text-primary-600 focus-visible:ring-primary-support-400 hover:shadow-none focus-visible:ring-offset-0;
+    @apply bg-primary-50 hover:bg-primary-100 text-primary-700 hover:text-primary-600 focus-visible:ring-primary-support-600 hover:shadow-none focus-visible:ring-offset-0;
     @apply disabled:opacity-50;
   }
   &.btn-link {
-    @apply text-primary-600 hover:bg-primary-50 focus-visible:ring-primary-support-400 focus-visible:border-primary-support-400 bg-transparent hover:shadow-none focus-visible:ring-1 focus-visible:ring-offset-0;
+    @apply text-primary-600 hover:bg-primary-50 focus-visible:ring-primary-support-600 focus-visible:border-primary-support-600 bg-transparent hover:shadow-none focus-visible:ring-1 focus-visible:ring-offset-0;
   }
   &.btn-outline {
-    @apply text-primary-600 hover:bg-primary-50 border-primary-600 focus-visible:border-primary-support-400 focus-visible:ring-primary-support-400 bg-transparent hover:shadow-none focus-visible:ring-1 focus-visible:ring-offset-0;
+    @apply text-primary-700 hover:bg-primary-50 border-primary-700 focus-visible:border-primary-support-600 focus-visible:ring-primary-support-600 bg-transparent hover:shadow-none focus-visible:ring-1 focus-visible:ring-offset-0;
   }
 
   /* Sizing */

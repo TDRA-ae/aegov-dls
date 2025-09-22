@@ -14,7 +14,7 @@
 .aegov-card {
   @apply rounded-xl;
   & > svg {
-    @apply text-primary-500 w-10 h-10;
+    @apply text-primary-600 w-10 h-10;
   }
   & .card-title {
     @apply text-h5 font-extrabold font-inter rtl:font-alexandria;
@@ -235,6 +235,9 @@
         @apply text-[3rem] leading-[1.05] p-8;
       }
     }
+  }
+  .aegov-link{
+    @apply underline ;
   }
 }
 

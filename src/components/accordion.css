@@ -6,7 +6,7 @@
     & button {
       @apply text-aeblack-800 hover:text-primary-600 flex items-start justify-between text-base font-semibold;
       &.accordion-active {
-        @apply text-primary-600;
+        @apply text-primary-700;
       }
       & svg {
         @apply text-inherit;
@@ -16,7 +16,7 @@
   &:not(.aegov-mobile-accordion) {
     & .accordion-title {
       & button {
-        @apply focus-visible:ring-primary-support-400 px-3 py-4 focus-visible:outline-none focus-visible:ring-2 md:py-5 xl:py-6;
+        @apply focus-visible:ring-primary-support-600 px-3 py-4 focus-visible:outline-none focus-visible:ring-2 md:py-5 xl:py-6;
       }
     }
     & .accordion-content {
