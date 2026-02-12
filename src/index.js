@@ -10,6 +10,29 @@ const aegovComponents = require("../dist/components");
 const aegovBlocks = require("../dist/blocks");
 const aegovUtil = require("../dist/utilities");
 
+/**
+ * Separates a styles object into base-level (raw element/attribute selectors)
+ * and component-level (class-based selectors).
+ *
+ * Raw element selectors (e.g. input[type="text"], textarea, select) must be
+ * registered via addBase() rather than addComponents() to comply with
+ * Tailwind CSS v3+ selector validation rules.
+ */
+function separateBaseFromComponents(styles) {
+	const base = {};
+	const components = {};
+
+	for (const [selector, value] of Object.entries(styles)) {
+		// Class selectors and @-rules belong in the component layer
+		if (selector.startsWith('.') || selector.startsWith('@')) {
+			components[selector] = value;
+		} else {
+			base[selector] = value;
+		}
+	}
+
+	return { base, components };
+}
 
 const mainFunction = ({ addBase, addComponents, addUtilities, config, postcss }) => {
 	let aegovIncludedItems = [];
@@ -23,12 +46,18 @@ const mainFunction = ({ addBase, addComponents, addUtilities, config, postcss })
 	addBase(aegovBase);
 	aegovIncludedItems.push("aegov-Base");
 
-	// Include the components style
-	addComponents(aegovComponents);
+	// Separate raw element selectors from class-based component selectors.
+	// Raw selectors (input[type="text"], textarea, etc.) must use addBase()
+	// to avoid Tailwind's strict utility/component selector validation.
+	const { base: componentBaseStyles, components: componentStyles } = separateBaseFromComponents(aegovComponents);
+	addBase(componentBaseStyles);
+	addComponents(componentStyles);
 	aegovIncludedItems.push("aegov-Components");
 
 	// Include the blocks style
-	addComponents(aegovBlocks);
+	const { base: blockBaseStyles, components: blockStyles } = separateBaseFromComponents(aegovBlocks);
+	addBase(blockBaseStyles);
+	addComponents(blockStyles);
 	aegovIncludedItems.push("aegov-Blocks");
 
 	// Include the utilities
