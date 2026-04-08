@@ -2,7 +2,7 @@
   /* --- 1. DEFAULT (PRIMARY) COLOR SCHEME --- */
   --form-label-fg: var(--color-aeblack-800);
   --form-input-bg: var(--color-whitely-50);
-  --form-input-ring: var(--color-primary-400);
+  --form-input-ring: var(--color-primary-600);
   --form-input-focus-ring: var(--color-primary-support-600);
   --form-input-text: var(--color-primary-900);
   --form-input-placeholder: var(--color-aeblack-500);
@@ -124,7 +124,7 @@
 
   /* --- 3. COLOR VARIANTS --- */
   &.control-secondary {
-    --form-input-ring: var(--color-secondary-400);
+    --form-input-ring: var(--color-secondary-800);
     --form-input-focus-ring: var(--color-secondary-support-300);
     --form-input-text: var(--color-secondary-900);
     --form-input-focus-prefix-fg: var(--color-secondary-900);
@@ -137,7 +137,7 @@
   &.control-error {
     --form-label-fg: var(--color-aered-600);
     --form-input-bg: var(--color-aered-50);
-    --form-input-ring: var(--color-aered-400);
+    --form-input-ring: var(--color-aered-600);
     --form-input-focus-ring: var(--color-aered-600);
     --form-input-text: var(--color-aered-900);
     --form-input-focus-prefix-fg: var(--color-aered-900);

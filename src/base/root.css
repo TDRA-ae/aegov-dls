@@ -63,6 +63,7 @@
   --container-padding-md: 0.875rem;
   --container-padding-lg: 1.375rem;
   --container-padding-xl: 1.25rem;
+  --container-padding-2xl: 1.75rem; 
   --container-center: mx-auto;
 }
 

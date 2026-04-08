@@ -110,6 +110,7 @@ const pluginConfig = {
           md: "var(--container-padding-md)",
           lg: "var(--container-padding-lg)",
           xl: "var(--container-padding-xl)",
+          '2xl': "var(--container-padding-2xl)",
         },
       },
     }
