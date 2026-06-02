@@ -11,9 +11,9 @@
   --hero-dot-selected-bg: var(--color-aeblack-800);
   --hero-row-bg: var(--color-primary-100);
   --hero-col-gradient-from: var(--color-primary-100);
-  --hero-title-fg: var(--color-aegold-700);
+  --hero-title-fg: var(--color-primary-600);
   --hero-hero-title-fg: var(--color-whitely-50);
-  --hero-description-fg: var(--color-primary-700);
+  --hero-description-fg: var(--color-primary-600);
 
   & picture {
     & img {

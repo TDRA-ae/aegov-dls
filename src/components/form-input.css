@@ -191,9 +191,12 @@
         @apply opacity-40;
       }
     }
-
+    &:has(input:focus) .file-input-label {
+      outline: 2px solid var(--btn-focus-ring, var(--form-input-focus-ring));
+      outline-offset: 2px;
+    }
     input[type="file"] {
-      @apply hidden;
+      @apply sr-only;
     }
 
     .file-input-summary {

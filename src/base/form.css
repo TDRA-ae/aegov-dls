@@ -15,7 +15,7 @@ input[type="radio"] {
   &:before {
     content: '';
     background-color: var(--form-check-hover-before-bg);
-    @apply absolute start-2/4 top-2/4 mix-blend-multiply h-12 w-12 -translate-x-2/4 -translate-y-2/4 scale-0 rounded-full transition-all;
+    @apply absolute left-2/4 top-2/4 mix-blend-multiply h-12 w-12 -translate-x-2/4 -translate-y-2/4 scale-0 rounded-full transition-all;
   }
 
   &:hover:not(:disabled)::before {
