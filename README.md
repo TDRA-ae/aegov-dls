@@ -13,6 +13,32 @@
 
 # The United Arab Emirates Design System
 
+> [!CAUTION]
+> **This is an older version of the UAE Design System and is no longer maintained.**
+>
+> This repository and the `@aegov/design-system` package (the TailwindCSS plugin, v3.x and earlier) will not receive further updates, bug fixes or security patches.
+>
+> **A new version of the UAE Design System, built on Web Components, is now available as [`@aegov/designsystem`](https://www.npmjs.com/package/@aegov/designsystem) (version 4.0.x). All projects must aim to upgrade to it.** Companion packages are available for React, Vue and Angular.
+>
+> ```bash
+> npm install @aegov/designsystem@^4.0.0
+> ```
+
+> [!WARNING]
+> **Upgrading to version 4.0.x is a breaking change.** A Web Components based design system requires structural changes to your HTML. Components are no longer built from HTML elements and CSS classes; each one is a custom element with its own attributes and events, and it needs the design system's JavaScript loaded to render. For example:
+>
+> ```html
+> <!-- @aegov/design-system (this repository) -->
+> <button class="aegov-btn btn-secondary btn-outline">Submit</button>
+>
+> <!-- @aegov/designsystem 4.0.x -->
+> <aegov-button variant="secondary" appearance="outline">Submit</aegov-button>
+> ```
+>
+> Plan the upgrade: replace markup component by component, update any JavaScript that depended on the old classes or the bundled Flowbite-based scripts, and test your pages thoroughly. Installation and the full component reference are on [designsystem.gov.ae](https://designsystem.gov.ae).
+
+---
+
 The design system has been created based on research and information collected from in-depth studies conducted on user behaviour and benchmarking best practices.
 
 The purpose of the design system is to create a set of components, blocks and patterns with detailed guidelines on how to create UI for websites and application of Federal Government Entities (FGE's) of the United Arab Emirates. This system is designed primarily for content specialists, user interface (UI) designers, developers, user researchers and digital operations teams of FGE's.
@@ -37,7 +63,10 @@ The design system is built with [TailwindCSS](https://tailwindcss.com) and to ge
 
 For installation instructions, go to [designsystem.gov.ae/docs/installation](https://designsystem.gov.ae/docs/installation)
 
-### How to install the plugin.
+### How to install the plugin (deprecated)
+
+> [!NOTE]
+> The instructions below are kept for existing projects only. New projects should install [`@aegov/designsystem@^4.0.0`](https://www.npmjs.com/package/@aegov/designsystem) instead.
 
 If you want to install the package via the NPM CLI, you can use the following:
 
